@@ -55,6 +55,7 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
+\usepackage{wasysym}%
 %%%%
 
 %%%%%=============================================================================%%%%
@@ -136,7 +137,7 @@
 
 Albert Einstein was insistent on a static Universe during the period in which he wrote his specialized theory of relativity\cite{einstein1905electrodynamics, Einstein1917CosmologicalConsiderations, ORaifeartaigh2017EinsteinCosmology, Nussbaumer2014EinsteinStaticToExpanding}. What is proposed here is largely a re-examination of this geometry under the assumption that the $\mathbb{R}^{3}$ space between two arbitrary points dilates as time progresses.
 
-This dilation is then bound to $\gamma$, giving a velocity dependent function for $\vec{g}$ and a magnitude that extends into a 4th spatial coordinate, mathematically similar to an unwrapped Kaluza-Klein (KK) dimension\cite{Kaluza1921, Klein1926}. Through these coordinate transformations time, cosmic inflation and gravitational acceleration become the same process as observed from different reference frames in a space-time where the 4th KK dimension acts as a concurrent density axis.
+This dilation is then bound to $\gamma$, giving a velocity dependent function for $\vec{g}$ and a magnitude that extends into a 4th spatial coordinate, similar in construction to an unwrapped Kaluza-Klein (KK) dimension\cite{Kaluza1921, Klein1926}. Through these coordinate transformations time, cosmic inflation and gravitational acceleration become the same process as observed from different reference frames in a space-time where the 4th KK dimension acts as a concurrent density axis.
 
 This geometry gives an entirely different model of concurrency and synchronicity as a classical notion of simultaneity is maintained. While maintaining classical simultaneity resolves a long list of temporal paradoxes without the need for selective reference frame preference, it produces a concurrent axis that describes the ultra-dense state of the early Universe being separated only by some $\Delta$ along this 4th axis.
 
@@ -150,7 +151,7 @@ Let there be two overlapping coordinate systems, $\mathbf{S}$ and $\mathbf{U}$. 
     v^{\left( S \right)} = \left( t, x_{\mu} \right) \qquad v^{\left( U \right)} = \left( t + \Delta t, x_{\mu} \right)
 \end{equation}
 
-Let there also be two observers, $A$ and $B$. Let $A$ and $B$ agree that $B$ should travel at some relativistic velocity $v^{\prime}$ between two arbitrary points in space contained within $\mathbf{S}$ and $\mathbf{U}$, $p_{1}$ and $p_{2}$. Let $A$ remain at relative rest with respect to $p_{1}$ and at $p_{2}$ place a time keeping device large enough to be visible from $p_{1}$.
+Let there also be two observers, $A$ and $B$. Let $A$ and $B$ agree that $B$ should travel at some relativistic velocity $v^{\prime}$ between two arbitrary points in space contained within $\mathbf{S}$ and $\mathbf{U}$, $p_{1}$ and $p_{2}$. Let $A$ remain at relative rest with respect to $p_{1}$, and at $p_{2}$ place a time keeping device large enough to be visible from $p_{1}$.
 
 If $A$ and $B$ were to disagree upon the time at which $B$ reaches $p_{2}$, this single, instantaneous event ($B$ reaching $p_{2}$) would be required to happen more than once. Therefore, we posit that it is not possible for $A$ and $B$ to disagree upon the time at which $B$ reaches $p_{2}$.
 
@@ -194,6 +195,8 @@ where $\dot{x}$ indicates not a derivative with respect to time, but rather a fu
 
 Here we examine these coordinate transformations in the context of the equivalence principle. While a well defined function remains elusive, a numerical intersection with the fine structure constant allows us to derive several important properties of an apparent electromagnetic function producing $\vec{g}$.
 
+\subsubsection{Earth's Kinematic Velocity From Electromagnetic Parameters}
+
 By solving $\gamma$ for $v$, let us define $v_{\left( \gamma \right)}$ to be
 
 \begin{equation}\label{eq_v_of_gamma}
@@ -207,7 +210,6 @@ And $\delta$ to be
 \end{equation}
 
 If $\delta$ is induced by spatial dilation, we should presume that this dilation is radial (at least in a simplified single body system). We then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
-
 
 \begin{equation}
     \omega = \sqrt[3]{\frac{d}{dR} g} = \delta^{1/3}
@@ -225,9 +227,9 @@ While this approximates $2 \alpha$, it more closely gives
     \omega_{\oplus} = \alpha \left( 2 - \alpha \right) \pm 0.0253\%
 \end{equation}
 
-If we then expand equation \ref{eq_omega_earth} we find
+Then by expanding equation \ref{eq_omega_earth}
 
-\begin{equation}
+\begin{equation}\label{eq_omega_earth_Gamma}
     \alpha \left( 2 - \alpha \right) = \sqrt[3]{\frac{d}{dR}g}
 \end{equation}
 
@@ -251,6 +253,59 @@ As $\gamma$ represents $1$ plus some small $ds$, let us add 1 to these additiona
 
 \begin{equation}
     v_{\left( \gamma_{\text{em}} \right)} = 371,721 ~\frac{m}{s}
+\end{equation}
+
+This matches the 2018 Plank data\cite{planck_collaboration_2020} to within $\approx 0.52\%$.
+
+\subsubsection{Solar $\omega$}
+
+If we expand equation \ref{eq_omega_earth_Gamma} we find
+
+\begin{equation}
+    \alpha = \Gamma_{\left( \theta \right)} \left( \frac{d}{dR} g \right)^{1/3}
+\end{equation}
+
+Where $\Gamma_{\left( \theta \right)}$ is some unknown function of spin. While a well defined function remains elusive, we can take advantage of several characteristics for specific local bodies according to table \ref{table_advantageous_props} to derive certain characteristics of $\Gamma_{\left(  \theta \right)}$.
+
+
+\begin{table}[h]
+\caption{Advantageous properties}\label{tab1}%
+\label{table_advantageous_props}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l l l }
+\toprule
+Body & Trait & Value\\
+\midrule
+Earth& The most mass dense.& $5495 ~ \text{kg}\ \text{m}^{-3}$\\
+Saturn& The least mass dense.& $687 ~ \text{kg}\ \text{m}^{-3}$\\
+Sun& The most massive.& $1.988 \times 10^{30} ~ \text{kg}$\\
+\botrule
+\end{tabular*}
+\end{table}
+
+In equation \ref{eq_omega_earth_Gamma} we've demonstrated that for the most mass dense body in the system
+
+\begin{equation}
+    \Gamma_{\left( \theta \right), \oplus} \approx \frac{1}{2 - \alpha}
+\end{equation}
+
+The Sun, being the dominant local mass with a surface gravitational acceleration almost $30$ times greater than the next body in question, would project this spatial vector (moving space itself) more closely to a purely radial projection. This behavior, the manner in which the Sun dominates the local gravitational environment should allow us to approximate a single body solution near the solar surface.
+
+Let us then inspect $\Gamma_{\left( \theta \right), \odot}$, under the assumption that this quantity acts \textit{inside} of the divergence, acting on each individual $\mathbb{R}^{3}$ axis.
+
+\begin{equation}
+    \Gamma_{\left( \theta \right), \odot} \propto \sqrt[3]{\Gamma_{\left( \theta \right)}}
+\end{equation}
+
+If we then presume that $\alpha$ in $\Gamma_{\left( \theta \right), \oplus}$ is associated with spin, we can approximate this term to be $0$, giving
+
+\begin{equation}
+    \Gamma_{\left( \theta \right), \odot} \approx \frac{1}{\sqrt[3]{2}}
+\end{equation}
+
+Or
+
+\begin{equation}
+    \alpha = \Gamma_{\left( \theta \right), \odot} \sqrt[3]{\frac{d}{dR}g} = \sqrt[3]{\frac{1}{2} \frac{d}{dR} g_{\odot}} \pm 0.47\%
 \end{equation}
 
 

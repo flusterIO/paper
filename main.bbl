@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{11}
+\begin{thebibliography}{12}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -207,6 +207,16 @@ Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der Wissenschaften z
 (\byear{2014})
 \doiurl{10.1103/PhysRevLett.113.120405}
 \end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{{Planck Collaboration}}{2020}]{planck_collaboration_2020}
+\begin{botherref}
+\oauthor{\bsnm{{Planck Collaboration}}}:
+Planck 2018 Results: Astro-ph Data Products.
+\url{https://esa.int}
+Accessed 2026-11-02
+\end{botherref}
 \endbibitem
 
 \end{thebibliography}
