@@ -1,0 +1,32 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usepackage{amsmath}
+\usetikzlibrary{arrows,snakes,backgrounds,patterns,matrix,shapes,fit,calc,shadows,plotmarks}
+\usepackage[graphics,tightpage,active]{preview}
+\PreviewEnvironment{tikzpicture}
+\PreviewEnvironment{equation}
+\PreviewEnvironment{equation*}
+\newlength{\imagewidth}
+\newlength{\imagescale}
+\begin{document}
+%% Use \usepackage{tikz}
+%% Use \usetikzlibrary{shapes,arrows,decorations, decorations.pathmorphing,arrows.meta,patterns}
+\begin{tikzpicture}[scale=1.0000]
+	\tikzstyle{every node}=[scale=1.0000]
+	
+	%%Created with tikzpy
+	
+	\node [black ,above]  at (1.4434,5.0000,0.0000)  {$\dot{x}~ d \tau$};
+	\draw [dotted ,black]  (0.3125,0.5413,0.0000) arc [radius=0.6250, start angle=60.0000, end angle=90.0000];
+	\node [black]  at (0.2157,0.8049,0.0000)  {$\theta$};
+	\draw [black]  (0.0000,0.0000,0.0000) circle [radius=5.0000];
+	\draw [black]  (0.0000,0.0000,0.0000) -- (0.0000,5.0000,0.0000);
+	\draw [black]  (0.0000,0.0000,0.0000) -- (2.5000,4.3301,0.0000);
+	\node [black ,left]  at (0.0000,2.5000,0.0000)  {$R_0$};
+	\draw [-> ,dashed ,black]  (0.0000,5.0000,0.0000) -- (2.8868,5.0000,0.0000);
+	\draw [decorate, decoration={snake} ,cyan]  (2.5000,4.3301,0.0000) -- (2.8868,5.0000,0.0000);
+    \node [black ,right]  at (2.8434,4.5151,0.0000)  {$\int_0^R  \delta~ dR~ dt = R + g\ d \tau$};
+
+\end{tikzpicture}
+
+\end{document}
+    
