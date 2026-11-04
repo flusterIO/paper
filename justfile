@@ -16,6 +16,8 @@ build_diagrams: build_dilating_planes build_trig_derivation
 	magick diagrams/outputs/omega_mass_density.png diagrams/outputs/omega_mass_density.eps
 	/opt/anaconda3/envs/jupyter/bin/python {{justfile_directory()}}/diagrams/inputs/generate_eilers_plot.py
 	magick diagrams/outputs/eilers_observation.png diagrams/outputs/eilers_observation.eps
+	/opt/anaconda3/envs/jupyter/bin/python {{justfile_directory()}}/diagrams/inputs/generate_mass_density_velocity_plot.py
+	magick diagrams/outputs/mass_density_velocity_plot.png diagrams/outputs/mass_density_velocity_plot.eps
 
 build_main:
 	sudo pdflatex ./main.tex

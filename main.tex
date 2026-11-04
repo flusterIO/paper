@@ -159,7 +159,7 @@ Let there also be two observers, $A$ and $B$. Let $A$ and $B$ agree that $B$ sho
 
 If $A$ and $B$ were to disagree upon the time at which $B$ reaches $p_{2}$, this single, instantaneous event ($B$ reaching $p_{2}$) would be required to happen more than once. Therefore, we theorize that it is not possible for $A$ and $B$ to disagree upon the time at which $B$ reaches $p_{2}$.
 
-Instead, as the additional factor of $\gamma$ has been demonstrated experimentally on a number of occasions\cite{Rossi1941, FrischSmith1963, Bailey1977, Bailey1979, Botermann2014}, we should conclude that both $A$ and $B$ observe $B$ reaching $p_{2}$ in $\frac{d}{v}\gamma$. This gives a set of coordinate transformations such that for each respective observer
+Instead, as the additional factor of $\gamma$ has been demonstrated experimentally on a number of occasions\cite{Rossi1941, FrischSmith1963, Bailey1977, Bailey1979, Botermann2014}, we should conclude that both $A$ and $B$ observe $B$ reaching $p_{2}$ in $\frac{d}{v}\gamma$. This gives a set of coordinate transformations such that for each relative observer
 
 \begin{equation}
     \Delta t = \overbrace{\frac{d \cdot \gamma}{v^{\left( U \right)}}}^{B} = \underbrace{\frac{d}{v^{\left( S \right)}} = \frac{d}{v^{\left( U \right)} \left( \frac{1}{\gamma} \right)}}_{A}
@@ -207,16 +207,16 @@ By solving $\gamma$ for $v$, let us define $v_{\left( \gamma \right)}$ to be
     v_{\left( \gamma \right)} = c \sqrt{1 - \frac{1}{\gamma^{2}}}
 \end{equation}
 
-And $\delta_{\left( R \right)}$ to be
+And $\delta_{\left( M, R \right)}$ to be
 
 \begin{equation}
-    \delta_{\left( R \right)} = \frac{d}{dR} g = -2 \frac{GM}{R^{3}}
+    \delta_{\left( M, R \right)} = \frac{d}{dR} g = -2 \frac{GM}{R^{3}}
 \end{equation}
 
-If $\delta_{\left( R \right)}$ is induced by spatial dilation, we should presume that this dilation is radial (at least in a simplified single body system). We then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
+If $\delta_{\left( M, R \right)}$ is induced by spatial dilation, we should presume that this dilation is radial (at least in a simplified single body system). We then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
 
 \begin{equation}
-    \omega = \sqrt[3]{\frac{d}{dR} g} = \delta^{1/3}
+    \omega_{\left( M, R \right)} = \sqrt[3]{\frac{d}{dR} g} = \delta_{\left( M, R \right)}^{1/3}
 \end{equation}
 
 If we investigate this quantity for Earth, we find:
@@ -341,15 +341,31 @@ Which in turn produces a domain where $\alpha \lessapprox \omega \lessapprox \al
 
 \subsection{Gravitational Parameters}
 \subsubsection{Cosmological Velocity}
+
 \begin{equation}
-\int_0^R \int_0^x \left[ \delta \frac{1}{v_\gamma} \tau \right]~ dR ~ d\tau = 1 + \frac{1}{2} \frac{G M_\oplus}{R^3_\oplus} \left( \frac{\dot{x}}{\hat{x}} \right)^{2}
+    \varphi_{\left( M, R \right)} = \frac{1}{R}\int \delta_{\left( M, R  \right)} = 1 + G \frac{M}{R^{3}}
+\end{equation}
+
+
+\begin{equation}
+    v_{\text{cosmo}} = c \sqrt{1 - \frac{1}{\varphi_{\left( M, R \right)}^{2}}} = 525,493.17 ~ \text{m} / \text{s}
 \end{equation}
 
 \subsubsection{Kinematic Velocity}
 
 \begin{equation}
-v_{\scriptsize \text{kinematic}} = c \sqrt{1 - \frac{1}{\left( 1 + \frac{1}{2} G \frac{M}{R^3} \right)^2}} = 371,567 ~ \text{m} ~ \text{s}^{-1}
+\int_0^R \int_0^x \left[ \delta \frac{1}{v_\gamma} \tau \right]~ dR ~ d\tau = 1 + \frac{1}{2} \frac{G M_\oplus}{R^3_\oplus} \left( \frac{\dot{x}}{\hat{x}} \right)^{2}
 \end{equation}
+
+\begin{equation}
+v_{\scriptsize \text{kinematic}} = c \sqrt{1 - \frac{1}{\left( 1 + \frac{1}{2} G \frac{M}{R^3} \right)^2}} = 371,567 ~ \text{m} / \text{s}
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{./diagrams/outputs/mass_density_velocity_plot.eps}
+\caption{A trigonometric derivation of a relativistic orbital velocity equation.}\label{fig1}
+\end{figure}
 
 \subsection{Orbital Velocity}
 \begin{figure}[h]
@@ -365,7 +381,7 @@ R_0^2 + \dot{x}^2 dt^2 = \left(\int_0^{R_0} 2 G \frac{M}{R^3}\right)^2 = \left(R
 \end{equation}
 
 \begin{equation}
-v_{\text{orbit}} = \frac{\sqrt{G M \left(G M + 2 R^{3}\right)}}{R^{2}} = 230,145 \ \text{m}\ \text{s}^{-1}
+    v_{\text{orbit}} = \frac{\sqrt{G M \left(G M + 2 R^{3}\right)}}{R^{2}} = 230,145 \ \text{m}/ \text{s} = v_{\text{eilers}} \pm 0.498\%
 \end{equation}
 
 
