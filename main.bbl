@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{12}
+\begin{thebibliography}{16}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -217,6 +217,63 @@ Planck 2018 Results: Astro-ph Data Products.
 \url{https://esa.int}
 Accessed 2026-11-02
 \end{botherref}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Gordon et~al.}{2008}]{gordon_determining_2008}
+\begin{barticle}
+\bauthor{\bsnm{Gordon}, \binits{C.}},
+\bauthor{\bsnm{Land}, \binits{K.}},
+\bauthor{\bsnm{Slosar}, \binits{A.}}:
+\batitle{Determining the motion of the solar system relative to the cosmic microwave background using type ia supernovae}.
+\bjtitle{Monthly Notices of the Royal Astronomical Society}
+\bvolume{387}(\bissue{1}),
+\bfpage{371}--\blpage{376}
+(\byear{2008})
+\doiurl{10.1111/j.1365-2966.2008.13239.x}
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Brout et~al.}{2022}]{Brout2022}
+\begin{barticle}
+\bauthor{\bsnm{Brout}, \binits{D.}},
+\bauthor{\bsnm{Scolnic}, \binits{D.}},
+\bauthor{\bsnm{Popovic}, \binits{B.}}, \betal:
+\batitle{The {Pantheon+} analysis: Cosmological constraints}.
+\bjtitle{The Astrophysical Journal}
+\bvolume{938}(\bissue{2}),
+\bfpage{110}
+(\byear{2022})
+\doiurl{10.3847/1538-4357/ac8e04}
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Betoule et~al.}{2014}]{Betoule2014}
+\begin{barticle}
+\bauthor{\bsnm{Betoule}, \binits{M.}},
+\bauthor{\bsnm{Kessler}, \binits{R.}},
+\bauthor{\bsnm{Guy}, \binits{J.}}, \betal:
+\batitle{Improved cosmological constraints from a joint analysis of the {SDSS-II} and {SNLS} supernova samples}.
+\bjtitle{Astronomy \& Astrophysics}
+\bvolume{568},
+\bfpage{22}
+(\byear{2014})
+\doiurl{10.1051/0004-6361/201423413}
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Wyler}{1969}]{Wyler1969}
+\begin{barticle}
+\bauthor{\bsnm{Wyler}, \binits{A.}}:
+\batitle{L'espace sym{\'e}trique du groupe des {\'e}quations de maxwell}.
+\bjtitle{Comptes Rendus de l'Acad{\'e}mie des Sciences, S{\'e}rie A-B}
+\bvolume{269},
+\bfpage{743}--\blpage{745}
+(\byear{1969})
+\end{barticle}
 \endbibitem
 
 \end{thebibliography}
