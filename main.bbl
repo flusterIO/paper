@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{16}
+\begin{thebibliography}{21}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -265,6 +265,93 @@ Accessed 2026-11-02
 \endbibitem
 
 %%% 16
+\bibitem[\protect\citeauthoryear{Cautun et~al.}{2020}]{cautun2020milky}
+\begin{barticle}
+\bauthor{\bsnm{Cautun}, \binits{M.}},
+\bauthor{\bsnm{Ben{\'i}tez-Llambay}, \binits{A.}},
+\bauthor{\bsnm{Deason}, \binits{A.J.}},
+\bauthor{\bsnm{Frenk}, \binits{C.S.}},
+\bauthor{\bsnm{Fattahi}, \binits{A.}},
+\bauthor{\bsnm{G{\'o}mez}, \binits{F.A.}},
+\bauthor{\bsnm{Grand}, \binits{R.J.J.}},
+\bauthor{\bsnm{Oman}, \binits{K.A.}},
+\bauthor{\bsnm{Navarro}, \binits{J.F.}},
+\bauthor{\bsnm{Simpson}, \binits{C.M.}}:
+\batitle{The milky way total mass profile as inferred from gaia dr2}.
+\bjtitle{Monthly Notices of the Royal Astronomical Society}
+\bvolume{494}(\bissue{3}),
+\bfpage{4291}--\blpage{4313}
+(\byear{2020})
+\doiurl{10.1093/mnras/staa1017}
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{{GRAVITY Collaboration}}{2018}]{gravity2018detection}
+\begin{barticle}
+\bauthor{\bsnm{{GRAVITY Collaboration}}}:
+\batitle{Detection of the gravitational redshift in the orbit of the star s2 near the galactic centre massive black hole}.
+\bjtitle{Astronomy \& Astrophysics}
+\bvolume{615},
+\bfpage{15}
+(\byear{2018})
+\doiurl{10.1051/0004-6361/201833718}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Bobylev and Bajkova}{2021}]{bobylev2021estimate}
+\begin{barticle}
+\bauthor{\bsnm{Bobylev}, \binits{V.V.}},
+\bauthor{\bsnm{Bajkova}, \binits{A.T.}}:
+\batitle{A new estimate of the best value for the solar galactocentric distance}.
+\bjtitle{Astronomy Reports}
+\bvolume{65}(\bissue{6}),
+\bfpage{498}--\blpage{506}
+(\byear{2021})
+\doiurl{10.1134/S1063772921070015}
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Eilers et~al.}{2019}]{Eilers_2019}
+\begin{barticle}
+\bauthor{\bsnm{Eilers}, \binits{A.-C.}},
+\bauthor{\bsnm{Hogg}, \binits{D.W.}},
+\bauthor{\bsnm{Rix}, \binits{H.-W.}},
+\bauthor{\bsnm{Ness}, \binits{M.K.}}:
+\batitle{The circular velocity curve of the milky way from 5 to 25 kpc}.
+\bjtitle{The Astrophysical Journal}
+\bvolume{871}(\bissue{1}),
+\bfpage{120}
+(\byear{2019})
+\doiurl{10.3847/1538-4357/aaf648}
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Yu et~al.}{2023}]{yu2023born}
+\begin{barticle}
+\bauthor{\bsnm{Yu}, \binits{S.}},
+\bauthor{\bsnm{Bullock}, \binits{J.S.}},
+\bauthor{\bsnm{Gurvich}, \binits{A.B.}},
+\bauthor{\bsnm{Hafen}, \binits{Z.}},
+\bauthor{\bsnm{Stern}, \binits{J.}},
+\bauthor{\bsnm{Boylan-Kolchin}, \binits{M.}},
+\bauthor{\bsnm{Faucher-Gigu{\`e}re}, \binits{C.-A.}},
+\bauthor{\bsnm{Wetzel}, \binits{A.}},
+\bauthor{\bsnm{Hopkins}, \binits{P.F.}},
+\bauthor{\bsnm{Moreno}, \binits{J.}}:
+\batitle{Born this way: thin disc, thick disc, and isotropic spheroid formation in fire-2 milky way-mass galaxy simulations}.
+\bjtitle{Monthly Notices of the Royal Astronomical Society}
+\bvolume{523}(\bissue{4}),
+\bfpage{6220}--\blpage{6238}
+(\byear{2023})
+\doiurl{10.1093/mnras/stad1806}
+\end{barticle}
+\endbibitem
+
+%%% 21
 \bibitem[\protect\citeauthoryear{Wyler}{1969}]{Wyler1969}
 \begin{barticle}
 \bauthor{\bsnm{Wyler}, \binits{A.}}:

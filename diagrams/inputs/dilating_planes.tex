@@ -3,10 +3,10 @@
 
 % Edit these four scalars to change each plane's dilation state.
 % Each plane's in-plane coordinate extent is multiplied by its gamma value.
-\def\gammaA{0.72}
-\def\gammaB{0.88}
-\def\gammaC{1.04}
-\def\gammaD{1.20}
+\def\gammaA{1.00}
+\def\gammaB{1.15}
+\def\gammaC{1.30}
+\def\gammaD{1.45}
 
 \tikzset{
   plane grid/.style={line width=0.35pt},
@@ -40,7 +40,7 @@
   \fill[#4!80!black] (0,0,#2) circle[radius=1.1pt];
 
   \node[plane label,anchor=west] at (2.15,-1.55,#2)
-    {$\gamma_{#1}=\pgfmathprintnumber[fixed,precision=2]{\g}$};
+  {$l_{#1}=\pgfmathprintnumber[fixed,precision=2]{\g}$};
 }
 
 \begin{document}
