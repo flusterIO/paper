@@ -386,7 +386,9 @@ As $\gamma$ is applied as a scalar, we take the average of the integral of $\del
 Substituting $\varphi_{\left( M, R \right)}$ into equation \ref{eq_v_of_gamma} gives
 
 \begin{equation}\label{eq_v_cosmo}
+    \boxed{
     v_{\text{cosmo}} = c \sqrt{1 - \frac{1}{\varphi_{\left( M, R \right)}^{2}}} = 525,493.17 ~ \text{m} / \text{s}
+    }
 \end{equation}
 
 
@@ -413,7 +415,9 @@ We apply the time-equivalent quantity in equation \ref{eq_tau_definition} to equ
 We then substitute equation \ref{eq_v_kinematic_1} into equation \ref{eq_v_of_gamma}
 
 \begin{equation}
-v_{\scriptsize \text{kinematic}} = c \sqrt{1 - \frac{1}{\left( 1 + \frac{1}{2} G \frac{M}{R^3} \right)^2}} = 371,580 ~ \text{m} / \text{s}
+    \boxed{
+        v_{\scriptsize \text{kinematic}} = c \sqrt{1 - \frac{1}{\left( 1 + \frac{1}{2} G \frac{M}{R^3} \right)^2}} = 371,580 ~ \text{m} / \text{s}
+    }
 \end{equation}
 
 which matches the 2018 Plank data to within $0.47\%$.
@@ -434,20 +438,20 @@ which matches the 2018 Plank data to within $0.47\%$.
 
 \subsubsection{Relativistic Stable Orbit Velocity}
 
-
 In the simplified single-body system considered here, the spatial dilation described above permits a trigonometric derivation of the stable-orbit velocity as an alternative to the conventional algebraic equality.
 
 Figure \ref{fig_trig_orbital_velocity} represents the geometric construction used in this derivation.
 
-\begin{equation}
+\begin{equation}\label{eq_trig_derivation}
 R_0^2 + v_{\text{orbit}}^2 d\tau^2 = \left(\int_0^{R_0} 2 G \frac{M}{R^3}\right)^2 = \left(R_0 + g~ d \tau\right)^2
 \end{equation}
-
 
 Setting $\tau = 1$ gives
 
 \begin{equation}
+    \boxed{
     v_{\left( M, R \right), \text{orbit}} = \frac{\sqrt{G M \left(G M + 2 R^{3}\right)}}{R^{2}} 
+    }
 \end{equation}
 
 For the comparison with the Milky Way, we adopt the enclosed Galactic baryonic mass reported by Cautun et al.~\cite{cautun2020milky}:
@@ -461,7 +465,7 @@ Here, $R_0 = 8.12\,\mathrm{kpc}$ denotes the Sun's Galactocentric orbital radius
 
 For comparison with observation, we use the solar-neighborhood circular velocity reported by Eilers et al.~\cite{Eilers_2019}. Using the adopted enclosed mass and solar orbital radius, the model gives the following orbital velocity:
 
-\begin{equation}
+\begin{equation}\label{eq_orbital_velocity}
 v_{\left( M_{\scriptsize\text{enc}}, R_{\scriptsize\text{orbit}} \right), \text{orbit}} = 216,874 \ \text{m}/ \text{s} = v_{\text{eilers}} \pm 5.59\%
 \end{equation}
 
@@ -478,33 +482,47 @@ The adopted mass scale is also consistent with the characteristic stellar mass s
 
 \subsubsection{Kinematic Velocity From Triginometric Orbit Equations}
 
+We now investigate equation \ref{eq_orbital_velocity} by setting 
+
+\begin{equation}
+    v_{\text{orbit}} = \sqrt{2 \frac{GM}{R}}
+\end{equation}
+
+which is obtained by $E_{\text{kinetic}} = \int g\ dR$. Solving equation \ref{eq_trig_derivation} for $\tau$ and substituting $v_{\text{orbit}}$ gives
+
 \begin{equation}
     \mathrm{d}t = \frac{2 R^{3}}{G M - 2 R^{3}} = -1.000000768
 \end{equation}
 
+Inserting this quantity into equation \ref{eq_v_of_gamma} gives
+
 \begin{equation}
-    v_{\left( -\mathrm{d}t \right)} = 371,580 ~ \text{m} / \text{s}
+    v_{\left( \left|\mathrm{d}t\right| \right)} = 371,580 ~ \text{m} / \text{s}
 \end{equation}
+
+which matches the 2018 Plank data to within $0.48\%$.
 
 
 \subsection{Fifth-Dimensional Spatial Displacement and Gravitational Force}
 
+While most of the derivations to this point have relied on simplified single body solutions, we explore the connections to the KK 5-dimensional metric. As the KK imposes a cylindrical condition largely due to the lack of an observable 4th spatial dimension, we derive the magnitude of this 4th dimension from the coordinate transformations described above and apply no such condition.
+
 \subsubsection{Geometric Construction of the Fifth-Dimensional Displacement}
 
-We extend the ordinary three-dimensional spatial displacement into the additional spatial coordinate $y$. Let the magnitude of the ordinary spatial displacement be
+We extend the ordinary three-dimensional displacement into the additional spatial coordinate $y$. Let $dx$ denote the magnitude of the ordinary spatial displacement,
 
 \begin{equation}
     dx = \sqrt{dx_i dx^i},
     \qquad i=1,2,3.
 \end{equation}
 
-For a spatial velocity magnitude $v$, the displacement parameter $\tau$ defined in the theoretical framework gives
+For spatial velocity magnitude $v$ and displacement parameter $\tau$, as defined in the theoretical framework, the ordinary displacement is
 
 \begin{equation}
     dx = v\tau.
 \end{equation}
 
-The extended displacement forms the hypotenuse of a right triangle whose perpendicular components are $dx$ and $dy$. Using the Lorentz factor $\gamma$ already used in Equation~\ref{eq_v_of_gamma}, the hypotenuse is
+The proposed construction treats the extended displacement $dx^{(U)}$ as the hypotenuse of a right triangle whose perpendicular components are $dx$ and $dy$. With $\gamma$ denoting the Lorentz factor defined in Equation~\ref{eq_v_of_gamma},
 
 \begin{equation}
     dx^{(U)} = v\tau\gamma.
@@ -516,32 +534,25 @@ Applying the Pythagorean theorem,
     \left(dx^{(U)}\right)^2 = dx^2 + dy^2,
 \end{equation}
 
-and substituting the expressions for the ordinary and extended displacements gives
+substitution gives
 
 \begin{align}
     dy^2
-    &= v^2\tau^2\gamma^2-v^2\tau^2\\
-    &= v^2\tau^2(\gamma^2-1).
+    &= \left(v\tau\gamma\right)^2-\left(v\tau\right)^2\\
+    &= v^2\tau^2\left(\gamma^2-1\right).
 \end{align}
 
-Taking the positive magnitude of the additional spatial displacement
+Taking the positive magnitude of the additional displacement yields
 
 \begin{equation}
-    dy = v\tau\sqrt{\gamma^2-1}.
-\end{equation}
-
-Using the relation between $v$ and $\gamma$ in Equation~\ref{eq_v_of_gamma}, this becomes
-
-\begin{equation}
-    \boxed{
-        dy = \tau\frac{v^2}{\sqrt{c^2-v^2}}
-    }
+    dy = v\tau\sqrt{\gamma^2-1}
+       = \tau\frac{v^2}{\sqrt{c^2-v^2}}.
     \label{eq:fifth_dimensional_displacement}
 \end{equation}
 
-Thus, the displacement along the additional spatial coordinate is expressed in terms of the ordinary spatial velocity magnitude and the displacement parameter.
+The velocity form follows from the Lorentz-factor relation in Equation~\ref{eq_v_of_gamma}.
 
-Differentiating with respect to $\tau$ gives
+For constant $v$, differentiation with respect to $\tau$ gives the rate of displacement along $y$:
 
 \begin{equation}
     \boxed{
@@ -554,7 +565,7 @@ Differentiating with respect to $\tau$ gives
 
 \subsection{Incorporation into the Kaluza--Klein Metric}
 
-We represent the additional spatial coordinate through the metric component $G_{55}$. For a diagonal metric, the five-dimensional line element is
+We represent the additional spatial coordinate through the metric component $G_{55}$. For a diagonal five-dimensional metric, the line element is
 
 \begin{equation}
     dS^2
@@ -579,9 +590,9 @@ The corresponding metric tensor has the block structure
     \label{eq:kk_metric}
 \end{equation}
 
-Here, $G_{55}$ describes the metric scaling of the additional spatial coordinate. Its spatial variation determines how displacement along that coordinate couples to motion in the ordinary spatial coordinates.
+The component $G_{55}$ sets the metric scaling of the additional coordinate. Its radial variation determines the coupling between motion along $y$ and radial motion in the ordinary spatial coordinates.
 
-For a radial coordinate $R$, the relevant Christoffel symbol is
+For radial coordinate $R$, the Christoffel symbol associated with this coupling is
 
 \begin{equation}
     \Gamma^R_{55}
@@ -590,7 +601,7 @@ For a radial coordinate $R$, the relevant Christoffel symbol is
     \frac{\partial G_{55}}{\partial R}.
 \end{equation}
 
-For a normalized radial coordinate with $g^{RR}=1$,
+For a normalized radial coordinate, $g^{RR}=1$, so
 
 \begin{equation}
     \boxed{
@@ -604,7 +615,7 @@ For a normalized radial coordinate with $g^{RR}=1$,
 
 \subsection{Derivation of the Radial Force Contribution}
 
-The radial geodesic equation, using $\tau$ as its trajectory parameter and assuming no angular motion, is
+Using $\tau$ as the trajectory parameter and assuming no angular motion, the radial geodesic equation for the contribution from the fifth coordinate is
 
 \begin{equation}
     \frac{d^2R}{d\tau^2}
@@ -614,7 +625,7 @@ The radial geodesic equation, using $\tau$ as its trajectory parameter and assum
     =0.
 \end{equation}
 
-Substituting Equation~\ref{eq:radial_christoffel} yields
+Substitution of Equation~\ref{eq:radial_christoffel} gives
 
 \begin{equation}
     \frac{d^2R}{d\tau^2}
@@ -624,7 +635,7 @@ Substituting Equation~\ref{eq:radial_christoffel} yields
     \left(\frac{dy}{d\tau}\right)^2.
 \end{equation}
 
-Using the fifth-dimensional displacement rate in Equation~\ref{eq:fifth_dimensional_rate},
+Using the displacement rate from Equation~\ref{eq:fifth_dimensional_rate} then gives
 
 \begin{equation}
     \frac{d^2R}{d\tau^2}
@@ -634,7 +645,7 @@ Using the fifth-dimensional displacement rate in Equation~\ref{eq:fifth_dimensio
     \frac{v^4}{c^2-v^2}.
 \end{equation}
 
-Defining the corresponding generalized radial force contribution for a body of mass $m$ as $\mathcal{F}_R=m\,d^2R/d\tau^2$, we obtain
+For a body of mass $m$, define the associated generalized radial force contribution by $\mathcal{F}_R=m\,d^2R/d\tau^2$. It follows that
 
 \begin{equation}
     \boxed{
@@ -646,9 +657,9 @@ Defining the corresponding generalized radial force contribution for a body of m
     \label{eq:radial_fifth_dimensional_force}
 \end{equation}
 
-This relates the gradient of the fifth-dimensional metric component to its radial force contribution. The velocity-dependent factor follows from the geometric extension of the ordinary spatial displacement, while the metric gradient sets the strength and direction of the radial coupling.
+This expression relates the radial gradient of $G_{55}$ to the force contribution. The velocity dependence follows from the assumed geometric extension of the ordinary displacement, while the metric gradient determines the magnitude and sign of the radial coupling.
 
-Rearranging Equation~\ref{eq:radial_fifth_dimensional_force} gives
+Rearranging Equation~\ref{eq:radial_fifth_dimensional_force} gives the corresponding metric gradient in terms of the force:
 
 \begin{equation}
     \boxed{
@@ -660,9 +671,9 @@ Rearranging Equation~\ref{eq:radial_fifth_dimensional_force} gives
     \label{eq:metric_gradient_from_force}
 \end{equation}
 
-Thus, a known radial force constrains the spatial gradient of $G_{55}$, while a specified fifth-dimensional metric determines the corresponding radial force contribution through Equation~\ref{eq:radial_fifth_dimensional_force}.
+Thus, a specified radial force constrains the spatial gradient of $G_{55}$; conversely, a specified fifth-dimensional metric determines the radial force contribution through Equation~\ref{eq:radial_fifth_dimensional_force}.
 
-The fifth-dimensional coordinate is treated as linear and non-compact; no periodic identification or compactification condition is imposed.
+We treat the fifth-dimensional coordinate as linear and non-compact, without imposing a periodic identification or compactification condition.
 
 \begin{figure}[h]
 \centering
@@ -676,7 +687,7 @@ The fifth-dimensional coordinate is treated as linear and non-compact; no period
 
 \subsection{The Appearance of Electromagnetic Parameters}
 
-We do not claim to derive a direct mechanical derivation for the fine structure constant, nor an explanation for it's appearance in section \ref{sec_equivalence_principle}. We simply apply the coordinate transformations defined in section \ref{sec_theoretical_framework} and discover that $\alpha$ appears repeatedly. While the probability is difficult to quantize, we feel that this repeated appearance of $\alpha$, appearing in gravitational approximations for all 3 of the local bodies with boundary like characteristics likely indicates a shared function which itself contains $\alpha$. Due to the hypersphere-like geometry that arises from this model, we propose further investigation into the boundary between Wyler's derivation\cite{Wyler1969} of $\alpha$ and $4 + 0$ space-time.
+We do not claim to derive a direct mechanical derivation for the fine structure constant, nor an explanation for it's appearance in section \ref{sec_equivalence_principle}. We simply apply the coordinate transformations defined in section \ref{sec_theoretical_framework} and discover that $\alpha$ appears repeatedly. While the probability is difficult to quantize, we feel that this repeated appearance of $\alpha$, appearing in gravitational approximations for all 3 of the local bodies with boundary like characteristics likely indicates a shared function which itself contains $\alpha$. Due to the hypersphere-like geometry that arises from this model, we propose further investigation into the boundary between Wyler's derivation\cite{Wyler1969} of $\alpha$ and the $4 + 0$ space-time described here.
 
 
 %%===========================================================================================%%
