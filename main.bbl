@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{21}
+\begin{thebibliography}{20}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -348,18 +348,6 @@ Accessed 2026-11-02
 \bfpage{6220}--\blpage{6238}
 (\byear{2023})
 \doiurl{10.1093/mnras/stad1806}
-\end{barticle}
-\endbibitem
-
-%%% 21
-\bibitem[\protect\citeauthoryear{Wyler}{1969}]{Wyler1969}
-\begin{barticle}
-\bauthor{\bsnm{Wyler}, \binits{A.}}:
-\batitle{L'espace sym{\'e}trique du groupe des {\'e}quations de maxwell}.
-\bjtitle{Comptes Rendus de l'Acad{\'e}mie des Sciences, S{\'e}rie A-B}
-\bvolume{269},
-\bfpage{743}--\blpage{745}
-(\byear{1969})
 \end{barticle}
 \endbibitem
 

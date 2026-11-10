@@ -111,7 +111,11 @@
 %% Sample for unstructured abstract %%
 %%==================================%%
 
-\abstract{We explore a modified set of coordinate transformations that describe time, cosmic inflation and gravitational acceleration as the same process as observed from different reference frames through an unwrapped Kaluza-Klein like geometry. We show that these transformations satisfy Lorentz invariance in a $4 + 0$ space-time with a radion scalar potential of $1$. From this mechanism an equation is derived trigonometrically for galactic orbital velocity, reproducing local observation with only baryonic mass. Through these coordinate transformations, a direct mechanism to the equivalence principle is derived yielding multiple functions producing our peculiar velocity and a secondary velocity, as well as a geometric justification for the discrepency between SNe and CMB relative velocity calculations. These modified coordinate transformations produce a classical notion of simultaneity and indicate a novel model of chronology which resolves multiple temporal pardoxes without the need for selective reference frame bias.}
+% Passive
+% \abstract{We explore a modified set of coordinate transformations in which time, cosmic inflation and gravitational acceleration are treated as the same process observed from different reference frames, using an unwrapped Kaluza-Klein-like geometry with a fourth spatial coordinate. The transformations preserve the Minkowski interval for instantaneous events and retain a classical notion of simultaneity by assigning the additional spatial separation to this coordinate. Within this framework, a trigonometric construction yields an orbital velocity equation that, using only the enclosed baryonic mass of the Milky Way, matches the observed solar-neighborhood circular velocity to within $5.6\%$. The construction also yields two characteristic velocities, a kinematic velocity and a cosmological velocity, which we compare with CMB dipole and supernova-based measurements as a possible geometric account of the discrepancy between them. We further show that the induced radial metric can reproduce the spatial geometry of the Schwarzschild solution. The model remains incomplete: it has not been unified with general relativity, a temporal metric relation is still required, and the dimensional treatment of the gravitational relations needs further formalization. We propose the framework as an alternative model of chronology that may avoid selective reference-frame preference, and outline directions for further work.}
+
+% Aggressive
+\abstract{We present a modified set of coordinate transformations in which time, cosmic inflation and gravitational acceleration emerge as a single process viewed from different reference frames, through an unwrapped Kaluza-Klein-like geometry with a fourth spatial coordinate. The transformations preserve the Minkowski interval and maintain a classical notion of simultaneity by attributing the additional spatial separation to this coordinate, offering an alternative model of chronology that avoids selective reference-frame preference. From this geometry we derive a trigonometric orbital velocity equation that, using only the enclosed baryonic mass of the Milky Way, reproduces the observed solar-neighborhood velocity to within $5.6\%$. The same construction produces two characteristic velocities, kinematic and cosmological, that agree with CMB dipole measurements to within $0.5\%$ and are consistent with supernova-based estimates, suggesting a geometric origin for the long-standing discrepancy between the two. We further show that the induced radial metric reproduces the spatial geometry of the Schwarzschild solution, and that the fine structure constant appears repeatedly in the gravitational parameters of the Earth, Sun and Saturn. These results point toward a unified geometric account of time, expansion and gravity. Remaining work includes a temporal metric relation, a full treatment of n-body inertia, and unification with general relativity.}
 
 %%================================%%
 %% Sample for structured abstract %%
@@ -221,11 +225,10 @@ Likewise, we presume that in a co-moving frame of reference along the $y$ axis, 
 To remove time as a physically meaningful quantity, we let
 
 \begin{equation}\label{eq_tau_definition}
-\tau = \frac{\dot{x}}{\widehat{v}}
+\tau = \frac{\dot{x}}{\widehat{x}}
 \end{equation}
 
-where $\dot{x}$ indicates not a derivative with respect to time, but rather a fundamental driving rate of change, a magnitude of length that grows with an arbitrary temporal scalar. Let $\widehat{v} = \partial_\tau x\ \hat{\tau}$ where $\hat{\tau} = 1$, or the velocity in units of distance. $\tau$, while equivalent in magnitude to $t$ is derived directly from the geometry and has no explicit time dependence.
-
+where $\dot{x}$ indicates not a derivative with respect to time, but rather a fundamental driving rate of change, a magnitude of length that grows with an arbitrary temporal scalar. Let $\widehat{x} = \partial_\tau x\ \hat{\tau} = \left| \vec{x} \right|$ where $\hat{\tau} = 1$, or the velocity in units of distance. $\tau$, while equivalent in magnitude to $t$ is derived directly from the geometry and has no explicit time dependence.
 
 \subsection{Lorentz Invariance}
 
@@ -303,7 +306,7 @@ Multiplying by the velocity expressed as a function of $\gamma$,
 \end{aligned}
 \end{equation}
 
-Finall we recover
+Finally we recover
 
 \begin{equation}
     \boxed{
@@ -314,7 +317,6 @@ Finall we recover
     \partial_\tau y
     }
 \end{equation}
-
 
 \subsubsection{Invariance of the Minkowski Interval}
 
@@ -411,7 +413,7 @@ Rearranging and substituting back into the Lorentz factor gives
 
 Consequently, we obtain the following expression for the Lorentz factor in terms of the additional coordinate:
 
-\begin{equation}
+\begin{equation}\label{eq_gamma_dy_dx}
     \boxed{
         \gamma = \sqrt{1+(\partial_x y)^2}
     }
@@ -479,7 +481,7 @@ As $\gamma$ represents $1$ plus some small $ds$, let us add 1 to these additiona
     v_{\left( \gamma_{\text{em}} \right)} = 371,721 ~ \text{m} / \text{s}
 \end{equation}
 
-This matches the 2018 Plank data\cite{planck_collaboration_2020} to within $0.514\%$, and is in rough agreement with general observation of the velocity necessary to induce the CMB dipole.
+This matches the 2018 Planck data\cite{planck_collaboration_2020} to within $0.514\%$, and is in rough agreement with general observation of the velocity necessary to induce the CMB dipole.
 
 \subsubsection{Solar $\omega$}
 
@@ -800,13 +802,13 @@ For a normalized radial coordinate, $g^{RR}=1$, so
 We take
 
 \begin{equation}
-    \partial_x y = \frac{v}{\sqrt{c^{2}  v^{2}}}
+    \partial_x y = \frac{v}{\sqrt{c^{2} - v^{2}}}
 \end{equation}
 
 Or
 
 \begin{equation}
-    dy = \frac{v}{c^{2} - v^{2}} dx
+    dy = \tau \frac{v}{c^{2} - v^{2}} dx
 \end{equation}
 
 We then take the KK line element to be 
@@ -855,11 +857,630 @@ However solving equation \ref{eq_simple_line_element} for $G_{44}$ in the $\math
 
 indicating that Newtonian mechanics remains contained within a temporal surface, while the relativistic portion of displacement magnitude extends into the 4th spatial dimension, $y$. For this reason, we speculate that inertia has it's origins purely in the relativistic component of displacement; a consequence of a Machian-like resistance along the 4th dimension.
 
+\subsection{Radial Embedding and Relativistic Orbital Motion}
+
+Consider a point mass $M$ located at the origin of a spherically symmetric spatial geometry. We assume that the radial coordinate $R$ is associated with a corresponding position along an additional spatial coordinate $y$, such that the embedded hypersurface is described by
+
+\begin{equation}
+    y=y(R;M)
+\end{equation}
+
+Consequently, the differential displacement along the additional coordinate is
+
+\begin{equation}
+    dy=\frac{dy}{dR}\,dR
+\end{equation}
+
+We begin with a flat four-dimensional ambient spatial metric, restricted to the equatorial plane:
+
+\begin{equation}
+    d\ell^2=dR^2+R^2d\phi^2+dy^2
+\end{equation}
+
+Substituting the radial embedding yields the induced spatial line element
+
+\begin{align}
+    d\ell_{\mathrm{ind}}^2
+    &=
+    dR^2+R^2d\phi^2
+    +\left(\frac{dy}{dR}\right)^2dR^2 \\
+    &=
+    \left[
+        1+\left(\frac{dy}{dR}\right)^2
+    \right]dR^2
+    +R^2d\phi^2
+\end{align}
+
+Defining the induced radial metric component as
+
+\begin{equation}
+    A(R)
+    =
+    1+\left(\frac{dy}{dR}\right)^2
+\end{equation}
+
+the resulting metric becomes
+
+\begin{equation}
+    \boxed{
+    d\ell_{\mathrm{ind}}^2
+    =
+    A(R)dR^2+R^2d\phi^2
+    }
+\end{equation}
+
+The radial metric component therefore contains the contribution from the gradient of the additional spatial coordinate. In particular,
+
+\begin{equation}
+    \boxed{
+    g_{RR}^{\mathrm{ind}}
+    =
+    1+\left(\frac{dy}{dR}\right)^2
+    }
+\end{equation}
+
+\subsubsection{Geodesic Equations of the Induced Spatial Metric}
+
+To determine the trajectories associated with this geometry, we consider the geodesic Lagrangian
+
+\begin{equation}
+    \mathcal{L}
+    =
+    \frac{1}{2}
+    \left[
+        A(R)\dot{R}^{\,2}
+        +R^2\dot{\phi}^{\,2}
+    \right],
+\end{equation}
+
+where an overdot denotes differentiation with respect to an affine parameter $\lambda$.
+
+Since the metric is independent of $\phi$, the corresponding angular momentum is conserved:
+
+\begin{equation}
+    \frac{\partial\mathcal{L}}{\partial\dot{\phi}}
+    =
+    R^2\dot{\phi}
+    =
+    L
+\end{equation}
+
+Thus,
+
+\begin{equation}
+    \boxed{
+    \dot{\phi}=\frac{L}{R^2}
+    }
+\end{equation}
+
+Applying the Euler--Lagrange equation to the radial coordinate gives
+
+\begin{equation}
+    \frac{d}{d\lambda}
+    \left(A\dot{R}\right)
+    -
+    \frac{1}{2}A'\dot{R}^{\,2}
+    -
+    R\dot{\phi}^{\,2}
+    =0,
+\end{equation}
+
+where $A'=dA/dR$. Expanding the derivative and rearranging,
+
+\begin{equation}
+    \boxed{
+    \ddot{R}
+    +
+    \frac{A'}{2A}\dot{R}^{\,2}
+    -
+    \frac{R}{A}\dot{\phi}^{\,2}
+    =0.
+    }
+\end{equation}
+
+Using conservation of angular momentum, this becomes
+
+\begin{equation}
+    \boxed{
+    \ddot{R}
+    =
+    -\frac{A'}{2A}\dot{R}^{\,2}
+    +
+    \frac{L^2}{AR^3}
+    }
+\end{equation}
+
+The radial trajectory therefore depends on both the radial variation of the induced metric and the angular motion of the particle.
+
+\subsubsection{The Orbit Equation}
+
+We introduce the reciprocal radial coordinate
+
+\begin{equation}
+    u(\phi)=\frac{1}{R(\phi)}.
+\end{equation}
+
+From conservation of angular momentum,
+
+\begin{equation}
+    \dot{\phi}=Lu^2.
+\end{equation}
+
+Differentiating $R=1/u$ with respect to $\lambda$ gives
+
+\begin{equation}
+    \dot{R}
+    =
+    \frac{dR}{d\phi}\dot{\phi}
+    =
+    -\frac{1}{u^2}
+    \frac{du}{d\phi}
+    Lu^2,
+\end{equation}
+
+and therefore
+
+\begin{equation}
+    \dot{R}=-Lu'.
+\end{equation}
+
+A second differentiation yields
+
+\begin{equation}
+    \ddot{R}
+    =
+    -L^2u^2u'',
+\end{equation}
+
+where primes on $u$ denote differentiation with respect to $\phi$.
+
+Substituting these expressions into the radial geodesic equation produces
+
+\begin{equation}
+    -L^2u^2u''
+    +
+    \frac{A'}{2A}L^2(u')^2
+    -
+    \frac{L^2u^3}{A}
+    =0.
+\end{equation}
+
+Dividing by $-L^2u^2$ gives the orbit equation of the induced spatial geometry:
+
+\begin{equation}
+    \boxed{
+    u''
+    +
+    \frac{u}{A(1/u)}
+    -
+    \frac{A'(1/u)}
+    {2A(1/u)u^2}
+    (u')^2
+    =0.
+    }
+\end{equation}
+
+This equation describes spatial geodesics on the embedded hypersurface. It does not, by itself, describe relativistic particle orbits in spacetime, since no temporal metric component has yet been introduced.
+
+\subsubsection{The Schwarzschild Spatial Embedding}
+
+We can compare the induced radial metric with the spatial part of the Schwarzschild solution. At constant coordinate time and in the equatorial plane, the Schwarzschild spatial line element is
+
+\begin{equation}
+    d\ell_{\mathrm{Sch}}^2
+    =
+    \frac{dR^2}
+    {1-\dfrac{2GM}{c^2R}}
+    +
+    R^2d\phi^2.
+\end{equation}
+
+Identifying the radial components of this metric with the induced radial metric gives
+
+\begin{equation}
+    1+\left(\frac{dy}{dR}\right)^2
+    =
+    \frac{1}{1-\dfrac{2GM}{c^2R}}.
+\end{equation}
+
+Solving for the embedding gradient,
+
+\begin{align}
+    \left(\frac{dy}{dR}\right)^2
+    &=
+    \frac{1}{1-\dfrac{2GM}{c^2R}}-1 \\[4pt]
+    &=
+    \frac{\dfrac{2GM}{c^2R}}
+    {1-\dfrac{2GM}{c^2R}}.
+\end{align}
+
+Introducing the Schwarzschild radius,
+
+\begin{equation}
+    r_s=\frac{2GM}{c^2},
+\end{equation}
+
+we obtain
+
+\begin{equation}
+    \boxed{
+    \frac{dy}{dR}
+    =
+    \pm\sqrt{\frac{r_s}{R-r_s}}.
+    }
+\end{equation}
+
+Integration with respect to $R$ gives
+
+\begin{align}
+    y(R)
+    &=
+    \pm\sqrt{r_s}
+    \int\frac{dR}{\sqrt{R-r_s}} \\[4pt]
+    &=
+    \pm2\sqrt{r_s(R-r_s)}+C.
+\end{align}
+
+Consequently, the embedding profile is
+
+\begin{equation}
+    \boxed{
+    y(R)
+    =
+    \pm2\sqrt{
+        \frac{2GM}{c^2}
+        \left(R-\frac{2GM}{c^2}\right)
+    }+C.
+    }
+\end{equation}
+
+This embedding reproduces the radial geometry of a Schwarzschild spatial slice for $R>r_s$. It demonstrates that the radial metric component can be represented geometrically through the gradient of an additional spatial coordinate.
+
+However, reproducing the spatial geometry does not yet establish the complete relativistic dynamics. To investigate orbital motion, the temporal metric component must also be included.
+
+\subsubsection{The Full Spacetime Metric}
+
+Consider a static, spherically symmetric spacetime metric restricted to the equatorial plane:
+
+\begin{equation}
+    ds^2
+    =
+    -N(R)^2c^2dt^2
+    +
+    A(R)dR^2
+    +
+    R^2d\phi^2.
+\end{equation}
+
+Here, $A(R)$ is the radial metric component obtained from the spatial geometry, while $N(R)$ is the temporal metric function.
+
+For the Schwarzschild solution,
+
+\begin{equation}
+    A(R)
+    =
+    \frac{1}{1-\dfrac{2GM}{c^2R}},
+\end{equation}
+
+and
+
+\begin{equation}
+    N(R)^2
+    =
+    1-\frac{2GM}{c^2R}.
+\end{equation}
+
+The relationship between these functions is therefore
+
+\begin{equation}
+    \boxed{
+    N(R)^2=\frac{1}{A(R)}.
+    }
+\end{equation}
+
+The spatial embedding determines $A(R)$ through the radial gradient of $y$. The corresponding temporal relation is an additional metric condition; it does not follow from the spatial embedding alone.
+
+\subsubsection{Conserved Quantities and the Radial Equation}
+
+For a massive particle, we take the proper time $\tau$ as the affine parameter. The geodesic Lagrangian is
+
+\begin{equation}
+    \mathcal{L}
+    =
+    \frac{1}{2}
+    \left[
+        -N(R)^2c^2\dot{t}^{\,2}
+        +
+        A(R)\dot{R}^{\,2}
+        +
+        R^2\dot{\phi}^{\,2}
+    \right].
+\end{equation}
+
+Stationarity and spherical symmetry give two conserved quantities:
+
+\begin{equation}
+    E=N(R)^2c^2\dot{t},
+\end{equation}
+
+and
+
+\begin{equation}
+    L=R^2\dot{\phi}.
+\end{equation}
+
+The normalization of the four-velocity is
+
+\begin{equation}
+    g_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}
+    =-c^2.
+\end{equation}
+
+Substituting the metric and conserved quantities,
+
+\begin{equation}
+    -N^2c^2\dot{t}^{\,2}
+    +
+    A\dot{R}^{\,2}
+    +
+    \frac{L^2}{R^2}
+    =
+    -c^2.
+\end{equation}
+
+Since
+
+\begin{equation}
+    \dot{t}
+    =
+    \frac{E}{N^2c^2},
+\end{equation}
+
+we obtain
+
+\begin{equation}
+    -\frac{E^2}{N^2c^2}
+    +
+    A\dot{R}^{\,2}
+    +
+    \frac{L^2}{R^2}
+    =
+    -c^2.
+\end{equation}
+
+Solving for the radial velocity,
+
+\begin{equation}
+    \boxed{
+    A(R)\dot{R}^{\,2}
+    =
+    \frac{E^2}{N(R)^2c^2}
+    -
+    c^2
+    -
+    \frac{L^2}{R^2}.
+    }
+\end{equation}
+
+This first integral describes the radial motion in terms of the two conserved quantities.
+
+\subsubsection{Derivation of the Relativistic Orbital Correction}
+
+We now substitute the Schwarzschild metric functions,
+
+\begin{equation}
+    N(R)^2
+    =
+    1-\frac{r_s}{R},
+    \qquad
+    A(R)
+    =
+    \frac{1}{1-\dfrac{r_s}{R}},
+\end{equation}
+
+where $r_s=2GM/c^2$.
+
+The radial first integral becomes
+
+\begin{equation}
+    \dot{R}^{\,2}
+    =
+    \frac{E^2}{c^2}
+    -
+    \left(1-\frac{r_s}{R}\right)
+    \left(c^2+\frac{L^2}{R^2}\right).
+\end{equation}
+
+Introducing $u=1/R$ and using
+
+\begin{equation}
+    \dot{R}=-Lu',
+\end{equation}
+
+we obtain
+
+\begin{equation}
+    L^2(u')^2
+    =
+    \frac{E^2}{c^2}
+    -
+    (1-r_su)(c^2+L^2u^2).
+\end{equation}
+
+Expanding the right-hand side,
+
+\begin{equation}
+    L^2(u')^2
+    =
+    \frac{E^2}{c^2}
+    -c^2
+    -L^2u^2
+    +r_sc^2u
+    +r_sL^2u^3.
+\end{equation}
+
+Differentiating with respect to $\phi$ gives
+
+\begin{equation}
+    2L^2u'u''
+    =
+    -2L^2uu'
+    +r_sc^2u'
+    +3r_sL^2u^2u'.
+\end{equation}
+
+For a nonconstant radial trajectory, dividing by $2L^2u'$ yields
+
+\begin{equation}
+    u''
+    =
+    -u
+    +
+    \frac{r_sc^2}{2L^2}
+    +
+    \frac{3r_s}{2}u^2.
+\end{equation}
+
+Rearranging,
+
+\begin{equation}
+    u''+u
+    =
+    \frac{r_sc^2}{2L^2}
+    +
+    \frac{3r_s}{2}u^2.
+\end{equation}
+
+Finally, substituting $r_s=2GM/c^2$, we arrive at
+
+\begin{equation}
+    \boxed{
+    \frac{d^2u}{d\phi^2}+u
+    =
+    \frac{GM}{L^2}
+    +
+    \frac{3GM}{c^2}u^2.
+    }
+\end{equation}
+
+The first term on the right-hand side is the Newtonian contribution. The second term is the leading relativistic orbital correction.
+
+In the Newtonian limit, $c\rightarrow\infty$, the relativistic contribution vanishes and the equation reduces to
+
+\begin{equation}
+    \frac{d^2u}{d\phi^2}+u
+    =
+    \frac{GM}{L^2}.
+\end{equation}
+
+Its solution describes a conic-section orbit:
+
+\begin{equation}
+    u(\phi)
+    =
+    \frac{GM}{L^2}
+    \left[1+e\cos(\phi-\phi_0)\right],
+\end{equation}
+
+where $e$ is the orbital eccentricity and $\phi_0$ specifies the orientation of the orbit.
+
+\subsubsection{Perihelion Precession}
+
+To determine the effect of the relativistic term, define the semilatus rectum
+
+\begin{equation}
+    p=\frac{L^2}{GM}
+\end{equation}
+
+The relativistic orbit equation becomes
+
+\begin{equation}
+    u''+u
+    =
+    \frac{1}{p}
+    +
+    \frac{3GM}{c^2}u^2
+\end{equation}
+
+In the weak-field limit,
+
+\begin{equation}
+    \frac{GM}{pc^2}\ll1
+\end{equation}
+
+we seek a first-order approximation to the Newtonian orbit. Substituting the leading-order form into the relativistic contribution gives the approximate solution
+
+\begin{equation}
+    u(\phi)
+    \simeq
+    \frac{1}{p}
+    \left[
+        1+
+        e\cos\left(
+            \left(1-\frac{3GM}{pc^2}\right)\phi
+        \right)
+    \right]
+\end{equation}
+
+The radial oscillation therefore does not repeat after an angular displacement of exactly $2\pi$. Instead, the perihelion advances by
+
+\begin{equation}
+    \Delta\phi
+    =
+    2\pi
+    \left[
+        \frac{1}{1-\dfrac{3GM}{pc^2}}-1
+    \right]
+\end{equation}
+
+To leading order,
+
+\begin{equation}
+    \boxed{
+    \Delta\phi
+    =
+    \frac{6\pi GM}{pc^2}
+    =
+    \frac{6\pi GM}
+    {a(1-e^2)c^2}
+    }
+\end{equation}
+
+where $a$ is the orbital semimajor axis and $e$ is the eccentricity.
+
+This is the leading-order Schwarzschild perihelion advance.
+
+\subsubsection{Geometric Interpretation}
+
+The derivation establishes a connection between the radial embedding and relativistic orbital geometry. The additional spatial coordinate produces an induced radial metric component,
+
+\begin{equation}
+    A(R)
+    =
+    1+\left(\frac{dy}{dR}\right)^2,
+\end{equation}
+
+which can reproduce the radial geometry of a Schwarzschild spatial slice. When the corresponding temporal metric function is also specified, the resulting spacetime geodesics produce the relativistic orbital correction.
+
+The distinction between these two contributions is essential. The spatial embedding determines the radial geometry, whereas the temporal metric determines how the geometry relates to the evolution of a massive particle. The relativistic orbital correction follows from their combined effect, rather than from the spatial embedding alone.
+
+Consequently, reproducing the Schwarzschild orbit equation through this construction requires establishing both the radial embedding and the corresponding temporal metric relation. Whether that temporal relation can be derived independently from the proposed fifth-dimensional geometry remains a separate question.
+
 \section{Discussion}
+
+\subsection{The Issue of Dimensionality}
+
+Several places throughout this paper we make calculations that appear to be dependent upon our choice of units, particularly that of time. We propose that this is purely an artifact of the math; left over residuals from a derivative that was never an inherent part of the system. Instead we interpret this geometry purely as magnitudes of length, and time as the ratio of lengths. 
+
+When we keep the reference length fixed where $l = \widehat{x} = \left| \vec{x} \right|$, we find that
+
+\begin{equation}
+    \frac{dx}{dt} \equiv \frac{dx}{d \tau} = \frac{dx}{\left( \frac{\dot{x}}{\widehat{x}} \right)} = \widehat{x}
+\end{equation}
 
 \subsection{The Appearance of Electromagnetic Parameters}
 
-We do not claim to derive a direct mechanical derivation for the fine structure constant, nor an explanation for it's appearance in section \ref{sec_equivalence_principle}. We simply apply the coordinate transformations defined in section \ref{sec_theoretical_framework} and discover that $\alpha$ appears repeatedly. While the probability is difficult to quantize, we feel that this repeated appearance of $\alpha$, appearing in gravitational approximations for all 3 of the local bodies with boundary like characteristics likely indicates a shared function which itself contains or produces $\alpha$. Due to the hypersphere-like geometry that arises from this model, we propose further investigation into the boundary between Wyler's derivation\cite{Wyler1969} of $\alpha$ and the $4 + 0$ space-time described here.
+We do not claim to derive a direct mechanical derivation for the fine structure constant, nor an explanation for it's appearance in section \ref{sec_equivalence_principle}. We simply apply the coordinate transformations defined in section \ref{sec_theoretical_framework} and discover that $\alpha$ appears repeatedly. While the probability is difficult to quantize, we feel that this repeated appearance of $\alpha$, appearing in gravitational approximations for all 3 of the local bodies with boundary like characteristics likely indicates a shared function which itself contains or produces $\alpha$. 
 
 
 %%===========================================================================================%%
