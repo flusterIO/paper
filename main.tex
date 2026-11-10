@@ -111,7 +111,7 @@
 %% Sample for unstructured abstract %%
 %%==================================%%
 
-\abstract{We explore a modified set of coordinate transformations that describe time, cosmic inflation and gravitational acceleration as the same process as observed from different reference frames through an unwrapped Kaluza-Klein like geometry. I'LL HAVE AI DO THIS WHEN THE PAPER'S DONE.}
+\abstract{We explore a modified set of coordinate transformations that describe time, cosmic inflation and gravitational acceleration as the same process as observed from different reference frames through an unwrapped Kaluza-Klein like geometry. We show that these transformations satisfy Lorentz invariance in a $4 + 0$ space-time with a radion scalar potential of $1$. From this mechanism an equation is derived trigonometrically for galactic orbital velocity, reproducing local observation with only baryonic mass. Through these coordinate transformations, a direct mechanism to the equivalence principle is derived yielding multiple functions producing our peculiar velocity and a secondary velocity, as well as a geometric justification for the discrepency between SNe and CMB relative velocity calculations. These modified coordinate transformations produce a classical notion of simultaneity and indicate a novel model of chronology which resolves multiple temporal pardoxes without the need for selective reference frame bias.}
 
 %%================================%%
 %% Sample for structured abstract %%
@@ -137,9 +137,17 @@
 
 Albert Einstein was insistent on a static Universe during the period in which he wrote his specialized theory of relativity\cite{einstein1905electrodynamics, Einstein1917CosmologicalConsiderations, ORaifeartaigh2017EinsteinCosmology, Nussbaumer2014EinsteinStaticToExpanding}(SR). What is proposed here is largely a re-examination of the geometry of SR under the assumption that the $\mathbb{R}^{3}$ space between two arbitrary points elongates as time progresses.
 
-This dilation is then bound to $\gamma$, giving a velocity dependent function for $\vec{g}$ and a magnitude that extends into a 4th spatial coordinate, $y$, similar in construction to an unwrapped Kaluza-Klein (KK) dimension\cite{Kaluza1921, Klein1926} with a known, non-zero derivative with respect to $y$. Through these coordinate transformations time, cosmic inflation and gravitational acceleration become the same process as observed from different reference frames in a space-time geometry where the 4th spatial KK dimension acts as a concurrent density axis.
+This dilation is then bound to $\gamma$, giving a velocity dependent function for $\vec{g}$ and a magnitude that extends into a 4th spatial coordinate, $y$, similar in construction to an unwrapped Kaluza-Klein (KK) dimension\cite{Kaluza1921, Klein1926}. Through these coordinate transformations time, cosmic inflation and gravitational acceleration become the same process as observed from different reference frames in a space-time geometry where the 4th spatial KK dimension acts as a concurrent density axis.
 
 This geometry gives an alternative model of concurrency and synchronicity as a classical notion of simultaneity is maintained by attributing the additional spatial separation to the 4th spatial dimension, $dy = v \tau \sqrt{\gamma^{2} - 1}$ as shown in figure \ref{fig_trig_diagram}. While maintaining classical simultaneity resolves numerous temporal paradoxes without the need for selective reference frame preference, it produces a concurrent axis that describes the ultra-dense state of the early Universe as being separated only by some $\Delta$ along this 4th spatial axis.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{./diagrams/outputs/simple_triangle.eps}
+\caption{Right-triangle construction used to represent the ordinary spatial displacement $dx$, the additional spatial displacement $dy$, and the extended displacement $dx^{(U)}$. The relation assigned to the hypotenuse is an assumption of the proposed geometric construction.}\label{fig_simple_triangle}
+\label{fig_trig_diagram}
+\end{figure}
 
 
 
@@ -159,7 +167,7 @@ where
 
 
 \begin{equation}
-    f\left( x_{i}, y^{\left( A \right)} \right) = \mathbf{A}
+    f\left( x_{i}, y^{\left( A \right)} \right) = \mathbf{A}\left( x_{i} \right)
 \end{equation}
 
 for an arbitrary $\mathbf{A}$ contained within $\mathcal{H}$.
@@ -171,7 +179,7 @@ Let $\mathbf{U}$ represent a `future' state from the perspective of an observer 
     v^{\left( S \right)} = \left( t, x_{\mu} \right) \qquad v^{\left( U \right)} = \left( t + \Delta t, x_{\mu} \right)
 \end{equation}
 
-where $\Delta t > 0$. Likewise, let $\mathbf{S}$ and $\mathbf{U}$ be bound such that 
+where $\Delta t > 0$ and $\mu = 1, 2, 3, 4$. Likewise, let $\mathbf{S}$ and $\mathbf{U}$ be bound such that 
 
 \begin{equation}
     f\left( x_{i}, y^{\left( U \right)} \right) = f\left( x_{i}, y^{\left( S \right)} \right) + \int_{x_{0}^{\left( S \right)}}^{x_{0}^{\left( U \right)}} F\left( x \right)\ \mathrm{d}t
@@ -187,13 +195,10 @@ We then make these assertions
 
 \begin{enumerate}[1.]
 \item To maintain a classical model of simultaneity $A$ and $B$ must agree upon the time at which $B$ reaches $p_{2}$.
-\item To satisfy existing experimental evidence for the additional $\gamma$ factor, $\Delta t = \gamma \frac{d}{v}$.
+\item To satisfy existing experimental evidence for the additional $\gamma$ factor\cite{Rossi1941, FrischSmith1963, Bailey1977, Bailey1979, Botermann2014}, $\Delta t = \gamma \frac{d}{v}$.
 \end{enumerate}
 
-
-If $A$ and $B$ are to disagree upon the time at which $B$ reaches $p_{2}$ while requiring that $v = v^{\prime}$, this single, instantaneous event ($B$ reaching $p_{2}$) must occur more than once. For this reason we theorize that $A$ and $B$ \textit{must} agree upon the time at which $B$ reaches $p_{2}$ as a fundamental property of our reality.
-
-As the additional factor of $\gamma$ has been demonstrated experimentally on a number of occasions\cite{Rossi1941, FrischSmith1963, Bailey1977, Bailey1979, Botermann2014}, we should conclude that both $A$ and $B$ observe $B$ reaching $p_{2}$ in $\frac{d}{v}\gamma$. This gives a set of coordinate transformations such that for each relative observer
+This gives a set of coordinate transformations such that for each relative observer
 
 \begin{equation}
     \Delta t = \overbrace{\frac{d \cdot \gamma}{v^{\left( U \right)}}}^{B} = \underbrace{\frac{d}{v^{\left( S \right)}} = \frac{d}{v^{\left( U \right)} \left( \frac{1}{\gamma} \right)}}_{A}
@@ -204,7 +209,7 @@ As the additional factor of $\gamma$ has been demonstrated experimentally on a n
 We acknowledge two primary properties of time:
 
 \begin{enumerate}[1.]
-\item A driving rate of change, as fundamental as the $\mathbb{R}^{3}$ dimensions.
+\item A driving rate of change, at least as fundamental as the $\mathbb{R}^{3}$ dimensions.
 \item A 4th displacement coordinate.
 \end{enumerate}
 
@@ -219,10 +224,10 @@ To remove time as a physically meaningful quantity, we let
 \tau = \frac{\dot{x}}{\widehat{v}}
 \end{equation}
 
-where $\dot{x}$ indicates not a derivative with respect to time, but rather a fundamental driving rate of change. Let $\widehat{v} = v \cdot 1t$, or the velocity in units of distance.
+where $\dot{x}$ indicates not a derivative with respect to time, but rather a fundamental driving rate of change, a magnitude of length that grows with an arbitrary temporal scalar. Let $\widehat{v} = \partial_\tau x\ \hat{\tau}$ where $\hat{\tau} = 1$, or the velocity in units of distance. $\tau$, while equivalent in magnitude to $t$ is derived directly from the geometry and has no explicit time dependence.
 
 
-\subsection{On Lorentz Invariance}
+\subsection{Lorentz Invariance}
 
 We consider these coordinate transformations with regards to the Lorentz transformations and find that for an instantaneous event where $dt \to 0$
 
@@ -237,22 +242,186 @@ We consider these coordinate transformations with regards to the Lorentz transfo
 
 where $y$ is as defined in equation \ref{eq_dy_definition}.
 
-By scaling $\partial_x y$ by $v\left( \gamma \right)$ we produce a closed symmetry such that
-
-\begin{equation}
-    \partial_x y\ v\left( \gamma \right) = \partial_\tau y
-\end{equation}
-
-where
+We define $v \left( \gamma \right)$ to be the Lorentz factor solved for $v$
 
 \begin{equation}\label{eq_v_of_gamma}
     v\left( \gamma \right) = c \sqrt{1 - \frac{1}{\gamma^{2}}}
 \end{equation}
 
+Beginning with the definition of the additional coordinate,
+
+\begin{equation}\label{eq_dy_definition}
+    y = \tau \frac{v^2}{\sqrt{c^2-v^2}}
+\end{equation}
+
+we take the partial derivative with respect to $\tau$, holding $v$ constant:
+
+\begin{equation}
+    \boxed{
+    \partial_\tau y =
+    \frac{v^2}{\sqrt{c^2-v^2}}
+    }
+\end{equation}
+
+Since $x=v\tau$, we can equivalently express the coordinate
+as a function of $x$:
+
+\begin{equation}
+    y = x\frac{v}{\sqrt{c^2-v^2}}.
+\end{equation}
+
+Taking the partial derivative with respect to $x$ gives
+
+\begin{equation}
+    \boxed{
+    \partial_x y =
+    \frac{v}{\sqrt{c^2-v^2}}
+    }
+\end{equation}
+
+We can now express this derivative in terms of the Lorentz factor:
+
+\begin{equation}
+    \partial_x y =
+    \frac{\gamma v}{c}.
+\end{equation}
+
+Multiplying by the velocity expressed as a function of $\gamma$,
+
+\begin{equation}
+\begin{aligned}
+    v(\gamma)\partial_x y
+    &=
+    c\sqrt{1-\frac{1}{\gamma^2}}
+    \frac{\gamma v}{c}
+    \\[6pt]
+    &=
+    v\sqrt{\gamma^2-1}
+    \\[6pt]
+    &=
+    \frac{\gamma v^2}{c}.
+\end{aligned}
+\end{equation}
+
+Finall we recover
+
+\begin{equation}
+    \boxed{
+    v(\gamma)\partial_x y
+    =
+    \frac{\gamma v^2}{c}
+    =
+    \partial_\tau y
+    }
+\end{equation}
+
+
+\subsubsection{Invariance of the Minkowski Interval}
+
+We can further examine the Lorentz invariance of these transformations by considering the Minkowski interval. For an instantaneous event, where $dt \to 0$, the transformed interval is given by
+
+\begin{equation}
+    ds'^2 = c^2dt'^2 - dx'^2.
+\end{equation}
+
+Substituting the coordinate transformations established above,
+
+\begin{equation}
+\begin{aligned}
+    ds'^2
+    &=
+    \left(-\gamma\frac{v}{c}dx\right)^2
+    -
+    \left(\gamma dx\right)^2
+    \\[6pt]
+    &=
+    \gamma^2 dx^2
+    \left(\frac{v^2}{c^2}-1\right).
+\end{aligned}
+\end{equation}
+
+Using the definition of the Lorentz factor,
+
+\begin{equation}
+    \gamma^2 =
+    \frac{1}{1-\frac{v^2}{c^2}},
+\end{equation}
+
+we obtain
+
+\begin{equation}
+    ds'^2
+    =
+    -\gamma^2 dx^2
+    \left(1-\frac{v^2}{c^2}\right).
+\end{equation}
+
+Therefore,
+
+\begin{equation}
+    \boxed{
+    ds'^2=-dx^2=ds^2
+    }
+\end{equation}
+
+Thus, the instantaneous coordinate transformations preserve the Minkowski interval, demonstrating consistency with the invariance condition of Lorentz transformations.
+
+\subsubsection{The Lorentz Factor as a Coordinate Gradient}
+
+Having established the relationship between the additional coordinate and the Lorentz transformations, we can rearrange the spatial derivative to express the Lorentz factor directly in terms of $\partial_x y$.
+
+Recall that
+
+\begin{equation}
+    \partial_x y = \frac{\gamma v}{c}.
+\end{equation}
+
+Squaring both sides gives
+
+\begin{equation}
+    (\partial_x y)^2 = \frac{\gamma^2 v^2}{c^2}.
+\end{equation}
+
+Using the definition of the Lorentz factor,
+
+\begin{equation}
+    \gamma^2 = \frac{1}{1-\frac{v^2}{c^2}},
+\end{equation}
+
+we can rewrite this expression as
+
+\begin{equation}
+    (\partial_x y)^2
+    =
+    \frac{v^2}{c^2-v^2}.
+\end{equation}
+
+Rearranging and substituting back into the Lorentz factor gives
+
+\begin{equation}
+\begin{aligned}
+    \gamma^2
+    &=
+    1+\frac{v^2}{c^2-v^2}
+    \\[6pt]
+    &=
+    1+(\partial_x y)^2.
+\end{aligned}
+\end{equation}
+
+Consequently, we obtain the following expression for the Lorentz factor in terms of the additional coordinate:
+
+\begin{equation}
+    \boxed{
+        \gamma = \sqrt{1+(\partial_x y)^2}
+    }
+\end{equation}
+
+This establishes a direct relationship between the Lorentz factor and the spatial gradient of the additional coordinate, allowing the relativistic factor to be expressed geometrically without explicitly introducing velocity.
 
 \subsection{The Equivalence Principle}\label{sec_equivalence_principle}
 
-Here we examine these coordinate transformations in the context of the equivalence principle. While a well defined function remains elusive, a numerical intersection with the fine structure constant allows us to derive several important properties of an apparent electromagnetic function producing $\vec{g}$.
+Here we examine these coordinate transformations in the context of the equivalence principle. While a well defined function remains elusive, these generialized coordinate transformations and a numerical intersection with the fine structure constant allows us to derive several important properties of an apparent electromagnetic function producing $\vec{g}$.
 
 \subsubsection{Earth's Kinematic Velocity From Electromagnetic Parameters}
 
@@ -262,7 +431,7 @@ We define $\delta\left( M, R \right)$ to be
     \delta\left( M, R \right) = \frac{d}{dR} g = 2 \frac{GM}{R^{3}}
 \end{equation}
 
-If $\delta\left( M, R \right)$ is induced by spatial dilation, we should presume that this dilation is radial. We then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
+If $\delta\left( M, R \right)$ is induced by the coordinate transformations described above, we should presume that this dilation is radial. We then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
 
 \begin{equation}
     \omega\left( M, R \right) = \sqrt[3]{\frac{d}{dR} g} = \left(\delta\left( M, R \right)\right)^{1/3}
@@ -323,7 +492,7 @@ We expand equation \ref{eq_omega_earth_Gamma} and define $\Gamma\left( \sigma \r
 Where $\Gamma\left( \sigma \right)$ is some unknown function of spin. While a well defined function remains elusive, we can take advantage of several characteristics for specific local bodies according to table \ref{table_advantageous_props} to derive certain characteristics of $\sigma$.
 
 \begin{table}[h]
-\caption{Advantageous properties}\label{tab1}%
+\caption{Advantageous properties}%
 \label{table_advantageous_props}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l l l }
 \toprule
@@ -343,7 +512,7 @@ In equation \ref{eq_omega_earth_Gamma} we've demonstrated that for the most mass
 \end{equation}
 
 
-We propose that $\Gamma_{\left( \sigma \right)}$ acts inside of the determinant. We then take the inverse of the determinant of a diagonal $3 \times 3$ matrix
+We propose that $\Gamma\left( \sigma \right)$ acts inside of the determinant. We then take the inverse of the determinant of a diagonal $3 \times 3$ matrix
 
 \begin{equation}
     \Gamma_{\odot}\left( \sigma \right) \propto \sqrt[3]{\Gamma\left( \sigma \right)}
@@ -361,20 +530,6 @@ Or
     \alpha = \Gamma_{\odot}\left( \sigma \right) \sqrt[3]{\frac{d}{dR}g} = \sqrt[3]{\frac{1}{2} \frac{d}{dR} g_{\odot}} \pm 0.47\%
 \end{equation}
 
-We then find through observation that for the least mass dense body in the system, $\Gamma_{\saturn}\left( \sigma \right) \approx 1$.
-
-This gives a set of $3$ equations where the $\Gamma\left( \sigma \right)$ term cancels for the dominant body in the system.
-
-\begin{equation}
-    \begin{aligned}
-        g_{\oplus} & = R_{\oplus} \left( \frac{\alpha^{3} \left( 2 - \alpha \right)^{3}}{2} \right) & \pm 0.008\% \\
-        g_{\odot} & = R_{\odot} \alpha^{3} & \pm 1.426\% \\
-        g_{\saturn} & = \frac{1}{2} R_{\saturn} \alpha^{3} & \pm 1.134\% \\
-    \end{aligned}
-\end{equation}
-
-
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\textwidth]{./diagrams/outputs/omega_mass_density.eps}
@@ -382,17 +537,21 @@ This gives a set of $3$ equations where the $\Gamma\left( \sigma \right)$ term c
 \label{fig_omega_mass_density}
 \end{figure}
 
+We then find through observation that for the least mass dense body in the system, $\Gamma_{\saturn}\left( \sigma \right) \approx 1$.
+
+This gives a set of $3$ equations where the $\Gamma\left( \sigma \right)$ term cancels for the dominant body in the system.
+
+\begin{equation}
+    \begin{aligned}
+        g_{\oplus} & = R_{\oplus} \left( \frac{\alpha^{3} \left( 2 - \alpha \right)^{3}}{2} \right)  \tau & \pm 0.008\% \\
+        g_{\odot} & = R_{\odot} \alpha^{3}  \tau & \pm 1.426\% \\
+        g_{\saturn} & = \frac{1}{2} R_{\saturn} \alpha^{3}  \tau & \pm 1.134\% \\
+    \end{aligned}
+\end{equation}
+
 Which in turn produces a domain where $\alpha \lessapprox \omega \lessapprox \alpha \left( 2 - \alpha \right)$ as shown in figure \ref{fig_omega_mass_density}.
 
-
-
 \subsection{Gravitational Parameters}
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{./diagrams/outputs/dilating_planes.eps}
-\caption{Schematic stack of spatial planes with progressively larger in-plane scale factors, arranged along the time-labeled axis to illustrate the proposed concurrent density coordinate.}\label{fig1}
-\end{figure}
 
 Due to algebraic symmetries, it's trivial to derive our kinematic velocity through gravitational parameters. What is of interest however, is that we derive what we propose is a more fundamental velocity first. It is only after integrating motion in a manner that is analogous to time that we produce our kinematic velocity. We call this first velocity our \textit{cosmological velocity}, and propose a new geometric interpretation of existing data that may resolve the SNe/CMB velocity discrepancy.
 
@@ -434,7 +593,7 @@ We apply the time-equivalent quantity in equation \ref{eq_tau_definition} to equ
 \frac{1}{R} \int_0^R \int_0^x \delta \tau~ dR ~ d\tau = 1 + \frac{1}{2} \frac{G M_\oplus}{R^3_\oplus} \left( \frac{\dot{x}}{\hat{x}} \right)^{2}
 \end{equation}
 
-We then substitute equation \ref{eq_v_kinematic_1} into equation \ref{eq_v_of_gamma}
+We then substitute equation \ref{eq_v_kinematic_1} into equation \ref{eq_v_of_gamma} where $d\tau = 1$
 
 \begin{equation}
     \boxed{
@@ -447,14 +606,14 @@ which matches the 2018 Plank data to within $0.47\%$.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\textwidth]{./diagrams/outputs/mass_density_velocity_plot.eps}
-\caption{Model-derived kinematic velocity plotted as a function of mass density.}\label{fig1}
+\caption{Model-derived kinematic velocity as a ratio with the velocity found by Eilers et al. plotted as a function of mass density.}
 \end{figure}
 
 \subsection{Orbital Velocity}
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\textwidth]{./diagrams/outputs/trig_orbital_velocity_derivation.eps}
-\caption{Geometric construction used in the proposed stable-orbit derivation, showing $R_0$, the angle $\theta$, the displacement $\dot{x}\,d\tau$, and the proposed radial increment $R+g\,d\tau$.}\label{fig1}
+\includegraphics[width=0.5\textwidth]{./diagrams/outputs/trig_orbital_velocity_derivation.eps}
+\caption{Geometric construction used in the proposed stable-orbit derivation, showing $R_0$, the angle $\theta$, the displacement $\dot{x}\,d\tau$, and the proposed radial increment $R+g\,d\tau$.}
 \label{fig_trig_orbital_velocity}
 \end{figure}
 
@@ -472,7 +631,7 @@ Setting $\tau = 1$ gives
 
 \begin{equation}
     \boxed{
-    v_{\left( M, R \right), \text{orbit}} = \frac{\sqrt{G M \left(G M + 2 R^{3}\right)}}{R^{2}} 
+    v_{\text{orbit}}\left( M, R \right) = \frac{\sqrt{G M \left(G M + 2 R^{3}\right)}}{R^{2}} 
     }
 \end{equation}
 
@@ -488,12 +647,12 @@ Here, $R_0 = 8.12\,\mathrm{kpc}$ denotes the Sun's Galactocentric orbital radius
 For comparison with observation, we use the solar-neighborhood circular velocity reported by Eilers et al.~\cite{Eilers_2019}. Using the adopted enclosed mass and solar orbital radius, the model gives the following orbital velocity:
 
 \begin{equation}\label{eq_orbital_velocity}
-v_{\left( M_{\scriptsize\text{enc}}, R_{\scriptsize\text{orbit}} \right), \text{orbit}} = 216,874 \ \text{m}/ \text{s} = v_{\text{eilers}} \pm 5.59\%
+    v_{\text{orbit}}\left( M_{\scriptsize\text{enc}}, R_{\scriptsize\text{orbit}} \right) = 216,874 \ \text{m}/ \text{s} = v_{\text{eilers}} \pm 5.59\%
 \end{equation}
 
 The model velocity equals the comparison velocity at $M_{\scriptsize \text{enc}} \approx 4.95 \times 10^{10} M_{\odot}$.
 
-The adopted mass scale is also consistent with the characteristic stellar mass scale of approximately $5 \times 10^{10}\,M_\odot$ identified by Yu et al.~\cite{yu2023born} in their FIRE-2 simulations of Milky Way-mass galaxies. Yu et al. associate this scale with a transition in galactic morphology from predominantly disc-dominated to increasingly spheroid-dominated systems. This result provides additional context for the adopted Galactic mass parameter.
+The adopted mass scale is also consistent with the characteristic stellar mass scale of approximately $5 \times 10^{10}\,M_\odot$ identified by Yu et al.~\cite{yu2023born} in their FIRE-2 simulations of Milky Way-mass galaxies. Yu et al. associate this scale with a transition in galactic morphology from predominantly disc-dominated to increasingly spheroid-dominated systems. 
 
 
 \begin{figure}[h]
@@ -501,6 +660,8 @@ The adopted mass scale is also consistent with the characteristic stellar mass s
 \includegraphics[width=0.9\textwidth]{./diagrams/outputs/eilers_observation.eps}
 \caption{Milky Way circular velocity as a function of galactocentric radius. Eilers et al. (2019) measurements are shown as points, alongside the relativistic and Newtonian point-mass model curves. The solar-neighborhood measurement is marked with a star; error bars indicate the reported uncertainties in galactocentric radius and circular velocity.}\label{fig_eilers_observation}
 \end{figure}
+
+It is important to note here that $v \left( M, R \right) \approx v_{\text{escape}}$ at $R = R_{\oplus}$ and $M=M_{\oplus}$, not a stable orbit velocity. This discrepency needs to be accounted for by Machian resistance in an n-body system. The associated equations remain elusive, but geometric unity achieved elsewhere appears to indicate the viability of this geometry, such that the sum of this radiating force for all other bodies in the system may induce inertial resistance.
 
 \subsubsection{Kinematic Velocity From Triginometric Orbit Equations}
 
@@ -544,13 +705,6 @@ For spatial velocity magnitude $v$ and displacement parameter $\tau$, as defined
     dx = v\tau.
 \end{equation}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{./diagrams/outputs/simple_triangle.eps}
-\caption{Right-triangle construction used to represent the ordinary spatial displacement $dx$, the additional spatial displacement $dy$, and the extended displacement $dx^{(U)}$. The relation assigned to the hypotenuse is an assumption of the proposed geometric construction.}\label{fig_simple_triangle}
-\label{fig_trig_diagram}
-\end{figure}
-
 The proposed construction treats the extended displacement $dx^{(U)}$ as the hypotenuse of a right triangle whose perpendicular components are $dx$ and $dy$ as shown in figure \ref{fig_trig_diagram}. With $\gamma$ denoting the Lorentz factor defined in Equation~\ref{eq_v_of_gamma},
 
 \begin{equation}
@@ -573,7 +727,7 @@ substitution gives
 
 Taking the positive magnitude of the additional displacement yields
 
-\begin{equation}\label{eq_dy_definition}
+\begin{equation}
     dy = v\tau\sqrt{\gamma^2-1}
        = \tau\frac{v^2}{\sqrt{c^2-v^2}}.
 \end{equation}
@@ -655,7 +809,7 @@ Or
     dy = \frac{v}{c^{2} - v^{2}} dx
 \end{equation}
 
-We then take the KK metric to be 
+We then take the KK line element to be 
 
 \begin{equation}\label{eq_line_element_definition}
     dS^{2} = g_{\mu \nu} dx^{\mu} dx^{\nu} + G_{44}dy^{2}
@@ -695,9 +849,11 @@ However solving equation \ref{eq_simple_line_element} for $G_{44}$ in the $\math
 
 \begin{equation}
     \boxed{
-        G_{44}^{\left( S \right)} = 0
+        G_{44}^{\left( S \right)} dy^{2} = 0
     }
 \end{equation}
+
+indicating that Newtonian mechanics remains contained within a temporal surface, while the relativistic portion of displacement magnitude extends into the 4th spatial dimension, $y$. For this reason, we speculate that inertia has it's origins purely in the relativistic component of displacement; a consequence of a Machian-like resistance along the 4th dimension.
 
 \section{Discussion}
 
