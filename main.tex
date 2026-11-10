@@ -152,14 +152,14 @@ Let there be two overlapping $\mathbb{R}^{3}$ coordinate systems, $\mathbf{S}$ a
 This gives
 
 \begin{equation}
-    f_{\left( x_{i}, y \right)} = \partial_y \mathcal{H}
+    f\left( x_{i}, y \right) = \partial_y \mathcal{H}
 \end{equation}
 
 where
 
 
 \begin{equation}
-    f_{\left( x_{i}, y^{\left( A \right)} \right)} = \mathbf{A}
+    f\left( x_{i}, y^{\left( A \right)} \right) = \mathbf{A}
 \end{equation}
 
 for an arbitrary $\mathbf{A}$ contained within $\mathcal{H}$.
@@ -174,7 +174,7 @@ Let $\mathbf{U}$ represent a `future' state from the perspective of an observer 
 where $\Delta t > 0$. Likewise, let $\mathbf{S}$ and $\mathbf{U}$ be bound such that 
 
 \begin{equation}
-    f_{\left( x_{i}, y^{\left( U \right)} \right)} = f_{\left( x_{i}, y^{\left( S \right)} \right)} + \int_{x_{0}^{\left( S \right)}}^{x_{0}^{\left( U \right)}} F_{\left( x \right)}\ \mathrm{d}t
+    f\left( x_{i}, y^{\left( U \right)} \right) = f\left( x_{i}, y^{\left( S \right)} \right) + \int_{x_{0}^{\left( S \right)}}^{x_{0}^{\left( U \right)}} F\left( x \right)\ \mathrm{d}t
 \end{equation}
 
 where $F$ is the sum of all forces acting on the point of space at $x$, integrated according to time, which in turn sums the change between the temporal surfaces $\mathbf{S}$ and $\mathbf{U}$.
@@ -222,28 +222,50 @@ To remove time as a physically meaningful quantity, we let
 where $\dot{x}$ indicates not a derivative with respect to time, but rather a fundamental driving rate of change. Let $\widehat{v} = v \cdot 1t$, or the velocity in units of distance.
 
 
+\subsection{On Lorentz Invariance}
+
+We consider these coordinate transformations with regards to the Lorentz transformations and find that for an instantaneous event where $dt \to 0$
+
+\begin{equation}
+\boxed{
+\begin{gathered}
+    dx' = \gamma dx = v^{\left( U \right)}\\
+    c\,dt' = -\gamma\frac{v}{c}dx = - \partial_\tau y
+\end{gathered}
+}
+\end{equation}
+
+where $y$ is as defined in equation \ref{eq_dy_definition}.
+
+By scaling $\partial_x y$ by $v\left( \gamma \right)$ we produce a closed symmetry such that
+
+\begin{equation}
+    \partial_x y\ v\left( \gamma \right) = \partial_\tau y
+\end{equation}
+
+where
+
+\begin{equation}\label{eq_v_of_gamma}
+    v\left( \gamma \right) = c \sqrt{1 - \frac{1}{\gamma^{2}}}
+\end{equation}
+
+
 \subsection{The Equivalence Principle}\label{sec_equivalence_principle}
 
 Here we examine these coordinate transformations in the context of the equivalence principle. While a well defined function remains elusive, a numerical intersection with the fine structure constant allows us to derive several important properties of an apparent electromagnetic function producing $\vec{g}$.
 
 \subsubsection{Earth's Kinematic Velocity From Electromagnetic Parameters}
 
-We define $v_{\left( \gamma \right)}$ to be
-
-\begin{equation}\label{eq_v_of_gamma}
-    v_{\left( \gamma \right)} = c \sqrt{1 - \frac{1}{\gamma^{2}}}
-\end{equation}
-
-And $\delta_{\left( M, R \right)}$ to be
+We define $\delta\left( M, R \right)$ to be
 
 \begin{equation}
-    \delta_{\left( M, R \right)} = \frac{d}{dR} g = 2 \frac{GM}{R^{3}}
+    \delta\left( M, R \right) = \frac{d}{dR} g = 2 \frac{GM}{R^{3}}
 \end{equation}
 
-If $\delta_{\left( M, R \right)}$ is induced by spatial dilation, we should presume that this dilation is radial. We then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
+If $\delta\left( M, R \right)$ is induced by spatial dilation, we should presume that this dilation is radial. We then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
 
 \begin{equation}
-    \omega_{\left( M, R \right)} = \sqrt[3]{\frac{d}{dR} g} = \delta_{\left( M, R \right)}^{1/3}
+    \omega\left( M, R \right) = \sqrt[3]{\frac{d}{dR} g} = \left(\delta\left( M, R \right)\right)^{1/3}
 \end{equation}
 
 
@@ -292,13 +314,13 @@ This matches the 2018 Plank data\cite{planck_collaboration_2020} to within $0.51
 
 \subsubsection{Solar $\omega$}
 
-We expand equation \ref{eq_omega_earth_Gamma} and define $\Gamma_{\left( \sigma \right)}$ to produce
+We expand equation \ref{eq_omega_earth_Gamma} and define $\Gamma\left( \sigma \right)$ to produce
 
 \begin{equation}
-    \alpha = \Gamma_{\left( \sigma \right)} \left( \frac{d}{dR} g \right)^{1/3}
+    \alpha = \Gamma\left( \sigma \right) \left( \frac{d}{dR} g \right)^{1/3}
 \end{equation}
 
-Where $\Gamma_{\left( \sigma \right)}$ is some unknown function of spin. While a well defined function remains elusive, we can take advantage of several characteristics for specific local bodies according to table \ref{table_advantageous_props} to derive certain characteristics of $\sigma$.
+Where $\Gamma\left( \sigma \right)$ is some unknown function of spin. While a well defined function remains elusive, we can take advantage of several characteristics for specific local bodies according to table \ref{table_advantageous_props} to derive certain characteristics of $\sigma$.
 
 \begin{table}[h]
 \caption{Advantageous properties}\label{tab1}%
@@ -317,31 +339,31 @@ Sun& The most massive.& $1.988 \times 10^{30} ~ \text{kg}$\\
 In equation \ref{eq_omega_earth_Gamma} we've demonstrated that for the most mass dense body in the system
 
 \begin{equation}
-    \Gamma_{\left( \sigma \right), \oplus} \approx \Gamma_{\left( \alpha \right)} = \frac{1}{2 - \alpha}
+    \Gamma_{\oplus}\left( \sigma \right) \approx \Gamma\left( \alpha \right) = \frac{1}{2 - \alpha}
 \end{equation}
 
 
 We propose that $\Gamma_{\left( \sigma \right)}$ acts inside of the determinant. We then take the inverse of the determinant of a diagonal $3 \times 3$ matrix
 
 \begin{equation}
-    \Gamma_{\left( \sigma \right), \odot} \propto \sqrt[3]{\Gamma_{\left( \sigma \right)}}
+    \Gamma_{\odot}\left( \sigma \right) \propto \sqrt[3]{\Gamma\left( \sigma \right)}
 \end{equation}
 
 We then presume that $\sigma$ is associated with spin. Due to the increased surface gravitational acceleration and the decreased rate of spin for the Sun, we approximate $\sigma = 0$.
 
 \begin{equation}
-    \Gamma_{\left( \sigma \right), \odot} \approx \frac{1}{\sqrt[3]{2}}
+    \Gamma_{\odot}\left( \sigma \right) \approx \frac{1}{\sqrt[3]{2}}
 \end{equation}
 
 Or
 
 \begin{equation}\label{eq_Gamma_solar}
-    \alpha = \Gamma_{\left( \sigma \right), \odot} \sqrt[3]{\frac{d}{dR}g} = \sqrt[3]{\frac{1}{2} \frac{d}{dR} g_{\odot}} \pm 0.47\%
+    \alpha = \Gamma_{\odot}\left( \sigma \right) \sqrt[3]{\frac{d}{dR}g} = \sqrt[3]{\frac{1}{2} \frac{d}{dR} g_{\odot}} \pm 0.47\%
 \end{equation}
 
-We then find through observation that for the least mass dense body in the system, $\Gamma_{\left( \sigma \right), \saturn} \approx 1$.
+We then find through observation that for the least mass dense body in the system, $\Gamma_{\saturn}\left( \sigma \right) \approx 1$.
 
-This gives a set of $3$ equations where the $\Gamma_{\left( \sigma \right)}$ term cancels for the dominant body in the system.
+This gives a set of $3$ equations where the $\Gamma\left( \sigma \right)$ term cancels for the dominant body in the system.
 
 \begin{equation}
     \begin{aligned}
@@ -380,14 +402,14 @@ Due to algebraic symmetries, it's trivial to derive our kinematic velocity throu
 As $\gamma$ is applied as a scalar, we take the average of the integral of $\delta_{\left( M, R \right)}$ to be
 
 \begin{equation}\label{eq_varphi}
-    \varphi_{\left( M, R \right)} = \frac{1}{R}\int \delta_{\left( M, R  \right)} = 1 + G \frac{M}{R^{3}}
+    \varphi\left( M, R \right) = \frac{1}{R}\int \delta\left( M, R  \right) = 1 + G \frac{M}{R^{3}}
 \end{equation}
 
-Substituting $\varphi_{\left( M, R \right)}$ into equation \ref{eq_v_of_gamma} gives
+Substituting $\varphi\left( M, R \right)$ into equation \ref{eq_v_of_gamma} gives
 
 \begin{equation}\label{eq_v_cosmo}
     \boxed{
-    v_{\text{cosmo}} = c \sqrt{1 - \frac{1}{\varphi_{\left( M, R \right)}^{2}}} = 525,493.17 ~ \text{m} / \text{s}
+    v_{\text{cosmo}} = c \sqrt{1 - \frac{1}{\varphi^2{\left( M, R \right)}}} = 525,493.17 ~ \text{m} / \text{s}
     }
 \end{equation}
 
@@ -522,7 +544,14 @@ For spatial velocity magnitude $v$ and displacement parameter $\tau$, as defined
     dx = v\tau.
 \end{equation}
 
-The proposed construction treats the extended displacement $dx^{(U)}$ as the hypotenuse of a right triangle whose perpendicular components are $dx$ and $dy$. With $\gamma$ denoting the Lorentz factor defined in Equation~\ref{eq_v_of_gamma},
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{./diagrams/outputs/simple_triangle.eps}
+\caption{Right-triangle construction used to represent the ordinary spatial displacement $dx$, the additional spatial displacement $dy$, and the extended displacement $dx^{(U)}$. The relation assigned to the hypotenuse is an assumption of the proposed geometric construction.}\label{fig_simple_triangle}
+\label{fig_trig_diagram}
+\end{figure}
+
+The proposed construction treats the extended displacement $dx^{(U)}$ as the hypotenuse of a right triangle whose perpendicular components are $dx$ and $dy$ as shown in figure \ref{fig_trig_diagram}. With $\gamma$ denoting the Lorentz factor defined in Equation~\ref{eq_v_of_gamma},
 
 \begin{equation}
     dx^{(U)} = v\tau\gamma.
@@ -544,10 +573,9 @@ substitution gives
 
 Taking the positive magnitude of the additional displacement yields
 
-\begin{equation}
+\begin{equation}\label{eq_dy_definition}
     dy = v\tau\sqrt{\gamma^2-1}
        = \tau\frac{v^2}{\sqrt{c^2-v^2}}.
-    \label{eq:fifth_dimensional_displacement}
 \end{equation}
 
 The velocity form follows from the Lorentz-factor relation in Equation~\ref{eq_v_of_gamma}.
@@ -556,23 +584,23 @@ For constant $v$, differentiation with respect to $\tau$ gives the rate of displ
 
 \begin{equation}
     \boxed{
-        \frac{dy}{d\tau}
+        \partial_\tau y
         =
         \frac{v^2}{\sqrt{c^2-v^2}}
     }
-    \label{eq:fifth_dimensional_rate}
+    \label{eq_dy_dtau}
 \end{equation}
 
-\subsection{Incorporation into the Kaluza--Klein Metric}
+\subsubsection{Incorporation into the Kaluza--Klein Metric}
 
-We represent the additional spatial coordinate through the metric component $G_{55}$. For a diagonal five-dimensional metric, the line element is
+We represent the additional spatial coordinate through the metric component $G_{44}$. For a diagonal five-dimensional metric, the line element is
 
 \begin{equation}
     dS^2
     =
     g_{\mu\nu}dx^\mu dx^\nu
     +
-    G_{55}dy^2.
+    G_{44}dy^2.
     \label{eq:kk_line_element}
 \end{equation}
 
@@ -584,104 +612,92 @@ The corresponding metric tensor has the block structure
     =
     \begin{pmatrix}
         g_{\mu\nu} & 0\\
-        0 & G_{55}
+        0 & G_{44}
     \end{pmatrix}
     }
     \label{eq:kk_metric}
 \end{equation}
 
-The component $G_{55}$ sets the metric scaling of the additional coordinate. Its radial variation determines the coupling between motion along $y$ and radial motion in the ordinary spatial coordinates.
+The component $G_{44}$ sets the metric scaling of the additional coordinate. Its radial variation determines the coupling between motion along $y$ and radial motion in the ordinary spatial coordinates.
 
 For radial coordinate $R$, the Christoffel symbol associated with this coupling is
 
 \begin{equation}
-    \Gamma^R_{55}
+    \Gamma^R_{44}
     =
     -\frac{1}{2}g^{RR}
-    \frac{\partial G_{55}}{\partial R}.
+    \frac{\partial G_{44}}{\partial R}.
 \end{equation}
 
 For a normalized radial coordinate, $g^{RR}=1$, so
 
 \begin{equation}
     \boxed{
-        \Gamma^R_{55}
+        \Gamma^R_{44}
         =
         -\frac{1}{2}
-        \frac{\partial G_{55}}{\partial R}
+        \frac{\partial G_{44}}{\partial R}
     }
     \label{eq:radial_christoffel}
 \end{equation}
 
-\subsection{Derivation of the Radial Force Contribution}
+\subsubsection{Finding $G_{44}$}
 
-Using $\tau$ as the trajectory parameter and assuming no angular motion, the radial geodesic equation for the contribution from the fifth coordinate is
-
-\begin{equation}
-    \frac{d^2R}{d\tau^2}
-    +
-    \Gamma^R_{55}
-    \left(\frac{dy}{d\tau}\right)^2
-    =0.
-\end{equation}
-
-Substitution of Equation~\ref{eq:radial_christoffel} gives
+We take
 
 \begin{equation}
-    \frac{d^2R}{d\tau^2}
-    =
-    \frac{1}{2}
-    \frac{\partial G_{55}}{\partial R}
-    \left(\frac{dy}{d\tau}\right)^2.
+    \partial_x y = \frac{v}{\sqrt{c^{2}  v^{2}}}
 \end{equation}
 
-Using the displacement rate from Equation~\ref{eq:fifth_dimensional_rate} then gives
+Or
 
 \begin{equation}
-    \frac{d^2R}{d\tau^2}
-    =
-    \frac{1}{2}
-    \frac{\partial G_{55}}{\partial R}
-    \frac{v^4}{c^2-v^2}.
+    dy = \frac{v}{c^{2} - v^{2}} dx
 \end{equation}
 
-For a body of mass $m$, define the associated generalized radial force contribution by $\mathcal{F}_R=m\,d^2R/d\tau^2$. It follows that
+We then take the KK metric to be 
+
+\begin{equation}\label{eq_line_element_definition}
+    dS^{2} = g_{\mu \nu} dx^{\mu} dx^{\nu} + G_{44}dy^{2}
+\end{equation}
+
+and the $\mathbb{R}^{4}$ spatial separation to be
 
 \begin{equation}
-    \boxed{
-        \mathcal{F}_R
-        =
-        \frac{m v^4}{2(c^2-v^2)}
-        \frac{\partial G_{55}}{\partial R}
-    }
-    \label{eq:radial_fifth_dimensional_force}
+    dS^{2}_{\text{spatial}} = dx^{2} + dy^{2}
 \end{equation}
 
-This expression relates the radial gradient of $G_{55}$ to the force contribution. The velocity dependence follows from the assumed geometric extension of the ordinary displacement, while the metric gradient determines the magnitude and sign of the radial coupling.
+where $dx^{2} = dx_i dx^{i}$ for $i = 1, 2, 3$. Expanding this gives
 
-Rearranging Equation~\ref{eq:radial_fifth_dimensional_force} gives the corresponding metric gradient in terms of the force:
+\begin{equation}
+    dS^{2}_{\text{spatial}} = dx^{2} \left( 1 + \frac{v^{2}}{c^{2} - v^{2}} \right) = dx^{2} \gamma^{2}
+\end{equation}
+
+which matches the expected displacement magnitude of the Lorentz transformations.
+
+Applying a flat metric to the line element defined in equation \ref{eq_line_element_definition} gives
+
+\begin{equation}\label{eq_simple_line_element}
+    dS^{2}_{U} = dx^{2} + G_{44} dy^{2}
+\end{equation}
+
+yielding
 
 \begin{equation}
     \boxed{
-        \frac{\partial G_{55}}{\partial R}
-        =
-        \frac{2(c^2-v^2)}{m v^4}
-        \mathcal{F}_R
+        G_{44}^{\left( U \right)} = 1
     }
-    \label{eq:metric_gradient_from_force}
 \end{equation}
 
-Thus, a specified radial force constrains the spatial gradient of $G_{55}$; conversely, a specified fifth-dimensional metric determines the radial force contribution through Equation~\ref{eq:radial_fifth_dimensional_force}.
+for $dS^{2}_{U} = \gamma^{2} dx^{2}$.
 
-We treat the fifth-dimensional coordinate as linear and non-compact, without imposing a periodic identification or compactification condition.
+However solving equation \ref{eq_simple_line_element} for $G_{44}$ in the $\mathbf{S}$ coordinate system where $dS^{2}_{S} = d_{i} d^{i}$ gives
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{./diagrams/outputs/simple_triangle.eps}
-\caption{Right-triangle construction used to represent the ordinary spatial displacement $dx$, the additional spatial displacement $dy$, and the extended displacement $dx^{(U)}$. The relation assigned to the hypotenuse is an assumption of the proposed geometric construction.}\label{fig_simple_triangle}
-\label{fig_trig_diagram}
-\end{figure}
-
+\begin{equation}
+    \boxed{
+        G_{44}^{\left( S \right)} = 0
+    }
+\end{equation}
 
 \section{Discussion}
 
