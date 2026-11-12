@@ -28,6 +28,7 @@ build_diagrams: build_dilating_planes build_trig_derivation build_triangle_diagr
 	magick diagrams/outputs/mass_density_velocity_plot.png diagrams/outputs/mass_density_velocity_plot.eps
 	/opt/anaconda3/envs/jupyter/bin/python {{justfile_directory()}}/diagrams/inputs/generate_cosmo_velocity_mass_density_plot.py
 	magick diagrams/outputs/cosmo_velocity_mass_density_plot.png diagrams/outputs/cosmo_velocity_mass_density_plot.eps
+
 	
 
 build_main:
@@ -37,3 +38,4 @@ build_main:
 	sudo pdflatex ./main.tex
 
 build: build_diagrams build_main clean_diagram_output
+	cp ./main.pdf /Users/bigsexy/Desktop/swift/Fluster/apps/website/public/assets/pdf/paper_preprint.pdf
