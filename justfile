@@ -29,6 +29,8 @@ build_diagrams: build_dilating_planes build_trig_derivation build_triangle_diagr
 	/opt/anaconda3/envs/jupyter/bin/python {{justfile_directory()}}/diagrams/inputs/generate_cosmo_velocity_mass_density_plot.py
 	magick diagrams/outputs/cosmo_velocity_mass_density_plot.png diagrams/outputs/cosmo_velocity_mass_density_plot.eps
 
+build_cover_letter:
+	sudo pandoc ./cover_letter/cover_letter.md -o ./cover_letter/cover_letter.pdf
 	
 
 build_main:
