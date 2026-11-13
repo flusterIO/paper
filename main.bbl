@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{36}
+\begin{thebibliography}{42}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -116,6 +116,66 @@ Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der Wissenschaften z
 \endbibitem
 
 %%% 7
+\bibitem[\protect\citeauthoryear{Wesson}{1999}]{Wesson1999STM}
+\begin{bbook}
+\bauthor{\bsnm{Wesson}, \binits{P.S.}}:
+\bbtitle{Space-Time-Matter: Modern Kaluza-Klein Theory}.
+\bpublisher{World Scientific},
+\blocation{Singapore}
+(\byear{1999})
+\end{bbook}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Overduin and Wesson}{1997}]{OverduinWesson1997}
+\begin{barticle}
+\bauthor{\bsnm{Overduin}, \binits{J.M.}},
+\bauthor{\bsnm{Wesson}, \binits{P.S.}}:
+\batitle{Kaluza-klein gravity}.
+\bjtitle{Physics Reports}
+\bvolume{283},
+\bfpage{303}--\blpage{378}
+(\byear{1997})
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Campbell}{1926}]{Campbell1926Course}
+\begin{bbook}
+\bauthor{\bsnm{Campbell}, \binits{J.E.}}:
+\bbtitle{A Course of Differential Geometry}.
+\bpublisher{Clarendon Press},
+\blocation{Oxford}
+(\byear{1926})
+\end{bbook}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Magaard}{1963}]{Magaard1963}
+\begin{botherref}
+\oauthor{\bsnm{Magaard}, \binits{L.}}:
+Zur einbettung riemannscher r{\"a}ume in einstein-r{\"a}ume und konforme einbettung riemannscher r{\"a}ume.
+PhD thesis,
+Universit{\"a}t Kiel
+(1963)
+\end{botherref}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Ives and Stilwell}{1938}]{IvesStillwell}
+\begin{barticle}
+\bauthor{\bsnm{Ives}, \binits{H.E.}},
+\bauthor{\bsnm{Stilwell}, \binits{G.R.}}:
+\batitle{An experimental study of the rate of a moving atomic clock}.
+\bjtitle{J. Opt. Soc. Am.}
+\bvolume{28}(\bissue{7}),
+\bfpage{215}--\blpage{226}
+(\byear{1938})
+\doiurl{10.1364/JOSA.28.000215}
+\end{barticle}
+\endbibitem
+
+%%% 12
 \bibitem[\protect\citeauthoryear{Rossi and Hall}{1941}]{Rossi1941}
 \begin{barticle}
 \bauthor{\bsnm{Rossi}, \binits{B.}},
@@ -129,7 +189,7 @@ Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der Wissenschaften z
 \end{barticle}
 \endbibitem
 
-%%% 8
+%%% 13
 \bibitem[\protect\citeauthoryear{Frisch and Smith}{1963}]{FrischSmith1963}
 \begin{barticle}
 \bauthor{\bsnm{Frisch}, \binits{D.H.}},
@@ -143,7 +203,7 @@ Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der Wissenschaften z
 \end{barticle}
 \endbibitem
 
-%%% 9
+%%% 14
 \bibitem[\protect\citeauthoryear{Bailey et~al.}{1977}]{Bailey1977}
 \begin{barticle}
 \bauthor{\bsnm{Bailey}, \binits{J.}},
@@ -167,7 +227,7 @@ Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der Wissenschaften z
 \end{barticle}
 \endbibitem
 
-%%% 10
+%%% 15
 \bibitem[\protect\citeauthoryear{Bailey et~al.}{1979}]{Bailey1979}
 \begin{barticle}
 \bauthor{\bsnm{Bailey}, \binits{J.}}, \betal:
@@ -180,7 +240,7 @@ Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der Wissenschaften z
 \end{barticle}
 \endbibitem
 
-%%% 11
+%%% 16
 \bibitem[\protect\citeauthoryear{Botermann et~al.}{2014}]{Botermann2014}
 \begin{barticle}
 \bauthor{\bsnm{Botermann}, \binits{B.}},
@@ -209,7 +269,221 @@ Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der Wissenschaften z
 \end{barticle}
 \endbibitem
 
-%%% 12
+%%% 17
+\bibitem[\protect\citeauthoryear{Bertotti et~al.}{2003}]{Bertotti2003}
+\begin{barticle}
+\bauthor{\bsnm{Bertotti}, \binits{B.}},
+\bauthor{\bsnm{Iess}, \binits{L.}},
+\bauthor{\bsnm{Tortora}, \binits{P.}}:
+\batitle{A test of general relativity using radio links with the {Cassini} spacecraft}.
+\bjtitle{Nature}
+\bvolume{425}(\bissue{6956}),
+\bfpage{374}--\blpage{376}
+(\byear{2003})
+\doiurl{10.1038/nature01997}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Brans and Dicke}{1961}]{BransDicke1961}
+\begin{barticle}
+\bauthor{\bsnm{Brans}, \binits{C.}},
+\bauthor{\bsnm{Dicke}, \binits{R.H.}}:
+\batitle{Mach's principle and a relativistic theory of gravitation}.
+\bjtitle{Physical Review}
+\bvolume{124},
+\bfpage{925}--\blpage{935}
+(\byear{1961})
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Kasner}{1921}]{Kasner1921}
+\begin{barticle}
+\bauthor{\bsnm{Kasner}, \binits{E.}}:
+\batitle{Finite representation of the solar gravitational field in flat space of six dimensions}.
+\bjtitle{American Journal of Mathematics}
+\bvolume{43},
+\bfpage{130}--\blpage{133}
+(\byear{1921})
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Painlev{\'e}}{1921}]{Painleve1921}
+\begin{barticle}
+\bauthor{\bsnm{Painlev{\'e}}, \binits{P.}}:
+\batitle{La m{\'e}canique classique et la th{\'e}orie de la relativit{\'e}}.
+\bjtitle{Comptes Rendus de l'Acad{\'e}mie des Sciences (Paris)}
+\bvolume{173},
+\bfpage{677}--\blpage{680}
+(\byear{1921})
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem[\protect\citeauthoryear{Gullstrand}{1922}]{Gullstrand1922}
+\begin{barticle}
+\bauthor{\bsnm{Gullstrand}, \binits{A.}}:
+\batitle{Allgemeine {L}{\"o}sung des statischen {E}ink{\"o}rperproblems in der {E}insteinschen {G}ravitationstheorie}.
+\bjtitle{Arkiv f{\"o}r Matematik, Astronomi och Fysik}
+\bvolume{16}(\bissue{8}),
+\bfpage{1}--\blpage{15}
+(\byear{1922})
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem[\protect\citeauthoryear{Martel and Poisson}{2001}]{MartelPoisson2001}
+\begin{barticle}
+\bauthor{\bsnm{Martel}, \binits{K.}},
+\bauthor{\bsnm{Poisson}, \binits{E.}}:
+\batitle{Regular coordinate systems for {Schwarzschild} and other spherical spacetimes}.
+\bjtitle{American Journal of Physics}
+\bvolume{69},
+\bfpage{476}
+(\byear{2001})
+{\href{https://arxiv.org/abs/gr-qc/0001069}{{gr-qc/0001069}}}
+\end{barticle}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{Hamilton and Lisle}{2008}]{HamiltonLisle2008}
+\begin{barticle}
+\bauthor{\bsnm{Hamilton}, \binits{A.J.S.}},
+\bauthor{\bsnm{Lisle}, \binits{J.P.}}:
+\batitle{The river model of black holes}.
+\bjtitle{American Journal of Physics}
+\bvolume{76},
+\bfpage{519}--\blpage{532}
+(\byear{2008})
+\doiurl{10.1119/1.2830526}
+\end{barticle}
+\endbibitem
+
+%%% 24
+\bibitem[\protect\citeauthoryear{Flamm}{1916}]{Flamm1916}
+\begin{barticle}
+\bauthor{\bsnm{Flamm}, \binits{L.}}:
+\batitle{Beitr{\"a}ge zur {E}insteinschen {G}ravitationstheorie}.
+\bjtitle{Physikalische Zeitschrift}
+\bvolume{17},
+\bfpage{448}--\blpage{454}
+(\byear{1916})
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem[\protect\citeauthoryear{Faraoni}{2011}]{Faraoni2011}
+\begin{botherref}
+\oauthor{\bsnm{Faraoni}, \binits{V.}}:
+Cosmological apparent and trapping horizons
+(2011)
+{\href{https://arxiv.org/abs/1106.4427}{{1106.4427}}}
+\end{botherref}
+\endbibitem
+
+%%% 26
+\bibitem[\protect\citeauthoryear{Faraoni et~al.}{2022}]{Faraoni2022}
+\begin{botherref}
+\oauthor{\bsnm{Faraoni}, \binits{V.}},
+\oauthor{\bsnm{Vachon}, \binits{G.}},
+\oauthor{\bsnm{Vanderwee}, \binits{R.}},
+\oauthor{\bsnm{Jose}, \binits{S.}}:
+{Friedmann--Lema{\^\i}tre--Robertson--Walker} cosmology through the lens of gravitoelectromagnetism
+(2022)
+{\href{https://arxiv.org/abs/2201.05287}{{2201.05287}}}
+\end{botherref}
+\endbibitem
+
+%%% 27
+\bibitem[\protect\citeauthoryear{Milne}{1934}]{Milne1934}
+\begin{barticle}
+\bauthor{\bsnm{Milne}, \binits{E.A.}}:
+\batitle{A {N}ewtonian expanding universe}.
+\bjtitle{Quarterly Journal of Mathematics (Oxford)}
+\bvolume{5},
+\bfpage{64}--\blpage{72}
+(\byear{1934})
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem[\protect\citeauthoryear{McCrea and Milne}{1934}]{McCreaMilne1934}
+\begin{barticle}
+\bauthor{\bsnm{McCrea}, \binits{W.H.}},
+\bauthor{\bsnm{Milne}, \binits{E.A.}}:
+\batitle{Newtonian universes and the curvature of space}.
+\bjtitle{Quarterly Journal of Mathematics (Oxford)}
+\bvolume{5},
+\bfpage{73}--\blpage{80}
+(\byear{1934})
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem[\protect\citeauthoryear{Lema{\^\i}tre}{1933}]{Lemaitre1933}
+\begin{barticle}
+\bauthor{\bsnm{Lema{\^\i}tre}, \binits{G.}}:
+\batitle{L'{U}nivers en expansion}.
+\bjtitle{Annales de la Soci{\'e}t{\'e} Scientifique de Bruxelles A}
+\bvolume{53},
+\bfpage{51}--\blpage{85}
+(\byear{1933})
+\end{barticle}
+\endbibitem
+
+%%% 30
+\bibitem[\protect\citeauthoryear{Tolman}{1934}]{Tolman1934}
+\begin{barticle}
+\bauthor{\bsnm{Tolman}, \binits{R.C.}}:
+\batitle{Effect of inhomogeneity on cosmological models}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{20},
+\bfpage{169}--\blpage{176}
+(\byear{1934})
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem[\protect\citeauthoryear{Bondi}{1947}]{Bondi1947}
+\begin{barticle}
+\bauthor{\bsnm{Bondi}, \binits{H.}}:
+\batitle{Spherically symmetrical models in general relativity}.
+\bjtitle{Monthly Notices of the Royal Astronomical Society}
+\bvolume{107},
+\bfpage{410}--\blpage{425}
+(\byear{1947})
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem[\protect\citeauthoryear{Misner and Sharp}{1964}]{MisnerSharp1964}
+\begin{barticle}
+\bauthor{\bsnm{Misner}, \binits{C.W.}},
+\bauthor{\bsnm{Sharp}, \binits{D.H.}}:
+\batitle{Relativistic equations for adiabatic, spherically symmetric gravitational collapse}.
+\bjtitle{Physical Review}
+\bvolume{136},
+\bfpage{571}
+(\byear{1964})
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem[\protect\citeauthoryear{Lasky and Lun}{2006}]{LaskyLun2006}
+\begin{barticle}
+\bauthor{\bsnm{Lasky}, \binits{P.D.}},
+\bauthor{\bsnm{Lun}, \binits{A.W.C.}}:
+\batitle{Generalized {L}ema{\^\i}tre--{T}olman--{B}ondi solutions with pressure}.
+\bjtitle{Physical Review D}
+\bvolume{74},
+\bfpage{084013}
+(\byear{2006})
+\end{barticle}
+\endbibitem
+
+%%% 34
 \bibitem[\protect\citeauthoryear{{Planck Collaboration}}{2020}]{planck_collaboration_2020}
 \begin{botherref}
 \oauthor{\bsnm{{Planck Collaboration}}}:
@@ -219,7 +493,7 @@ Accessed 2026-11-02
 \end{botherref}
 \endbibitem
 
-%%% 13
+%%% 35
 \bibitem[\protect\citeauthoryear{Gordon et~al.}{2008}]{gordon_determining_2008}
 \begin{barticle}
 \bauthor{\bsnm{Gordon}, \binits{C.}},
@@ -234,7 +508,7 @@ Accessed 2026-11-02
 \end{barticle}
 \endbibitem
 
-%%% 14
+%%% 36
 \bibitem[\protect\citeauthoryear{Brout et~al.}{2022}]{Brout2022}
 \begin{barticle}
 \bauthor{\bsnm{Brout}, \binits{D.}},
@@ -249,7 +523,7 @@ Accessed 2026-11-02
 \end{barticle}
 \endbibitem
 
-%%% 15
+%%% 37
 \bibitem[\protect\citeauthoryear{Betoule et~al.}{2014}]{Betoule2014}
 \begin{barticle}
 \bauthor{\bsnm{Betoule}, \binits{M.}},
@@ -264,7 +538,7 @@ Accessed 2026-11-02
 \end{barticle}
 \endbibitem
 
-%%% 16
+%%% 38
 \bibitem[\protect\citeauthoryear{Cautun et~al.}{2020}]{cautun2020milky}
 \begin{barticle}
 \bauthor{\bsnm{Cautun}, \binits{M.}},
@@ -286,7 +560,7 @@ Accessed 2026-11-02
 \end{barticle}
 \endbibitem
 
-%%% 17
+%%% 39
 \bibitem[\protect\citeauthoryear{{GRAVITY Collaboration}}{2018}]{gravity2018detection}
 \begin{barticle}
 \bauthor{\bsnm{{GRAVITY Collaboration}}}:
@@ -299,7 +573,7 @@ Accessed 2026-11-02
 \end{barticle}
 \endbibitem
 
-%%% 18
+%%% 40
 \bibitem[\protect\citeauthoryear{Bobylev and Bajkova}{2021}]{bobylev2021estimate}
 \begin{barticle}
 \bauthor{\bsnm{Bobylev}, \binits{V.V.}},
@@ -313,7 +587,7 @@ Accessed 2026-11-02
 \end{barticle}
 \endbibitem
 
-%%% 19
+%%% 41
 \bibitem[\protect\citeauthoryear{Eilers et~al.}{2019}]{Eilers_2019}
 \begin{barticle}
 \bauthor{\bsnm{Eilers}, \binits{A.-C.}},
@@ -329,7 +603,7 @@ Accessed 2026-11-02
 \end{barticle}
 \endbibitem
 
-%%% 20
+%%% 42
 \bibitem[\protect\citeauthoryear{Yu et~al.}{2023}]{yu2023born}
 \begin{barticle}
 \bauthor{\bsnm{Yu}, \binits{S.}},
@@ -348,207 +622,6 @@ Accessed 2026-11-02
 \bfpage{6220}--\blpage{6238}
 (\byear{2023})
 \doiurl{10.1093/mnras/stad1806}
-\end{barticle}
-\endbibitem
-
-%%% 21
-\bibitem[\protect\citeauthoryear{Bertotti et~al.}{2003}]{Bertotti2003}
-\begin{barticle}
-\bauthor{\bsnm{Bertotti}, \binits{B.}},
-\bauthor{\bsnm{Iess}, \binits{L.}},
-\bauthor{\bsnm{Tortora}, \binits{P.}}:
-\batitle{A test of general relativity using radio links with the {Cassini} spacecraft}.
-\bjtitle{Nature}
-\bvolume{425}(\bissue{6956}),
-\bfpage{374}--\blpage{376}
-(\byear{2003})
-\doiurl{10.1038/nature01997}
-\end{barticle}
-\endbibitem
-
-%%% 22
-\bibitem[\protect\citeauthoryear{Kasner}{1921}]{Kasner1921}
-\begin{barticle}
-\bauthor{\bsnm{Kasner}, \binits{E.}}:
-\batitle{Finite representation of the solar gravitational field in flat space of six dimensions}.
-\bjtitle{American Journal of Mathematics}
-\bvolume{43},
-\bfpage{130}--\blpage{133}
-(\byear{1921})
-\end{barticle}
-\endbibitem
-
-%%% 23
-\bibitem[\protect\citeauthoryear{Painlev{\'e}}{1921}]{Painleve1921}
-\begin{barticle}
-\bauthor{\bsnm{Painlev{\'e}}, \binits{P.}}:
-\batitle{La m{\'e}canique classique et la th{\'e}orie de la relativit{\'e}}.
-\bjtitle{Comptes Rendus de l'Acad{\'e}mie des Sciences (Paris)}
-\bvolume{173},
-\bfpage{677}--\blpage{680}
-(\byear{1921})
-\end{barticle}
-\endbibitem
-
-%%% 24
-\bibitem[\protect\citeauthoryear{Gullstrand}{1922}]{Gullstrand1922}
-\begin{barticle}
-\bauthor{\bsnm{Gullstrand}, \binits{A.}}:
-\batitle{Allgemeine {L}{\"o}sung des statischen {E}ink{\"o}rperproblems in der {E}insteinschen {G}ravitationstheorie}.
-\bjtitle{Arkiv f{\"o}r Matematik, Astronomi och Fysik}
-\bvolume{16}(\bissue{8}),
-\bfpage{1}--\blpage{15}
-(\byear{1922})
-\end{barticle}
-\endbibitem
-
-%%% 25
-\bibitem[\protect\citeauthoryear{Martel and Poisson}{2001}]{MartelPoisson2001}
-\begin{barticle}
-\bauthor{\bsnm{Martel}, \binits{K.}},
-\bauthor{\bsnm{Poisson}, \binits{E.}}:
-\batitle{Regular coordinate systems for {Schwarzschild} and other spherical spacetimes}.
-\bjtitle{American Journal of Physics}
-\bvolume{69},
-\bfpage{476}
-(\byear{2001})
-{\href{https://arxiv.org/abs/gr-qc/0001069}{{gr-qc/0001069}}}
-\end{barticle}
-\endbibitem
-
-%%% 26
-\bibitem[\protect\citeauthoryear{Hamilton and Lisle}{2008}]{HamiltonLisle2008}
-\begin{barticle}
-\bauthor{\bsnm{Hamilton}, \binits{A.J.S.}},
-\bauthor{\bsnm{Lisle}, \binits{J.P.}}:
-\batitle{The river model of black holes}.
-\bjtitle{American Journal of Physics}
-\bvolume{76},
-\bfpage{519}--\blpage{532}
-(\byear{2008})
-\doiurl{10.1119/1.2830526}
-\end{barticle}
-\endbibitem
-
-%%% 27
-\bibitem[\protect\citeauthoryear{Flamm}{1916}]{Flamm1916}
-\begin{barticle}
-\bauthor{\bsnm{Flamm}, \binits{L.}}:
-\batitle{Beitr{\"a}ge zur {E}insteinschen {G}ravitationstheorie}.
-\bjtitle{Physikalische Zeitschrift}
-\bvolume{17},
-\bfpage{448}--\blpage{454}
-(\byear{1916})
-\end{barticle}
-\endbibitem
-
-%%% 28
-\bibitem[\protect\citeauthoryear{Faraoni}{2011}]{Faraoni2011}
-\begin{botherref}
-\oauthor{\bsnm{Faraoni}, \binits{V.}}:
-Cosmological apparent and trapping horizons
-(2011)
-{\href{https://arxiv.org/abs/1106.4427}{{1106.4427}}}
-\end{botherref}
-\endbibitem
-
-%%% 29
-\bibitem[\protect\citeauthoryear{Faraoni et~al.}{2022}]{Faraoni2022}
-\begin{botherref}
-\oauthor{\bsnm{Faraoni}, \binits{V.}},
-\oauthor{\bsnm{Vachon}, \binits{G.}},
-\oauthor{\bsnm{Vanderwee}, \binits{R.}},
-\oauthor{\bsnm{Jose}, \binits{S.}}:
-{Friedmann--Lema{\^\i}tre--Robertson--Walker} cosmology through the lens of gravitoelectromagnetism
-(2022)
-{\href{https://arxiv.org/abs/2201.05287}{{2201.05287}}}
-\end{botherref}
-\endbibitem
-
-%%% 30
-\bibitem[\protect\citeauthoryear{Milne}{1934}]{Milne1934}
-\begin{barticle}
-\bauthor{\bsnm{Milne}, \binits{E.A.}}:
-\batitle{A {N}ewtonian expanding universe}.
-\bjtitle{Quarterly Journal of Mathematics (Oxford)}
-\bvolume{5},
-\bfpage{64}--\blpage{72}
-(\byear{1934})
-\end{barticle}
-\endbibitem
-
-%%% 31
-\bibitem[\protect\citeauthoryear{McCrea and Milne}{1934}]{McCreaMilne1934}
-\begin{barticle}
-\bauthor{\bsnm{McCrea}, \binits{W.H.}},
-\bauthor{\bsnm{Milne}, \binits{E.A.}}:
-\batitle{Newtonian universes and the curvature of space}.
-\bjtitle{Quarterly Journal of Mathematics (Oxford)}
-\bvolume{5},
-\bfpage{73}--\blpage{80}
-(\byear{1934})
-\end{barticle}
-\endbibitem
-
-%%% 32
-\bibitem[\protect\citeauthoryear{Lema{\^\i}tre}{1933}]{Lemaitre1933}
-\begin{barticle}
-\bauthor{\bsnm{Lema{\^\i}tre}, \binits{G.}}:
-\batitle{L'{U}nivers en expansion}.
-\bjtitle{Annales de la Soci{\'e}t{\'e} Scientifique de Bruxelles A}
-\bvolume{53},
-\bfpage{51}--\blpage{85}
-(\byear{1933})
-\end{barticle}
-\endbibitem
-
-%%% 33
-\bibitem[\protect\citeauthoryear{Tolman}{1934}]{Tolman1934}
-\begin{barticle}
-\bauthor{\bsnm{Tolman}, \binits{R.C.}}:
-\batitle{Effect of inhomogeneity on cosmological models}.
-\bjtitle{Proceedings of the National Academy of Sciences}
-\bvolume{20},
-\bfpage{169}--\blpage{176}
-(\byear{1934})
-\end{barticle}
-\endbibitem
-
-%%% 34
-\bibitem[\protect\citeauthoryear{Bondi}{1947}]{Bondi1947}
-\begin{barticle}
-\bauthor{\bsnm{Bondi}, \binits{H.}}:
-\batitle{Spherically symmetrical models in general relativity}.
-\bjtitle{Monthly Notices of the Royal Astronomical Society}
-\bvolume{107},
-\bfpage{410}--\blpage{425}
-(\byear{1947})
-\end{barticle}
-\endbibitem
-
-%%% 35
-\bibitem[\protect\citeauthoryear{Misner and Sharp}{1964}]{MisnerSharp1964}
-\begin{barticle}
-\bauthor{\bsnm{Misner}, \binits{C.W.}},
-\bauthor{\bsnm{Sharp}, \binits{D.H.}}:
-\batitle{Relativistic equations for adiabatic, spherically symmetric gravitational collapse}.
-\bjtitle{Physical Review}
-\bvolume{136},
-\bfpage{571}
-(\byear{1964})
-\end{barticle}
-\endbibitem
-
-%%% 36
-\bibitem[\protect\citeauthoryear{Lasky and Lun}{2006}]{LaskyLun2006}
-\begin{barticle}
-\bauthor{\bsnm{Lasky}, \binits{P.D.}},
-\bauthor{\bsnm{Lun}, \binits{A.W.C.}}:
-\batitle{Generalized {L}ema{\^\i}tre--{T}olman--{B}ondi solutions with pressure}.
-\bjtitle{Physical Review D}
-\bvolume{74},
-\bfpage{084013}
-(\byear{2006})
 \end{barticle}
 \endbibitem
 

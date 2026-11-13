@@ -28,6 +28,20 @@ for f in main_files:
     Path(f).unlink()
 
 
+final_files = [
+    f
+    for f in mainDir.glob("final.*")
+    if not f.__str__().endswith(".pdf")
+    and not f.__str__().endswith(".tex")
+    and not f.__str__().endswith(".bbl")
+    and not f.__str__().endswith(".bib")
+]
+
+
+for f in final_files:
+    Path(f).unlink()
+
+
 pdflatex_files = [f for f in mainDir.glob("pdflatex*")]
 
 

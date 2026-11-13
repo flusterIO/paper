@@ -1,4 +1,3 @@
-
 build_dilating_planes:
 	cd {{justfile_directory()}}/diagrams/inputs; sudo pdflatex -output-directory=../outputs ./dilating_planes.tex
 	pdftops -eps ./diagrams/outputs/dilating_planes.pdf ./diagrams/outputs/dilating_planes.eps
@@ -28,11 +27,12 @@ build_diagrams: build_dilating_planes build_trig_derivation build_triangle_diagr
 	magick diagrams/outputs/mass_density_velocity_plot.png diagrams/outputs/mass_density_velocity_plot.eps
 	/opt/anaconda3/envs/jupyter/bin/python {{justfile_directory()}}/diagrams/inputs/generate_cosmo_velocity_mass_density_plot.py
 	magick diagrams/outputs/cosmo_velocity_mass_density_plot.png diagrams/outputs/cosmo_velocity_mass_density_plot.eps
+	/opt/anaconda3/envs/jupyter/bin/python {{justfile_directory()}}/diagrams/inputs/generate_rotation_curve_plot.py
+	magick diagrams/outputs/rotation_curve_plot.png diagrams/outputs/rotation_curve_plot.eps
 
 build_cover_letter:
 	sudo pandoc ./cover_letter/cover_letter.md -o ./cover_letter/cover_letter.pdf
 	
-
 build_main:
 	sudo pdflatex ./main.tex
 	bibtex ./main
