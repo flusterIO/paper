@@ -10,4 +10,4 @@ due to
 
 ![](./diagrams/outputs/simple_triangle.png)
 
-where $i = 1, 2, 3$
+and $i = 1, 2, 3$
