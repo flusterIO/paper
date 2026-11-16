@@ -15,7 +15,10 @@ build_triangle_diagram:
 	cd {{justfile_directory()}}/diagrams/inputs; sudo pdflatex -output-directory=../outputs ./simple_triangle.tex
 	pdftops -eps ./diagrams/outputs/simple_triangle.pdf ./diagrams/outputs/simple_triangle.eps
 
-clean_diagram_output:
+copy_images:
+	cp -r ./diagrams/outputs/**.png  /Users/bigsexy/Desktop/swift/Fluster/apps/website/public/assets/diagrams/paper
+
+clean_diagram_output: copy_images
 	/opt/anaconda3/envs/jupyter/bin/python {{justfile_directory()}}/clean.py
 
 build_diagrams: build_dilating_planes build_trig_derivation build_triangle_diagram

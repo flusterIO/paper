@@ -1460,6 +1460,40 @@ The slope $\beta\gamma$ of the Flamm embedding therefore coincides with $\beta_{
 \paragraph{What is and is not established.}
 Established: given the slope of $y$ on a static vacuum slice, the lapse is fixed, so the closure of equation~\eqref{eq_N_postulate} is equivalent to the second static field equation expressed through the embedding. Not established: the static equations themselves are imported from general relativity, and equation~\eqref{eq_lapse_hessian} is therefore a restatement of them, not a prediction. The result is also confined to vacuum; with matter the right-hand side acquires pressure terms, and for non-static flow $\xi$ is absent. It does sharpen the open problem. A closed theory needs one five-dimensional action whose reduction yields both ${}^{(3)}\!R=0$ and equation~\eqref{eq_lapse_hessian}. Where such an action allows $G_{44}\neq1$ or $a_\mu\neq0$, equation~\eqref{eq_lapse_hessian} acquires extra terms, and those terms are the candidate source of any departure from general relativity.
 
+\subsubsection{Interior Lapse and the Buchdahl Bound}\label{sec_interior_lapse}
+
+Subsection~\ref{sec_lapse_derivation} derived the lapse in vacuum. The same steps extend to a static perfect fluid with density $\rho(R)$ and pressure $p(R)$. The slice is unchanged: equation~\eqref{eq_beta_enclosed} holds for any density, so $\beta^2=2Gm(R)/(c^2R)$ and $\gamma^2=1/(1-\beta^2)$. The static Einstein equations with a fluid at rest read
+
+\begin{equation}
+    {}^{(3)}\!R_{ij}-\frac{1}{N}\nabla_i\nabla_jN=\frac{4\pi G}{c^{4}}\left(\rho c^{2}-p\right)h_{ij}
+\end{equation}
+
+The angular component, with the embedding values ${}^{(3)}\!R_{\hat\theta\hat\theta}=\beta\beta'/R+\beta^2/R^2$ and the identity $\left(R\beta^2\right)'=8\pi G\rho R^2/c^2$, gives
+
+\begin{equation}\label{eq_interior_lapse}
+    \frac{N'}{N}=\gamma^{2}\left(\frac{\beta^{2}}{2R}+\frac{4\pi G\,p\,R}{c^{4}}\right)
+    =\frac{G\left(m+4\pi R^{3}p/c^{2}\right)}{c^{2}R^{2}\left(1-2Gm/c^{2}R\right)}
+\end{equation}
+
+This is the potential gradient of the Tolman--Oppenheimer--Volkoff (TOV) equation. The radial component is then satisfied identically provided $p'=-\left(\rho c^2+p\right)N'/N$, which is hydrostatic equilibrium. Outside the matter $p=0$ and equation~\eqref{eq_interior_lapse} reduces to the vacuum result $N=1/\gamma$. Inside matter $N\neq1/\gamma$: the pressure term adds to the redshift beyond the foreshortening of the slice.
+
+\paragraph{Uniform density.} For $\rho=\text{const}$, $\beta^2=R^2/L^2$ with $L^2=3c^2/(8\pi G\rho)$, and the slice is the spherical cap found above. Writing $s(R)=\cos\theta=1/\gamma=\sqrt{1-R^2/L^2}$ and $s_*=s(R_*)$, equation~\eqref{eq_interior_lapse} and hydrostatic equilibrium are solved by
+
+\begin{equation}\label{eq_uniform_interior}
+    N(R)=\frac{3s_*-s(R)}{2},
+    \qquad
+    p(R)=\rho c^{2}\,\frac{s(R)-s_*}{3s_*-s(R)}
+\end{equation}
+
+with $N(R_*)=s_*=\sqrt{1-r_s/R_*}$ and $p(R_*)=0$, the interior Schwarzschild solution. The interior lapse is $\tfrac32\cos\theta_*-\tfrac12\cos\theta(R)$ in terms of the tilt of the slice.
+
+\paragraph{Buchdahl bound.} The central pressure is $p_c/\rho c^2=(1-s_*)/(3s_*-1)$, which is finite only for $3s_*>1$. In terms of the slice this means $\gamma_*<3$, or $\cos\theta_*>1/3$, a tilt of the slice at the surface below $70.5^\circ$, which is the same as
+
+\begin{equation}
+    R_*>\frac{9}{8}\,r_s
+\end{equation}
+
+At the limit $N(0)=(3s_*-1)/2\to0$ and the central pressure diverges. This is derived here only for uniform density. Buchdahl's theorem for any non-increasing density profile is not derived in this paper.
 
 
 \subsection{Consequences for Orbital Motion}\label{sec_orbit_consequences}
@@ -3428,7 +3462,7 @@ The derivation establishes a connection between the radial embedding and relativ
 \begin{equation}
     A(R)
     =
-    1+\left(\frac{dy}{dR}\right)^2,
+    1+\left(\frac{dy}{dR}\right)^2
 \end{equation}
 
 which can reproduce the radial geometry of a Schwarzschild spatial slice. When the corresponding temporal metric function is also specified, the resulting spacetime geodesics produce the relativistic orbital correction.
@@ -3439,6 +3473,23 @@ Consequently, reproducing the Schwarzschild orbit equation through this construc
 
 
 \end{appendices}
+
+\section*{Declarations}
+
+\paragraph{Competing Interests.}
+The author declares that there are no competing financial or non-financial interests that could have influenced the work presented in this paper.
+
+\paragraph{Funding.}
+This research received grants or funding of any kind.
+
+\paragraph{Author Contributions.}
+The author conceived, developed, conducted, and wrote this research independently.
+
+\paragraph{Data Availability.}
+No new datasets were generated or analyzed during this study. All data used are obtained from publicly available sources, which are cited in the manuscript.
+
+\paragraph{Ethics Approval.}
+This research did not involve human participants, animal subjects, or personally identifiable data. Ethics approval was therefore not required.
 
 
 %%===========================================================================================%%

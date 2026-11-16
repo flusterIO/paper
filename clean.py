@@ -21,6 +21,7 @@ main_files = [
     if not f.__str__().endswith(".pdf")
     and not f.__str__().endswith(".tex")
     and not f.__str__().endswith(".bbl")
+    and not f.__str__().endswith(".png")
 ]
 
 
@@ -35,6 +36,7 @@ final_files = [
     and not f.__str__().endswith(".tex")
     and not f.__str__().endswith(".bbl")
     and not f.__str__().endswith(".bib")
+    and not f.__str__().endswith(".png")
 ]
 
 
