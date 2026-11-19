@@ -314,7 +314,7 @@ Multiplying by the velocity expressed as a function of $\gamma$,
     v\sqrt{\gamma^2-1}
     \\[6pt]
     &=
-    \frac{\gamma v^2}{c}.
+    \frac{\gamma v^2}{c}
 \end{aligned}
 \end{equation}
 
@@ -501,7 +501,7 @@ We represent the additional spatial coordinate through the metric component $G_{
     =
     g_{\mu\nu}dx^\mu dx^\nu
     +
-    G_{44}dy^2.
+    G_{44}dy^2
     \label{eq_kk_line_element}
 \end{equation}
 
@@ -1382,7 +1382,7 @@ The general potential is
     \mathcal{F}_{\mu\nu}=\partial_\mu a_\nu-\partial_\nu a_\mu .
 \end{equation}
 
-All results above correspond to $a_\mu=0$. A non-zero $a_\mu$ is the only way for the five-dimensional geometry to carry a field strength, and $\mathcal{F}_{\mu\nu}$ acts on a body only through its fifth momentum $p_y$. We speculate that the spin dependence $\Gamma(\sigma)$ enters here as a curl component analogous to a gravitomagnetic potential, and possibly the electromagnetic parameters of Appendix~\ref{sec_numerical_correlations}. Neither connection is derived here.
+All results above correspond to $a_\mu=0$. A non-zero $a_\mu$ is the only way for the five-dimensional geometry to carry a field strength, and $\mathcal{F}_{\mu\nu}$ acts on a body only through its fifth momentum $p_y$. For a slowly rotating source, subsection~\ref{sec_rotation} identifies the spatial part of $a_\mu$ with the rotational part of the flow velocity, so that $\mathcal{F}_{ij}$ is the gravitomagnetic field and the Lense--Thirring result follows. That component is far too small to account for the spin dependence $\Gamma(\sigma)$ of Appendix~\ref{sec_numerical_correlations}, so any electromagnetic or spin-dependent role of $a_\mu$ remains undetermined.
 
 
 \subsection{Deriving the Temporal Relation from the Embedding}\label{sec_lapse_derivation}
@@ -1494,6 +1494,64 @@ with $N(R_*)=s_*=\sqrt{1-r_s/R_*}$ and $p(R_*)=0$, the interior Schwarzschild so
 \end{equation}
 
 At the limit $N(0)=(3s_*-1)/2\to0$ and the central pressure diverges. This is derived here only for uniform density. Buchdahl's theorem for any non-increasing density profile is not derived in this paper.
+
+\subsection{Rotation and the Non-Gradient Component}\label{sec_rotation}
+
+The results above have $a_\mu=0$: a static, spherical source. This subsection identifies the non-gradient component for a slowly rotating source and shows that, to first order in the angular momentum $J$, it is the gravitomagnetic sector of general relativity. It is an identification and a check, not a new field equation.
+
+\paragraph{First order in $J$.} To first order in $J$ rotation changes neither the slice metric $h_{ij}$ nor the lapse $N$. It adds a shift:
+
+\begin{equation}\label{eq_slow_rotation}
+    ds^2=-N^2c^2dt^2+\gamma^2dR^2+R^2d\theta^2+R^2\sin^2\theta\left(d\phi-\omega(R)\,dt\right)^2,
+    \qquad N=\frac1\gamma
+\end{equation}
+
+so the embedded slice, with $\partial_Ry=\beta\gamma$, is unchanged. Here $\omega(R)=d\phi/dt$ is the angular velocity of zero-angular-momentum observers, the rate at which space is dragged around the source.
+
+\paragraph{Momentum constraint.} For a stationary shift the extrinsic curvature is $K_{ij}=\left(D_iN_j+D_jN_i\right)/(2Nc)$ with $N^\phi=-\omega$, and its trace vanishes. The vacuum momentum constraint $D_j\!\left(K^{ij}-h^{ij}K\right)=0$ has only a $\phi$-component, which on the slice of this paper is
+
+\begin{equation}\label{eq_momentum_vacuum}
+    D_jK^{j\phi}\;\propto\;-\frac{\sqrt{R-r_s}}{R^{9/2}}\,\frac{d}{dR}\!\left(R^4\,\omega'\right)=0
+\end{equation}
+
+The factors of $r_s$ drop out of the equation $\left(R^4\omega'\right)'=0$, so it is the same as in flat space. With $\omega\to0$ at infinity,
+
+\begin{equation}\label{eq_lt_solution}
+    \omega(R)=\frac{2GJ}{c^2R^3}
+\end{equation}
+
+which is the Lense--Thirring result~\cite{LenseThirring1918}, here exact on the Flamm slice at this order.
+
+
+\paragraph{Source and the meaning of $J$.} With a momentum density $\rho v^i$ the weak-field constraint reads $\tfrac12\nabla^2N^i=8\pi G\rho v^i/c^2$, so
+
+\begin{equation}
+    N^i(\mathbf{x})=-\frac{4G}{c^2}\int\frac{\rho\,v^i(\mathbf{x}')}{|\mathbf{x}-\mathbf{x}'|}\,d^3x'
+    \;\xrightarrow{\;r\to\infty\;}\;
+    -\frac{2G}{c^2}\,\frac{(\mathbf{J}\times\mathbf{x})^i}{r^3},
+    \qquad
+    \mathbf{J}=\int\mathbf{x}\times\rho\mathbf{v}\,d^3x
+\end{equation}
+
+which is equation~\eqref{eq_lt_solution} with $J$ the usual angular momentum. A numerical integration for a rigidly rotating uniform ball reproduces the far field to five digits.
+
+\paragraph{The non-gradient component.} The identity $\gamma^2=1+\mathcal{A}_k\mathcal{A}^k$ is satisfied by $\mathcal{A}_i=\gamma\beta_i$, where $\beta_i$ is the velocity of the flow of space relative to static observers in units of $c$. The radial flow gives the gradient $\partial_R y$. Rotation adds an azimuthal flow $\mathbf{v}_s=\omega\,\hat{\mathbf{z}}\times\mathbf{x}$, and to leading order in $r_s/R$ this is the non-gradient component,
+
+\begin{equation}\label{eq_nongradient_flow}
+    a_i\simeq\frac{v_{s,i}}{c},
+    \qquad
+    \mathcal{F}=\nabla\times\mathbf{a}=\frac{2GJ}{c^3}\,\frac{3(\hat{\mathbf{z}}\cdot\hat{\mathbf{r}})\hat{\mathbf{r}}-\hat{\mathbf{z}}}{R^3}
+\end{equation}
+
+The non-gradient component is the vorticity of the flow, and $\mathcal{F}$ has the form of a dipole field. A gyroscope at rest precesses with half the vorticity of the flow~\cite{HamiltonLisle2008}, $\boldsymbol{\Omega}=\tfrac{c}{2}\mathcal{F}$:
+
+\begin{equation}\label{eq_gyro}
+    \boldsymbol{\Omega}_{\mathrm{LT}}=\frac{G}{c^2R^3}\left[3(\mathbf{J}\cdot\hat{\mathbf{r}})\hat{\mathbf{r}}-\mathbf{J}\right],
+\end{equation}
+
+the standard Lense--Thirring precession: $2GJ/(c^2R^3)$ at the pole and $-GJ/(c^2R^3)$ at the equator. Averaged over a polar orbit of radius $a$ it is $GJ/(2c^2a^3)$. For $J_\oplus=5.86\times10^{33}~\mathrm{kg\,m^2\,s^{-1}}$ and $a=7027$~km this gives about $41~\mathrm{mas\,yr^{-1}}$, consistent within the accuracy of these rounded inputs with the general-relativistic value and with the Gravity Probe B measurement of $37.2\pm7.2~\mathrm{mas\,yr^{-1}}$~\cite{Everitt2011GPB}.
+
+\paragraph{What this does not give.} At the surface of the Earth $\omega=3.4\times10^{-14}~\mathrm{s^{-1}}$, which is $1.9\times10^{-11}$ of $\sqrt{\delta_\oplus}=1.76\times10^{-3}~\mathrm{s^{-1}}$. The spin-dependent factor $1/(2-\alpha)$ of Appendix~\ref{sec_numerical_correlations} differs from $1/2$ by a fraction $\alpha/2=3.7\times10^{-3}$. The gravitomagnetic component is therefore about eight orders of magnitude too small to account for the spin dependence $\Gamma(\sigma)$, and the speculation that it might do so is not supported.
 
 
 \subsection{Consequences for Orbital Motion}\label{sec_orbit_consequences}
@@ -1820,7 +1878,7 @@ such that
     \partial_{\nu}a_{\mu}
 \end{equation}
 
-The physical interpretation of this additional component remains open. In particular, the possible relationship between its antisymmetric derivatives, spin-dependent gravitational parameters, and electromagnetic interactions requires a field equation and independent physical justification.
+For slowly rotating sources the spatial part of this additional component is the gravitomagnetic field (subsection~\ref{sec_rotation}). Any relationship between its antisymmetric derivatives, spin-dependent gravitational parameters, and electromagnetic interactions beyond that still requires a field equation and independent physical justification.
 
 The present results therefore establish a connection to the geometrical structure of Kaluza--Klein theory, but do not yet constitute a unified electromagnetic and gravitational theory.
 
@@ -3480,7 +3538,7 @@ Consequently, reproducing the Schwarzschild orbit equation through this construc
 The author declares that there are no competing financial or non-financial interests that could have influenced the work presented in this paper.
 
 \paragraph{Funding.}
-This research received grants or funding of any kind.
+This research received no grants or funding of any kind.
 
 \paragraph{Author Contributions.}
 The author conceived, developed, conducted, and wrote this research independently.
