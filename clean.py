@@ -24,7 +24,9 @@ cleanInputFolder(Path(__file__).parent / "iop")
 files = [
     f
     for f in outputDir.glob("*")
-    if not f.__str__().endswith(".pdf") and not f.__str__().endswith(".eps")
+    if not f.__str__().endswith(".pdf")
+    and not f.__str__().endswith(".eps")
+    and not f.__str__().endswith("simple_triangle.png")
 ]
 
 for f in files:
