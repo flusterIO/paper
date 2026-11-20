@@ -316,7 +316,7 @@ Having established the relationship between the additional coordinate and the Lo
 
 As shown in equation \ref{eq_partial_x_of_y},
 
-\begin{equation}
+\begin{equation}\label{eq_dy_dx}
     \partial_x y = \frac{\gamma v}{c} = \beta \gamma
 \end{equation}
 
@@ -419,7 +419,7 @@ For a normalized radial coordinate, $g^{RR}=1$, so
 
 \subsubsection{Finding $G_{44}$}
 
-We take
+As defined in equation \ref{eq_dy_dx}, we take
 
 \begin{equation}\label{eq_partial_x_of_y}
     \partial_x y = \frac{v}{\sqrt{c^{2} - v^{2}}}
@@ -487,7 +487,7 @@ For the induced radial metric, only the product $G_{44}\,(dy/dR)^2$ enters,
     h_{RR}=1+G_{44}\left(\frac{dy}{dR}\right)^2
 \end{equation}
  
-The product alone cannot fix $G_{44}$, since a rescaling of $y$ absorbs it. Above $y$ is defined kinematically, $dy=v\tau\sqrt{\gamma^2-1}$, so $\partial_R y=\beta\gamma$ with $\beta c$ the flow velocity, and $G_{44}$ then has a definite value. Requiring the Schwarzschild radial component, $h_{RR}=1/(1-\beta^2)=1+\beta^2\gamma^2$ with $\beta^2=r_s/R$, gives
+Above $y$ is defined kinematically, $dy=v\tau\sqrt{\gamma^2-1}$, so $\partial_R y=\beta\gamma$ with $\beta c$ the flow velocity, and $G_{44}$ then has a definite value. The product alone cannot fix $G_{44}$, since a rescaling of $y$ absorbs it. Requiring the Schwarzschild radial component, $h_{RR}=1/(1-\beta^2)=1+\beta^2\gamma^2$ with $\beta^2=r_s/R$, gives
  
 \begin{equation}
     \boxed{G_{44}=1}
@@ -565,7 +565,7 @@ Here $\Phi$ is the scalar field associated with the additional spatial dimension
     \label{eq_cylinder_condition_scalar}
 \end{equation}
 
-This condition is imposed to isolate the scalar contribution to the five-dimensional curvature. It does not establish that the unwrapped fifth dimension must be independent of its coordinate.
+This condition is imposed to isolate the scalar contribution to the five-dimensional curvature. 
 
 \paragraph{Reduction of the five-dimensional field equations.}
 
@@ -794,7 +794,7 @@ This condition indicates that when specifying a static matter source, the densit
 
 \paragraph{Radial scalar field equation.}
 
-Write the four-dimensional static spherical metric as
+Let the four-dimensional static spherical metric be
 
 \begin{equation}
     ds_4^2
@@ -1091,13 +1091,15 @@ For an asymptotic normalization $\Phi_\infty=1$, this becomes the exact exterior
 
 \paragraph{Interpretation and limitations.}
 
-The preceding derivation establishes three relationships.
+The preceding derivation establishes four relationships.
 
 First, the fifth-dimensional scalar contributes directly to the four-dimensional Einstein equations through its second covariant derivatives, as shown in equation~\eqref{eq_effective_4d_field}.
 
 Second, its radial variation is sourced by a combination of ordinary energy density and stresses in the additional dimension, as shown in equation~\eqref{eq_scalar_fluid_source}.
 
 Third, the exterior scalar charge is determined by the integrated interior source, and the resulting Schwarzschild-exterior solution reduces to the familiar $1/R$ profile in the weak-field limit.
+
+Fourth, the $y$ axis is concurrent. As this axis now occupies the fourth displacement coordinate in place of time, we should conclude that time itself is concurrent. This is not to say that all of an observer's consecutive events occur simultaneously, but rather that the space at which they will occur exists concurrent to some state at $y^{\prime} + \Delta y$. Subsequently, if an observer were to transit back in time some $- \Delta t \equiv - \Delta y$ and attempt to kill his own grandfather, the grandfather would not be there as he has transitioned some $\Delta y$ at $y^{\prime}$.
 
 These results provide a concrete matter-to-geometry mechanism for the additional spatial metric component.
 
@@ -1178,7 +1180,7 @@ where $w^\mu$ is the four-velocity of an observer at rest with respect to the so
 
 \subsubsection{Recovering the Induced Geometry}
 
-Transform to the frame in which the fibre coordinate is constant on a temporal surface, $y'=y-y(x)$, so that $dy'=0$ on $\mathbf{S}$ and $\mathcal{A}_\mu=\partial_\mu y$. Equation \ref{eq_kk_full} then restricts to the surface as
+Let us transform to the frame in which the fibre coordinate is constant on a temporal surface, $y'=y-y(x)$, so that $dy'=0$ on $\mathbf{S}$ and $\mathcal{A}_\mu=\partial_\mu y$. Equation \ref{eq_kk_full} then restricts to the surface as
 
 \begin{equation}
     h_{\mu\nu}=g_{\mu\nu}+G_{44}\,\mathcal{A}_\mu\mathcal{A}_\nu
@@ -1198,13 +1200,13 @@ the induced radial component of the embedding section. The construction develope
 A hypersurface $y(x)$ of flat $\mathbb{R}^4$ has extrinsic curvature $K_{ij}=\partial_i\partial_j y/\sqrt{1+\mathcal{A}_k\mathcal{A}^k}$, and its intrinsic scalar curvature follows from the Gauss equation,
 
 \begin{equation}
-    {}^{(3)}\!R = K^2-K_{ij}K^{ij}.
+    {}^{(3)}\!R = K^2-K_{ij}K^{ij}
 \end{equation}
 
 For a spherically symmetric profile $y(R)$, define $\beta^2\equiv\mathcal{A}_R^2/(1+\mathcal{A}_R^2)=1-\gamma^{-2}$. Then
 
 \begin{equation}\label{eq_gauss_radial}
-    {}^{(3)}\!R=\frac{2}{R^2}\frac{d}{dR}\left(R\,\beta^2\right).
+    {}^{(3)}\!R=\frac{2}{R^2}\frac{d}{dR}\left(R\,\beta^2\right)
 \end{equation}
 
 Imposing the time-symmetric Hamiltonian constraint of general relativity, ${}^{(3)}\!R=16\pi G\rho/c^2$, and integrating from a regular centre gives
@@ -1242,7 +1244,7 @@ which is equivalent to $N^2=1/A(R)$ and to the statement that the time-dilation 
 \begin{equation}
     \vec{g}=\frac{c^2}{2}\nabla\beta^2,
     \qquad
-    \delta(M,R)=\frac{c^2}{2}\frac{\partial^2\beta^2}{\partial R^2}=\frac{2GM}{R^3},
+    \delta(M,R)=\frac{c^2}{2}\frac{\partial^2\beta^2}{\partial R^2}=\frac{2GM}{R^3}
 \end{equation}
 
 which identifies $\delta(M,R)=d\vec{g}/dR$ with the radial tidal eigenvalue and writes it as a second derivative of a dimensionless potential (see also Appendix~\ref{sec_numerical_correlations}). The same closure gives $v_{\mathrm{local}}^2=GM/(R-r_s)$ in the exterior region, which is $\beta^2c^2/2$ to leading order. Inside extended matter equation \ref{eq_N_postulate} is not the general-relativistic relation, so it should be applied to exterior regions only. Inside extended matter, equation~\eqref{eq_N_postulate} is not the general-relativistic relation. The interior perfect-fluid case is treated below in subsection~\ref{sec_interior_lapse}, while time-dependent spherical configurations are discussed in section~\ref{sec_pg_relation}.
@@ -1254,7 +1256,7 @@ The general potential is
 \begin{equation}
     \mathcal{A}_\mu=\partial_\mu y+a_\mu,
     \qquad
-    \mathcal{F}_{\mu\nu}=\partial_\mu a_\nu-\partial_\nu a_\mu .
+    \mathcal{F}_{\mu\nu}=\partial_\mu a_\nu-\partial_\nu a_\mu
 \end{equation}
 
 All results above correspond to $a_\mu=0$. A non-zero $a_\mu$ is the only way for the five-dimensional geometry to carry a field strength, and $\mathcal{F}_{\mu\nu}$ acts on a body only through its fifth momentum $p_y$. For a slowly rotating source, subsection~\ref{sec_rotation} identifies the spatial part of $a_\mu$ with the rotational part of the flow velocity, so that $\mathcal{F}_{ij}$ is the gravitomagnetic field and the Lense--Thirring result follows. That component is far too small to account for the spin dependence $\Gamma(\sigma)$ of Appendix~\ref{sec_numerical_correlations}, so any electromagnetic or spin-dependent role of $a_\mu$ remains undetermined.
@@ -1265,45 +1267,55 @@ All results above correspond to $a_\mu=0$. A non-zero $a_\mu$ is the only way fo
 Section~\ref{sec_four_potential} introduced $N=1/\gamma$ as a closure, because the embedded slice carries no information about $g_{00}$ ($\mathcal{A}_0=0$). This subsection shows that, in the static vacuum region, the closure is not independent of the construction: the Gauss equation of the embedding, together with the second static field equation, determines $N$ from the slope of $y$. The only imported input is the static vacuum Einstein system; the lapse itself is no longer assumed there.
 
 \paragraph{Static vacuum equations in embedding form.}
-Write the static metric as $ds^2=-N^2c^2dt^2+h_{ij}dx^idx^j$, with $h_{ij}$ the metric induced on the embedded slice. The vacuum Einstein equations reduce to
+We write the static metric as $ds^2=-N^2c^2dt^2+h_{ij}dx^idx^j$, with $h_{ij}$ the metric induced on the embedded slice. The vacuum Einstein equations reduce to
+
 \begin{equation}\label{eq_static_vacuum}
     {}^{(3)}\!R_{ij}=\frac{1}{N}\nabla_i\nabla_jN,
     \qquad
-    \Delta N=0 .
+    \Delta N=0
 \end{equation}
+
 The trace of the first equation is ${}^{(3)}\!R=\Delta N/N$, so together they imply the time-symmetric Hamiltonian constraint ${}^{(3)}\!R=0$ already used in equation~\eqref{eq_beta_enclosed}. For a hypersurface of flat $\mathbb{R}^4$ the Gauss equation gives ${}^{(3)}\!R_{ijkl}=K_{ik}K_{jl}-K_{il}K_{jk}$, hence ${}^{(3)}\!R_{ij}=K\,K_{ij}-K_{ik}K^{k}{}_{j}$. The first equation of~\eqref{eq_static_vacuum} becomes
+
 \begin{equation}\label{eq_lapse_hessian}
     \boxed{
     \nabla_i\nabla_jN=N\left(K\,K_{ij}-K_{ik}K^{k}{}_{j}\right),
     \qquad
-    K_{ij}=\frac{\partial_i\partial_jy}{\sqrt{1+\mathcal{A}_k\mathcal{A}^k}} .
+    K_{ij}=\frac{\partial_i\partial_jy}{\sqrt{1+\mathcal{A}_k\mathcal{A}^k}}
     }
 \end{equation}
+
 The Hessian of the lapse is fixed by the Hessian of the fourth coordinate. Equation~\eqref{eq_lapse_hessian} is a linear equation for $N$ once $y$ is known.
 
 \paragraph{Curvatures of the radial slice.}
 For a spherical profile $y(R)$ with $\partial_Ry=\beta\gamma$, the tangent plane of the embedded slice is tilted from the $R$-axis by an angle $\theta$ with $\tan\theta=\partial_Ry$. Then
+
 \begin{equation}
-    \sin\theta=\beta,\qquad \cos\theta=\frac{1}{\gamma}=\frac{dR}{d\ell},
+    \sin\theta=\beta,\qquad \cos\theta=\frac{1}{\gamma}=\frac{dR}{d\ell}
 \end{equation}
+
 where $d\ell=\gamma\,dR$ is the proper radial length. The principal curvatures are the rates at which the tilt changes along each direction:
+
 \begin{equation}\label{eq_principal_curvatures}
     \kappa_\theta=\kappa_\phi=\frac{\sin\theta}{R}=\frac{\beta}{R},
     \qquad
-    \kappa_R=\frac{d\theta}{d\ell}=\frac{d\theta}{dR}\frac{dR}{d\ell}=\frac{\beta'}{\cos\theta}\cos\theta=\beta' .
+    \kappa_R=\frac{d\theta}{d\ell}=\frac{d\theta}{dR}\frac{dR}{d\ell}=\frac{\beta'}{\cos\theta}\cos\theta=\beta'
 \end{equation}
+
 The sectional curvatures are $\kappa_R\kappa_\theta=\beta\beta'/R$ and $\kappa_\theta\kappa_\phi=\beta^2/R^2$, so in an orthonormal frame
+
 \begin{equation}
     {}^{(3)}\!R_{\hat R\hat R}=\frac{2\beta\beta'}{R},
     \qquad
-    {}^{(3)}\!R_{\hat\theta\hat\theta}=\frac{\beta\beta'}{R}+\frac{\beta^2}{R^2}.
+    {}^{(3)}\!R_{\hat\theta\hat\theta}=\frac{\beta\beta'}{R}+\frac{\beta^2}{R^2}
 \end{equation}
+
 Their trace, ${}^{(3)}\!R={}^{(3)}\!R_{\hat R\hat R}+2\,{}^{(3)}\!R_{\hat\theta\hat\theta}=4\beta\beta'/R+2\beta^2/R^2=(2/R^2)\,d(R\beta^2)/dR$, reproduces equation~\eqref{eq_gauss_radial}, which is a check on~\eqref{eq_principal_curvatures}.
 
-Let the exterior slice of a static, spherically symmetric vacuum region be the embedding with $\partial_Ry=\beta\gamma$ and $\beta^2=r_s/R$, and let $N\to1$ as $R\to\infty$. Then equation~\eqref{eq_lapse_hessian} implies
+If we let the exterior slice of a static, spherically symmetric vacuum region be the embedding with $\partial_Ry=\beta\gamma$ and $\beta^2=r_s/R$, and let $N\to1$ as $R\to\infty$, then equation~\eqref{eq_lapse_hessian} implies
 
 \begin{equation}
-    N(R)=\sqrt{1-\frac{r_s}{R}}=\frac{1}{\gamma}.
+    N(R)=\sqrt{1-\frac{r_s}{R}}=\frac{1}{\gamma}
 \end{equation}
 
 \begin{proof}
@@ -1312,13 +1324,15 @@ In an orthonormal frame the angular Hessian of $N$ is $\nabla_{\hat\theta}\nabla
 \begin{equation}
     \frac{N'}{\gamma^2RN}=\frac{\beta\beta'}{R}+\frac{\beta^2}{R^2}
     \quad\Longrightarrow\quad
-    \frac{N'}{N}=\gamma^2\left(\beta\beta'+\frac{\beta^2}{R}\right).
+    \frac{N'}{N}=\gamma^2\left(\beta\beta'+\frac{\beta^2}{R}\right)
 \end{equation}
 
 For $\beta^2=r_s/R$ one has $\beta'=-\beta/(2R)$, so $\beta\beta'+\beta^2/R=\beta^2/(2R)$ and
+
 \begin{equation}
-    \frac{N'}{N}=\frac{\gamma^2\beta^2}{2R}=\frac{r_s}{2R^2\left(1-r_s/R\right)}=\frac12\frac{d}{dR}\ln\!\left(1-\frac{r_s}{R}\right).
+    \frac{N'}{N}=\frac{\gamma^2\beta^2}{2R}=\frac{r_s}{2R^2\left(1-r_s/R\right)}=\frac12\frac{d}{dR}\ln\!\left(1-\frac{r_s}{R}\right)
 \end{equation}
+
 Integrating with $N(\infty)=1$ gives the stated result. The radial component, $N_{,\ell\ell}/N=2\beta\beta'/R$, is then satisfied identically.
 \end{proof}
 
@@ -1330,7 +1344,7 @@ Let $u$ be a radial geodesic with relative Lorentz factor $\gamma_{\rm rel}$ wit
 \begin{equation}
     \gamma_{\rm rel}(R)=\frac{N(R_0)}{N(R)},
     \qquad
-    \beta_{\rm rel}^2=1-\frac{N(R)^2}{N(R_0)^2}\neq\beta^2 .
+    \beta_{\rm rel}^2=1-\frac{N(R)^2}{N(R_0)^2}\neq\beta^2
 \end{equation}
 
 The slope $\beta\gamma$ of the Flamm embedding therefore coincides with $\beta_{\rm rel}\gamma_{\rm rel}$ only for the marginally bound congruence. Bound orbits are not described by a different embedding of the same slice but by a different relation between the flow and the slope. The orbit results of Appendix~\ref{app_orbits} use the static geometry and standard geodesics and are unaffected, but the reading of $y$ as ``the displacement of the infalling frame'' is specific to $E=1$.
@@ -1476,7 +1490,7 @@ and hence
     }\,du.
 \end{equation}
 
-The integrand is regular at the centre and the embedding has vanishing radial slope there, as required by spherical symmetry. The embedding is real throughout the interior only if $\beta^2(x)<1$. Since the maximum of the polynomial in equation~\eqref{eq_tolman_vii_beta} is $25/24$, this requires
+The integrand is regular at the centre and the embedding has a vanishing radial slope there, as required by spherical symmetry. The embedding is real throughout the interior only if $\beta^2(x)<1$. Since the maximum of the polynomial in equation~\eqref{eq_tolman_vii_beta} is $25/24$, this requires
 
 \begin{equation}\label{eq_tolman_vii_embedding_bound}
     C<\frac{24}{25}.
