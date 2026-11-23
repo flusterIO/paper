@@ -37,13 +37,11 @@
 \keywords{gravitation, time, relativity, inflation}
 
 \begin{abstract}
-We present a higher-dimensional geometric framework in which relativistic motion and gravitational phenomena are interpreted through an additional, non-compact spatial coordinate, $dy = \tau v^{2} \left( c^{2} - v^{2} \right)^{- 1/2}$. The construction explores the possibility of retaining absolute time and classical simultaneity while representing relativistic effects through spatial displacement and geometric dilation.
+We study a geometric reformulation of relativistic motion and gravitation in which the Lorentz factor is the slope of an additional, non-compact spatial coordinate $y$, $\gamma=\sqrt{1+\left(\partial_x y\right)^{2}}$. Relativistic effects then appear as spatial displacement along $y$, which allows absolute time and classical simultaneity to be retained. For a static spherical mass the induced radial metric is the Flamm embedding of the Schwarzschild spatial slice, with slope $\beta\gamma$ and $\beta^{2}=2Gm/(c^{2}R)$. Written in Painlev\'e--Gullstrand form, the same relation joins the radial flow of Schwarzschild geometry to homogeneous Hubble expansion, and the Sciama identity $Gm_H/(c^{2}R_H)=1/2$ follows.
 
-We first establish a relationship between the Lorentz factor and the gradient of the additional coordinate, $\gamma=\sqrt{1 + \left(\partial_x y\right)^{2}}$, allowing relativistic displacement to be expressed geometrically in an extended spatial manifold. We then extend this construction to gravitational systems, demonstrating that the induced spatial metric reproduces the radial geometry of the Schwarzschild solution. By incorporating the corresponding temporal metric, we recover the relativistic circular-orbit conditions, innermost stable circular orbit, and Schwarzschild perihelion precession. We further establish a common dimensionless gravitational relation connecting the radial flow of Schwarzschild geometry with homogeneous cosmological expansion, providing a unified geometric interpretation of these otherwise distinct solutions.
+Taking the static field equations of general relativity, the embedding fixes the lapse and reproduces the circular-orbit velocity, the innermost stable circular orbit, perihelion precession, uniform-density and Tolman VII interiors with the Buchdahl bound, and the Lense--Thirring precession. In these regimes the construction is equivalent to general relativity. The field equations are imported and not derived from a five-dimensional action, so these results are consistency checks and not predictions. The five-dimensional scalar sector with a cylinder condition reduces to Brans--Dicke theory with $\omega_{\mathrm{BD}}=0$. Agreement with general relativity and with the Cassini bound then requires a stress along $y$ of $p_y=(3p-\epsilon)/2$ inside matter. This condition is derived here but has no known origin in an action.
 
-Finally, we examine the relationship between the construction and Kaluza–Klein geometry, and introduce a testable hypothesis concerning the relationship between galactic inertia and cosmological expansion. We distinguish results obtained from established relativistic solutions from assumptions and predictions specific to the proposed framework.
-
-The results provide a geometric basis for investigating relativistic phenomena through an additional spatial dimension and motivate the development of a complete higher-dimensional dynamical theory.
+We also present Hypothesis M, a modified-inertia proposal for the galactic regime with a characteristic acceleration proportional to $cH_0$. It is an assumption, is not shown to follow from the embedding, and is not claimed to explain galactic data. An appendix lists numerical relations involving the fine-structure constant, Earth's mean density and the cosmic microwave background dipole. They have about as many adjustable choices as data points and are reported as observations without evidential weight. Predictions that differ from general relativity must come from sectors not yet developed: a non-gradient potential, a varying $G_{44}$, or a derivation of Hypothesis M.
 \end{abstract}
 
 \section{Introduction}\label{sec1}
@@ -178,8 +176,8 @@ We consider these coordinate transformations with regards to the Lorentz transfo
 \begin{equation}
 \boxed{
 \begin{gathered}
-    dx' = \gamma dx = v^{\left( U \right)}\\
-    c\,dt' = -\gamma\frac{v}{c}dx = - \partial_\tau y
+    dx' = \gamma\,dx \quad \text{(separation measured in } \mathbf{U}\text{)}\\
+    c\,dt' = -\gamma\frac{v}{c}dx = - \hat{\tau}\,\partial_\tau y
 \end{gathered}
 }
 \end{equation}
@@ -428,7 +426,7 @@ As defined in equation \ref{eq_dy_dx}, we take
 Or
 
 \begin{equation}
-    dy = \tau \frac{v}{c^{2} - v^{2}} dx
+    dy = \frac{v}{\sqrt{c^{2} - v^{2}}}\, dx
 \end{equation}
 
 We then take the KK line element to be 
@@ -507,7 +505,7 @@ Light deflection and Shapiro delay scale as $(1+\gamma_{\mathrm{PPN}})/2$, so $G
  
 at $1\sigma$, consistent with $G_{44}=1$.
 
-In standard terms, a non-constant $G_{44}=\Phi^2$ is a Brans--Dicke-type scalar~\cite{BransDicke1961,OverduinWesson1997}, with $\gamma_{\mathrm{PPN}}=(1+\omega_{\mathrm{BD}})/(2+\omega_{\mathrm{BD}})$. The Cassini measurement then corresponds to $\omega_{\mathrm{BD}}\gtrsim4\times10^{4}$, the bound usually quoted for it~\cite{Bertotti2003}, so any matter-sourced variation of $G_{44}$ in the Solar System must be suppressed to a correspondingly small level.
+In standard terms, a non-constant $G_{44}=\Phi^2$ is a Brans--Dicke-type scalar~\cite{BransDicke1961,OverduinWesson1997}, with $\gamma_{\mathrm{PPN}}=(1+\omega_{\mathrm{BD}})/(2+\omega_{\mathrm{BD}})$. The Cassini measurement then corresponds to $\omega_{\mathrm{BD}}\gtrsim4\times10^{4}$, the bound usually quoted for it~\cite{Bertotti2003}, so any matter-sourced variation of $G_{44}$ in the Solar System must be suppressed to a correspondingly small level. Within the matter-sourced field equations below, this suppression is equivalent to the condition on $p_y$ in equation~\eqref{eq_py_gr_condition}.
 
  
 \subsubsection{Field equation for $G_{44}$}
@@ -1088,6 +1086,21 @@ The corresponding fifth-dimensional metric component is
 \end{equation}
 
 For an asymptotic normalization $\Phi_\infty=1$, this becomes the exact exterior expression for the scalar metric component in the adopted Schwarzschild background.
+
+\paragraph{Consistency with general relativity and the Cassini bound.}
+
+With $\mathcal{A}_\mu=0$ and $\partial_y=0$ the reduced action is $\int\sqrt{-g}\,\Phi R^{(4)}$ with no kinetic term for $\Phi$, which is Brans--Dicke theory with $\omega_{\mathrm{BD}}=0$. Equivalently, the coefficient $\tfrac13$ in equation~\eqref{eq_sourced_scalar_field} is $1/(3+2\omega_{\mathrm{BD}})$. Two consequences follow directly from equations~\eqref{eq_ricci_scalar_source} and~\eqref{eq_scalar_fluid_source}.
+
+\begin{enumerate}
+\item The $yy$ equation gives $R^{(4)}=-2\kappa_5 p_y$, while the general-relativistic value is $R^{(4)}=\kappa_5(\epsilon-3p)$. The four-dimensional curvature inside matter therefore agrees with general relativity only if
+\begin{equation}\label{eq_py_gr_condition}
+    p_y=\frac{3p-\epsilon}{2},
+\end{equation}
+which is $p_y=-\epsilon/2$ for pressureless matter. In particular $p_y=0$ gives $R^{(4)}=0$ inside matter.
+\item For the same value of $p_y$ the scalar source $\epsilon-3p+2p_y$ in equation~\eqref{eq_scalar_fluid_source} vanishes. Then $\Phi$ is constant, $G_{44}=1$ holds exactly, and $\gamma_{\mathrm{PPN}}=1$. For any other $p_y$ the scalar is sourced with $\omega_{\mathrm{BD}}=0$ strength, which is excluded by the Cassini bound $\omega_{\mathrm{BD}}\gtrsim4\times10^{4}$ unless the source is suppressed to a correspondingly small level.
+\end{enumerate}
+
+Equation~\eqref{eq_py_gr_condition} is therefore a condition that the stress along $y$ must satisfy for this sector to agree with general relativity and with the Cassini measurement. It follows from the field equations adopted here and is not derived from a five-dimensional action. Either some mechanism fixes $p_y$ to this value, a tension along $y$ equal to half the energy density for dust, or the construction must be formulated without a dynamical $G_{44}$. Within the cylinder sector, a model with $p_y=0$ in matter is excluded by Solar-System tests.
 
 \paragraph{Interpretation and limitations.}
 
@@ -2164,7 +2177,7 @@ $v_{\text{kinematic}}$ & $c\,\Omega\,\tau$ with $\Omega=\sqrt{GM/R^3}$ the circu
 \end{tabular}
 \end{table}
 
-The last two rows follow from $v=c\sqrt{1-\varphi^{-2}}\approx c\sqrt{2(\varphi-1)}$ with $\varphi-1=GM/R^3$ and $\tfrac12GM/R^3$ respectively, and they explain why the two velocities differ by a factor $\sqrt{2}$, the ratio of escape to circular speed.
+The last two rows follow from $v=c\sqrt{1-\varphi^{-2}}\approx c\sqrt{2(\varphi-1)}$ with $\varphi-1=GM\hat{\tau}^{2}/R^3$ and $\tfrac12GM\hat{\tau}^{2}/R^3$ respectively, and they explain why the two velocities differ by a factor $\sqrt{2}$, the ratio of escape to circular speed.
 
 
 \subsection{The Equivalence Principle}\label{sec_equivalence_principle}
@@ -2182,7 +2195,7 @@ We define $\delta\left( M, R \right)$ to be
 If $\delta\left( M, R \right)$ is induced by the coordinate transformations described above, we should infer that this dilation is radial. If we presume that this dilation exists in $\mathbb{R}^{3}$ space, such that $y$ is only an emergent property and not a true spatial dimension\footnote{This axis must then be comprised completely of relative coordinate density, with the orthogonal mathematics acting only to represent an independent coordinate with no actual separation along $y$.}, we then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
 
 \begin{equation}
-    \omega\left( M, R \right) = \sqrt[3]{\frac{d}{dR} g} = \left(\delta\left( M, R \right)\right)^{1/3}
+    \omega\left( M, R \right) = \sqrt[3]{\hat{\tau}^{2}\frac{d}{dR} g} = \left(\hat{\tau}^{2}\delta\left( M, R \right)\right)^{1/3}
 \end{equation}
 
 
@@ -2309,7 +2322,7 @@ Due to algebraic symmetries, it's trivial to derive our kinematic velocity throu
 As $\gamma$ is applied as a scalar, we take the average of the integral of $\delta_{\left( M, R \right)}$ to be
 
 \begin{equation}\label{eq_varphi}
-    \varphi\left( M, R \right) = \frac{1}{R}\int \delta\left( M, R  \right) = 1 + G \frac{M}{R^{3}}
+    \varphi\left( M, R \right) = \frac{1}{R}\int \delta\left( M, R  \right) = 1 + G \frac{M \hat{\tau}^{2}}{R^{3}}
 \end{equation}
 
 Substituting $\varphi\left( M, R \right)$ into equation \ref{eq_v_of_gamma} gives
@@ -2342,7 +2355,7 @@ We then substitute equation \ref{eq_v_kinematic_1} into equation \ref{eq_v_of_ga
 
 \begin{equation}
     \boxed{
-        v_{\text{kinematic}} = c \sqrt{1 - \frac{1}{\left( 1 + \frac{1}{2} G \frac{M}{R^3} \right)^2}} = 371,580 ~ \text{m} / \text{s}
+        v_{\text{kinematic}} = c \sqrt{1 - \frac{1}{\left( 1 + \frac{1}{2} G \frac{M \hat{\tau}^{2}}{R^3} \right)^2}} = 371,580 ~ \text{m} / \text{s}
     }
 \end{equation}
 
@@ -2370,7 +2383,7 @@ While an intersection is produced at our galactic orbital radius to within $5.6\
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{../diagrams/outputs/trig_orbital_velocity_derivation.eps}
-\caption{Geometric construction used in the proposed stable-orbit derivation, showing $R_0$, the angle $\theta$, the displacement $\dot{x}\,d\tau$, and the proposed radial increment $R+g\,d\tau$.}
+\caption{Geometric construction used in the proposed stable-orbit derivation, showing $R_0$, the angle $\theta$, the displacement $\dot{x}\,d\tau$, and the proposed radial increment $R+g\,\hat{\tau}\,d\tau$.}
 \label{fig_trig_orbital_velocity}
 \end{figure}
 
@@ -2381,14 +2394,14 @@ In the simplified single-body system considered here, the spatial dilation descr
 Figure \ref{fig_trig_orbital_velocity} represents the geometric construction used in this derivation.
 
 \begin{equation}\label{eq_trig_derivation}
-R_0^2 + v_{\text{orbit}}^2 d\tau^2 = \left(\int_0^{R_0} 2 G \frac{M}{R^3}\ dR\ d\tau\right)^2 = \left(R_0 + g~ d \tau\right)^2
+R_0^2 + v_{\text{orbit}}^2 d\tau^2 = \left(\hat{\tau}\int_0^{R_0} 2 G \frac{M}{R^3}\ dR\ d\tau\right)^2 = \left(R_0 + g\,\hat{\tau}\, d \tau\right)^2
 \end{equation}
 
-Setting $\tau = 1$ gives
+Setting $d\tau = \hat{\tau} = 1~\mathrm{s}$ gives
 
 \begin{equation}\label{eq_orbital_velocity}
     \boxed{
-    v_{\text{orbit}}\left( M, R \right) = \frac{\sqrt{G M \left(G M + 2 R^{3}\right)}}{R^{2}} 
+    v_{\text{orbit}}\left( M, R \right) = \frac{\hat{\tau}\sqrt{G M \left(G M + 2 R^{3}/\hat{\tau}^{2}\right)}}{R^{2}} 
     }
 \end{equation}
 
