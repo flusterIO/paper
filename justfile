@@ -49,10 +49,10 @@ build_without_appendix: build_diagrams && clean_diagram_output
 	cd {{justfile_directory()}}/without_appendix; sudo pdflatex ./main.tex
 
 build_iop: build_diagrams && clean_diagram_output
-	cd {{justfile_directory()}}/iop; sudo pdflatex ./main.tex
-	cd {{justfile_directory()}}/iop; biber ./main
-	cd {{justfile_directory()}}/iop; sudo pdflatex ./main.tex
-	cd {{justfile_directory()}}/iop; sudo pdflatex ./main.tex
+	cd {{justfile_directory()}}/iop; sudo pdflatex main.tex
+	cd {{justfile_directory()}}/iop; biber main
+	cd {{justfile_directory()}}/iop; sudo pdflatex main.tex
+	cd {{justfile_directory()}}/iop; sudo pdflatex main.tex
 
 build: build_diagrams build_main clean_diagram_output
 	cp ./main.pdf /Users/bigsexy/Desktop/swift/Fluster/apps/website/public/assets/pdf/paper_preprint.pdf

@@ -1521,6 +1521,45 @@
       \field{pages}{B571}
       \range{pages}{-1}
     \endentry
+    \entry{MTW1973}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=05c5e0e62bd36ef32b9a719149851fdc}{%
+           family={Misner},
+           familyi={M\bibinitperiod},
+           given={Charles\bibnamedelima W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=09e928bef0c66042b777c23f5eb91c00}{%
+           family={Thorne},
+           familyi={T\bibinitperiod},
+           given={Kip\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c5881170e377ca8ea5535e98437b9ecf}{%
+           family={Wheeler},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Francisco}%
+      }
+      \list{publisher}{1}{%
+        {W. H. Freeman}%
+      }
+      \strng{namehash}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \strng{fullhash}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \strng{fullhashraw}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \strng{bibnamehash}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \strng{authorbibnamehash}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \strng{authornamehash}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \strng{authorfullhash}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \strng{authorfullhashraw}{f6d2b0cbca1298693fc88a8b43a9a306}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gravitation}
+      \field{year}{1973}
+    \endentry
     \entry{Nussbaumer2014EinsteinStaticToExpanding}{article}{}{}
       \name{author}{1}{}{%
         {{hash=2db093daec250bb3731ff2dc17a17b4c}{%
@@ -1742,6 +1781,45 @@
       \field{pages}{34\bibrangedash 42}
       \range{pages}{9}
     \endentry
+    \entry{ThorneMembrane1986}{book}{}{}
+      \name{editor}{3}{}{%
+        {{hash=09e928bef0c66042b777c23f5eb91c00}{%
+           family={Thorne},
+           familyi={T\bibinitperiod},
+           given={Kip\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=268c55a649f0568a623802cd07a96888}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Richard\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=24b58b20f956a63d4ddde85a05816802}{%
+           family={Macdonald},
+           familyi={M\bibinitperiod},
+           given={Douglas\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Haven}%
+      }
+      \list{publisher}{1}{%
+        {Yale University Press}%
+      }
+      \strng{namehash}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \strng{fullhash}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \strng{fullhashraw}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \strng{bibnamehash}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \strng{editorbibnamehash}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \strng{editornamehash}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \strng{editorfullhash}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \strng{editorfullhashraw}{1b4db5bfe0e31b0167ddda9a982ef821}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Black Holes: The Membrane Paradigm}
+      \field{year}{1986}
+    \endentry
     \entry{Tolman1934}{article}{}{}
       \name{author}{1}{}{%
         {{hash=86b86cfd09bbb0b3532163b4d454da8c}{%
@@ -1768,6 +1846,38 @@
       \field{year}{1934}
       \field{pages}{169\bibrangedash 176}
       \range{pages}{8}
+    \endentry
+    \entry{VisserWeinfurtner2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=596d153ead84e4b02c4dc558bba2e511}{%
+           family={Visser},
+           familyi={V\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d2a2c8f47bd1fd7c916728b9435bb0c}{%
+           family={Weinfurtner},
+           familyi={W\bibinitperiod},
+           given={Silke},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \strng{fullhash}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \strng{fullhashraw}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \strng{bibnamehash}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \strng{authorbibnamehash}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \strng{authornamehash}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \strng{authorfullhash}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \strng{authorfullhashraw}{3a2f3b5610fe20efc4f5f154eee9d7c9}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Classical and Quantum Gravity}
+      \field{title}{Vortex geometry for the equatorial slice of the {K}err black hole}
+      \field{volume}{22}
+      \field{year}{2005}
+      \field{pages}{2493\bibrangedash 2510}
+      \range{pages}{18}
     \endentry
     \entry{Wesson1999STM}{book}{}{}
       \name{author}{1}{}{%

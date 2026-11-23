@@ -2,6 +2,8 @@
 
 ## Project
 
+> The version that we're currently working on is contained within the `./iop` directory. Use the bibliography, `main.tex` and other associted files from that directory.
+
 - This folder contains a research manuscript on a proposed relationship among time, gravitation, cosmic expansion, and a fourth density-like spatial coordinate. The working LaTeX manuscript is `main.tex`; references are in `citations.bib`; figures and their sources are under `diagrams/`.
 - The goal is to develop a submission-ready paper during November 2026. Treat November 30, 2026 as the working deadline unless the author sets another date.
 - The target journal is not yet specified. Do not assume the included Springer Nature template determines the eventual venue or its requirements.

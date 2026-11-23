@@ -1,20 +1,19 @@
 [0] Config.pm:329> INFO - This is Biber 2.22
-[0] Config.pm:332> INFO - Logfile is './main.blg'
-[58] biber-darwin:342> INFO - === Wed Nov 18, 2026, 17:29:09
-[71] Biber.pm:421> INFO - Reading './main.bcf'
-[141] Biber.pm:1002> INFO - Found 50 citekeys in bib section 0
-[152] Biber.pm:4487> INFO - Processing section 0
-[160] Biber.pm:4680> INFO - Looking for bibtex file './citations.bib' for section 0
-[162] bibtex.pm:1713> INFO - LaTeX decoding ...
-[206] bibtex.pm:1519> INFO - Found BibTeX data source './citations.bib'
-[485] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[485] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[485] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[485] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[525] bbl.pm:676> INFO - Writing './main.bbl' with encoding 'UTF-8'
-[542] bbl.pm:779> INFO - Output to ./main.bbl
-[543] Biber.pm:132> WARN - Duplicate entry key: 'Monari2018' in file './citations.bib', skipping ...
-[543] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'IvesStillwell' is not an integer - this will probably not sort properly.
-[543] Biber.pm:132> WARN - legacy month field 'jan' in entry 'Eilers_2019' is not an integer - this will probably not sort properly.
-[543] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/y4/689m6j856h393pc_m1stcnpr0000gn/T/biber_tmp_deu5/56f1c414433802ad7930cb94138c5670_51752.utf8, line 567, warning: 1 characters of junk seen at toplevel
-[543] Biber.pm:134> INFO - WARNINGS: 4
+[0] Config.pm:332> INFO - Logfile is 'main.blg'
+[33] biber-darwin:342> INFO - === Sun Nov 22, 2026, 11:07:57
+[42] Biber.pm:421> INFO - Reading 'main.bcf'
+[85] Biber.pm:1002> INFO - Found 53 citekeys in bib section 0
+[92] Biber.pm:4487> INFO - Processing section 0
+[98] Biber.pm:4680> INFO - Looking for bibtex file './citations.bib' for section 0
+[99] bibtex.pm:1713> INFO - LaTeX decoding ...
+[127] bibtex.pm:1519> INFO - Found BibTeX data source './citations.bib'
+[309] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[309] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[309] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[309] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[334] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[345] bbl.pm:779> INFO - Output to main.bbl
+[345] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'IvesStillwell' is not an integer - this will probably not sort properly.
+[345] Biber.pm:132> WARN - legacy month field 'jan' in entry 'Eilers_2019' is not an integer - this will probably not sort properly.
+[346] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/y4/689m6j856h393pc_m1stcnpr0000gn/T/biber_tmp_Uozv/56f1c414433802ad7930cb94138c5670_56030.utf8, line 557, warning: 1 characters of junk seen at toplevel
+[346] Biber.pm:134> INFO - WARNINGS: 3

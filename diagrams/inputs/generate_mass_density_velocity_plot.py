@@ -1,4 +1,7 @@
 from pathlib import Path
+import numpy as np, matplotlib
+
+matplotlib.use("Agg")
 
 from physics.plot_generators.mass_density_derived_velocity import (
     plotMassDensityDerivedVelocity,

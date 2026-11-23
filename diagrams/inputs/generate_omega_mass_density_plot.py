@@ -1,5 +1,8 @@
 from physics.plot_generators.omega_mass_density import plot, outliers
 from pathlib import Path
+import numpy as np, matplotlib
+
+matplotlib.use("Agg")
 
 
 def main():

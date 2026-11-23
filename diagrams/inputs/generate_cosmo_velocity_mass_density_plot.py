@@ -2,6 +2,9 @@ from physics.plot_generators.cosmological_velocity_mass_density import (
     plotCosmologicalVelocityMassDensity,
 )
 from pathlib import Path
+import numpy as np, matplotlib
+
+matplotlib.use("Agg")
 
 
 if __name__ == "__main__":

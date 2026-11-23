@@ -1,0 +1,23 @@
+/var/folders/y4/689m6j856h393pc_m1stcnpr0000gn/T/biber_tmp_1wN7/56f1c414433802ad7930cb94138c5670_46033.utf8, line 557, warning: 1 characters of junk seen at toplevel
+warning: overriding existing definition of macro "mar"
+warning: overriding existing definition of macro "may"
+warning: overriding existing definition of macro "nov"
+warning: overriding existing definition of macro "feb"
+warning: overriding existing definition of macro "jun"
+warning: overriding existing definition of macro "dec"
+warning: overriding existing definition of macro "oct"
+warning: overriding existing definition of macro "aug"
+warning: overriding existing definition of macro "sep"
+warning: overriding existing definition of macro "apr"
+warning: overriding existing definition of macro "jan"
+warning: overriding existing definition of macro "jul"
+Unicode::UCD: failed to find unicore/version in /private/var/folders/y4/689m6j856h393pc_m1stcnpr0000gn/T/par-62696773657879/cache-bcf1e1e0a2c546e2ccb004c42af5f8631c12c6fd/thin /var/folders/y4/689m6j856h393pc_m1stcnpr0000gn/T/par-62696773657879/cache-bcf1e1e0a2c546e2ccb004c42af5f8631c12c6fd/inc/lib /var/folders/y4/689m6j856h393pc_m1stcnpr0000gn/T/par-62696773657879/cache-bcf1e1e0a2c546e2ccb004c42af5f8631c12c6fd/inc CODE(0x83f7c7870) CODE(0x83f7cd0f0) at /var/folders/y4/689m6j856h393pc_m1stcnpr0000gn/T/par-62696773657879/cache-bcf1e1e0a2c546e2ccb004c42af5f8631c12c6fd/inc/lib/Biber/Input/file/bibtex.pm line 1057.
+INFO - This is Biber 2.22
+INFO - Logfile is 'main.blg'
+INFO - DEBUG mode: all messages are logged to 'main.blg'
+INFO - Reading 'main.bcf'
+INFO - Found 53 citekeys in bib section 0
+INFO - Processing section 0
+INFO - Looking for bibtex file './citations.bib' for section 0
+INFO - LaTeX decoding ...
+INFO - Found BibTeX data source './citations.bib'
