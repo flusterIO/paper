@@ -362,6 +362,66 @@ Consequently, we obtain the following expression for the Lorentz factor in terms
 This establishes a direct relationship between the Lorentz factor and the spatial gradient of the additional coordinate, allowing the relativistic factor to be expressed geometrically without explicitly introducing velocity.
 
 
+\subsection{Classical Simultaneity in \texorpdfstring{$\mathbb{R}^3$}{R3}}\label{sec_classical_simultaneity}
+
+The transformations above treat an instantaneous separation, $d\tau=0$. Here we show that, once the displacement along $y$ is included, every inertial observer assigns the same absolute time $\tau$ to every event, and that the relativity of simultaneity is then entirely a displacement along $y$.
+
+Let events be labelled by an absolute position $x$ in $\mathbb{R}^3$ (one axis is shown) and by the absolute time $\tau$, both referred to the frame $\mathbf{S}$. An observer $\mathbf{U}$ moving at velocity $v$ relative to $\mathbf{S}$ assigns to each event the displacement
+
+\begin{equation}\label{eq_y_offset}
+    y_U(x)=\gamma\frac{v}{c}\,x ,
+\end{equation}
+
+which is equation~\eqref{eq_dy_dx} integrated at fixed velocity.
+
+\paragraph{Proposition.} For every event $(x,\tau)$ and every inertial observer $\mathbf{U}$ moving at $v$ relative to $\mathbf{S}$:
+\begin{enumerate}
+\item the Lorentz coordinates of $\mathbf{U}$ are
+\begin{equation}\label{eq_observer_clock}
+    x_U=\gamma\left(x-v\tau\right),
+    \qquad
+    c\,t_U=\gamma c\,\tau-y_U(x) ;
+\end{equation}
+\item every observer recovers the same absolute time,
+\begin{equation}\label{eq_tau_recovered}
+    \tau=\frac{c\,t_U+y_U(x)}{\gamma c} ;
+\end{equation}
+\item two events with $\Delta\tau=0$ and any separation $\Delta x$ satisfy $c\,\Delta t_U=-\Delta y_U$;
+\item along the worldline of $\mathbf{U}$, $x=v\tau$, the clock of $\mathbf{U}$ advances by $dt_U=d\tau/\gamma$;
+\item for an observer $\mathbf{W}$ moving at $v_2$ relative to $\mathbf{U}$, items 1 to 4 hold with $v$ replaced by the velocity of $\mathbf{W}$ relative to $\mathbf{S}$, $v_W=(v+v_2)/(1+vv_2/c^2)$.
+\end{enumerate}
+
+\begin{proof}
+1. With $\tau$ as the time coordinate of $\mathbf{S}$, the Lorentz transformation gives $x_U=\gamma(x-v\tau)$ and
+\begin{equation}
+    c\,t_U=\gamma\left(c\tau-\frac{v}{c}x\right)=\gamma c\,\tau-\gamma\frac{v}{c}x=\gamma c\,\tau-y_U(x),
+\end{equation}
+using equation~\eqref{eq_y_offset}.
+
+2. Solving equation~\eqref{eq_observer_clock} for $\tau$ gives equation~\eqref{eq_tau_recovered}. The right-hand side uses only quantities assigned by $\mathbf{U}$ and its velocity relative to $\mathbf{S}$, and it returns the same $\tau$ for every $v$.
+
+3. Subtracting equation~\eqref{eq_observer_clock} for two events at equal $\tau$ gives $c\,\Delta t_U=-\gamma(v/c)\Delta x=-\Delta y_U$.
+
+4. On $x=v\tau$, $y_U=\gamma v^2\tau/c$, so
+\begin{equation}
+    c\,t_U=\gamma c\,\tau\left(1-\frac{v^2}{c^2}\right)=\frac{c\,\tau}{\gamma}.
+\end{equation}
+The clock of $\mathbf{U}$ loses, relative to $\gamma c\,d\tau$, exactly its own advance $dy_U=\gamma(v/c)\,v\,d\tau$ along $y$.
+
+5. Collinear boosts compose by addition of rapidities, so the boost at $v$ followed by the boost at $v_2$ is the boost at $v_W$ with $\gamma_W=\gamma\gamma_2(1+vv_2/c^2)$. Items 1 to 4 then follow with $v_W$ and $y_W(x)=\gamma_W(v_W/c)\,x$.
+\end{proof}
+
+The conventional time difference $\Delta t_U=-\gamma v\Delta x/c^2$ between two events at the same $\tau$ is therefore not a difference in absolute time. It is the displacement $\Delta y_U$ that $\mathbf{U}$ assigns to their separation, and all of $\mathbb{R}^3$ at a given $\tau$ is one instant for every observer. Item 4 obtains the slowing of a moving clock from its displacement along $y$; it does not insert time dilation separately. For $\Delta\tau=0$ the invariant interval is $\Delta x_U^2-(c\Delta t_U)^2=\Delta x_U^2-\Delta y_U^2=\Delta x^2$, so in the interval the separation along $y$ enters with the sign of the time coordinate.
+
+\paragraph{The gravitational case.} In gravity the absolute slices are the surfaces $T=\text{const}$ of equation~\eqref{eq_pg_metric}, which are intrinsically flat (section~\ref{sec_pg_relation}). The offset between $T$ and the static time $t$ is
+\begin{equation}\label{eq_sync_gap_flamm}
+    c\left(dT-dt\right)=\frac{\beta}{1-\beta^2}\,dR=\gamma\left(\beta\gamma\,dR\right)=\gamma\,dy ,
+\end{equation}
+where $dy=\beta\gamma\,dR$ is the slope of the Flamm embedding. Light sent outward and back by a static observer travels at $c(1-\beta)$ and $c(1+\beta)$ relative to the flat slice, so the synchronization parameter of that observer is $\epsilon=(1+\beta)/2$ and $dy=(2\epsilon-1)\,d\ell$ with $d\ell=\gamma\,dR$. Here $y$ is not defined from the Lorentz transformation. It is the height of the embedding, fixed by the spatial geometry, and it coincides with the synchronization offset between the static and the absolute slicing.
+
+\paragraph{What is and is not established.} Established: items 1 to 5 and equation~\eqref{eq_sync_gap_flamm} hold exactly, so a single absolute time over $\mathbb{R}^3$ is consistent with the Lorentz coordinates of every inertial observer and, for the spherical and Hubble flows, with an exactly flat absolute slice. Assumed: that the frame $\mathbf{S}$ is physically distinguished. We identify it with the frame of the flow, the cosmic rest frame on large scales and the free-fall frame of section~\ref{sec_pg_relation} locally. Equation~\eqref{eq_tau_recovered} requires each observer to know its velocity relative to this frame, which on cosmological scales is measured by the dipole of the cosmic microwave background. Not claimed: that local experiments can distinguish this description from special relativity. The construction is a preferred-frame formulation with the same local predictions, and a different observable must come from a sector with independent dynamics for $y$. Exactly flat absolute slices are shown here for spherical vacuum, marginally bound dust and homogeneous expansion, and to first order in the angular momentum (section~\ref{sec_rotation}). They are not shown for general spacetimes.
+
+
 \subsection{Fifth-Dimensional Spatial Displacement and Gravitational Force}
 
 

@@ -8,6 +8,7 @@
 - The goal is to develop a submission-ready paper during November 2026. Treat November 30, 2026 as the working deadline unless the author sets another date.
 - The target journal is not yet specified. Do not assume the included Springer Nature template determines the eventual venue or its requirements.
 - Check the `bulletpoints.md` file for all of the major bulletpoints this paper needs to validate or address. Check this file before _**EVERY**_ change that you make to the primary paper.
+- Use the `iop/major_edits.md` file as a way to write complicated output regarding your latest edits. Make **sure** to mention _exactly_ where you make changes to the main paper so I can verify everything.
 
 ### Git
 
