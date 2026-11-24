@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.10)  23 NOV 2026 19:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.10)  23 NOV 2026 20:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,7 +715,7 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <5.5> not available
 
  <./orcid.pdf>]
 Package epstopdf Info: Source file: <../diagrams/outputs/simple_triangle.eps>
-(epstopdf)                    date: 2026-11-23 19:59:03
+(epstopdf)                    date: 2026-11-23 20:12:27
 (epstopdf)                    size: 137493 bytes
 (epstopdf)             Output file: <../diagrams/outputs/simple_triangle-eps-converted-to.pdf>
 (epstopdf)                    date: 2026-11-16 20:03:07
@@ -804,7 +804,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3269 
+l.3272 
        
 ? 
 [38]
@@ -816,7 +816,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3269 
+l.3272 
        
 ? 
 
@@ -827,7 +827,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3269 
+l.3272 
        
 ? 
 [39] [40] (./main.aux)
@@ -855,18 +855,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21594 strings out of 469089
- 371923 string characters out of 5458208
+ 21595 strings out of 469089
+ 371934 string characters out of 5458208
  1219321 words of memory out of 5000000
  49917 multiletter control sequences out of 15000+600000
  645424 words of font info for 110 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,13n,93p,1261b,1500s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,93p,1261b,1497s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/bigsexy/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.602pk> </Users/bigsexy/Library/TinyTeX/texmf-var/fonts/pk/ljfour/public/wasy/wasy10.600pk></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></Users/bigsexy/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (40 pages, 574210 bytes).
+Output written on main.pdf (40 pages, 574854 bytes).
 PDF statistics:
- 1308 PDF objects out of 1440 (max. 8388607)
- 1181 compressed objects within 12 object streams
- 500 named destinations out of 1000 (max. 500000)
+ 1310 PDF objects out of 1440 (max. 8388607)
+ 1183 compressed objects within 12 object streams
+ 501 named destinations out of 1000 (max. 500000)
  491 words of extra memory for PDF output out of 10000 (max. 10000000)
 
