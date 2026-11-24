@@ -37,9 +37,9 @@
 \keywords{gravitation, time, relativity, inflation}
 
 \begin{abstract}
-We present a geometric reformulation of relativistic motion and gravitation in which the Lorentz factor is the slope of an additional, non-compact spatial coordinate $y$, $\gamma=\sqrt{1+\left(\partial_x y\right)^{2}}$, and time is not a separate dimension but a ratio of distances. The construction is classically simultaneous. With $\tau$ the absolute time, the Lorentz coordinates of any inertial observer are $c\,t_U=\gamma c\tau-y_U$, every observer recovers the same $\tau$ for every event, and the relativity of simultaneity is entirely a displacement along $y$. A moving clock runs at $1/\gamma$ because of its own advance along $y$. In gravity the absolute slices are the flat Painlev\'e--Gullstrand slices, and their synchronization offset from the static slicing equals the height of the Flamm embedding of the Schwarzschild spatial slice, which is fixed independently by the spatial geometry.
+We present a geometric reformulation of relativistic motion and gravitation in which the Lorentz factor is the slope of an additional, non-compact spatial coordinate $y$, $\gamma=\sqrt{1+\left(\partial_x y\right)^{2}}$, and time is not a separate dimension but a ratio of distances. The construction is classically simultaneous. With $\tau$ the absolute time, the Lorentz coordinates of any inertial observer are $c\,t_U=\gamma c\tau-y_U$, every observer recovers the same $\tau$ for every event, and the relativity of simultaneity is entirely a displacement along $y$. A moving clock runs at $1/\gamma$ because of its own advance along $y$. In gravity space flows outward from every mass, in the same direction as the Hubble flow, while static bodies keep their radius. The absolute slices are the flat Painlev\'e--Gullstrand slices of this outward flow, and their synchronization offset from the static slicing equals the height of the Flamm embedding of the Schwarzschild spatial slice, which is fixed independently by the spatial geometry.
 
-The same relation, $\beta^{2}=2Gm/(c^{2}R)$, joins the radial flow of Schwarzschild geometry to Hubble expansion, and the Sciama identity follows. Taking the static field equations of general relativity, the embedding reproduces circular orbits, the innermost stable circular orbit, perihelion precession, uniform-density and Tolman VII interiors with the Buchdahl bound, and Lense--Thirring precession. These are consistency checks, not predictions, because the field equations are imported. The scalar sector reduces to Brans--Dicke theory with $\omega_{\mathrm{BD}}=0$, so agreement with the Cassini bound requires a stress along $y$ of $p_y=(3p-\epsilon)/2$ inside matter.
+The same relation, $\beta^{2}=2Gm/(c^{2}R)$, joins the outward flow around a mass to Hubble expansion, and the Sciama identity follows. Outside matter the coordinate density equals the static clock rate, and the rate $\theta$ at which the flow changes coordinate density obeys one constraint, $\tfrac23\theta^{2}-\sigma_{ij}\sigma^{ij}=16\pi G\rho$, which gives a shear-balanced flow around an isolated mass and the Friedmann equation for a uniform universe. Taking the static field equations of general relativity, the embedding reproduces circular orbits, the innermost stable circular orbit, perihelion precession, uniform-density and Tolman VII interiors with the Buchdahl bound, and Lense--Thirring precession. These are consistency checks, not predictions, because the field equations are imported. The scalar sector reduces to Brans--Dicke theory with $\omega_{\mathrm{BD}}=0$, so agreement with the Cassini bound requires a stress along $y$ of $p_y=(3p-\epsilon)/2$ inside matter.
 
 The absolute frame is assumed to be physically distinguished and is identified with the cosmic flow; locally the construction makes the same predictions as special relativity. We also state Hypothesis M, a modified-inertia proposal with a characteristic acceleration proportional to $cH_0$, which is assumed, not derived. Predictions that differ from general relativity must come from sectors not yet developed: a non-gradient potential, a varying $G_{44}$, or a derivation of Hypothesis M.
 \end{abstract}
@@ -163,7 +163,7 @@ This paper & Standard counterpart\\
 $\beta c=v$ & shift vector (``river velocity''), escape velocity from the enclosed mass\\
 $\gamma$ & Lorentz factor associated with the spatial embedding; $1/\gamma$ equals the static lapse in the exterior vacuum region, but not generally inside matter\\
 $y(R)$, $\partial_R y=\beta\gamma$ & Flamm embedding of the static slice, $d\ell^2=dR^2+dy^2$\\
-$\partial_\tau y=v^2/\sqrt{c^2-v^2}$ & $dy/dT$ along a free-fall worldline\\
+$\partial_\tau y=v^2/\sqrt{c^2-v^2}$ & $dy/dT$ along a worldline at rest in the outward flow\\
 $\delta(M,R)=2GM/R^3$ & radial tidal eigenvalue\\
 \bottomrule
 \end{tabular}
@@ -415,13 +415,13 @@ The conventional time difference $\Delta t_U=-\gamma v\Delta x/c^2$ between two 
 
 \paragraph{The gravitational case.} In gravity the absolute slices are the surfaces $T=\text{const}$ of equation~\eqref{eq_pg_metric}, which are intrinsically flat (section~\ref{sec_pg_relation}). The offset between $T$ and the static time $t$ is
 \begin{equation}\label{eq_sync_gap_flamm}
-    c\left(dT-dt\right)=\frac{\beta}{1-\beta^2}\,dR=\gamma\left(\beta\gamma\,dR\right)=\gamma\,dy ,
+    c\left(dT-dt\right)=-\frac{\beta}{1-\beta^2}\,dR=-\gamma\left(\beta\gamma\,dR\right)=-\gamma\,dy ,
 \end{equation}
-where $dy=\beta\gamma\,dR$ is the slope of the Flamm embedding. Light sent outward and back by a static observer travels at $c(1-\beta)$ and $c(1+\beta)$ relative to the flat slice, so the synchronization parameter of that observer is $\epsilon=(1+\beta)/2$ and $dy=(2\epsilon-1)\,d\ell$ with $d\ell=\gamma\,dR$. Here $y$ is not defined from the Lorentz transformation. It is the height of the embedding, fixed by the spatial geometry, and it coincides with the synchronization offset between the static and the absolute slicing. The structure is the same as in item~3: the flat slice supplies the observer-independent base $dR$, and the static proper length $\gamma\,dR$ is the arc length of the Flamm graph, $1+\left(\partial_R y\right)^2=\gamma^2$.
+where $dy=\beta\gamma\,dR$ is the slope of the Flamm embedding. Space flows outward through the flat slice, so a static observer moves inward relative to space at $u=-\beta c$. Light it sends outward travels with the flow at $c(1+\beta)$ and returns against it at $c(1-\beta)$, so its synchronization parameter is $\epsilon=(1-\beta)/2$, the value $\tfrac12(1+u/c)$ of an observer moving at $u$, and $dy=(1-2\epsilon)\,d\ell$ with $d\ell=\gamma\,dR$. Here $y$ is not defined from the Lorentz transformation. It is the height of the embedding, fixed by the spatial geometry, and it coincides with the synchronization offset between the static and the absolute slicing. The structure is the same as in item~3: the flat slice supplies the observer-independent base $dR$, and the static proper length $\gamma\,dR$ is the arc length of the Flamm graph, $1+\left(\partial_R y\right)^2=\gamma^2$.
 
 \paragraph{Sign of $G_{44}$.} Both cases require a Euclidean embedding, $G_{44}>0$. With $G_{44}<0$ the induced radial metric would be $1-\left(\partial_R y\right)^2\neq\gamma^2$, and in the reduction of the four-potential of section~\ref{sec_four_potential} the sign of the field-strength term $\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu}$ would reverse. The scalar-sector results below do not depend on this sign. With $G_{44}=\pm\Phi^2$ and $T_{44}^{(5)}=\pm\Phi^2p_y$ the reduction gives $R_{44}^{(5)}=\mp\Phi\,\Box\Phi$, and the $44$ equation becomes $\mp\tfrac12\Phi^2R^{(4)}=\pm\kappa_5\Phi^2p_y$. The sign cancels in both, so $R^{(4)}=-2\kappa_5p_y$ and equations~\eqref{eq_scalar_fluid_source} and \eqref{eq_py_gr_condition} are unchanged.
 
-\paragraph{What is and is not established.} Established: items 1 to 5 and equation~\eqref{eq_sync_gap_flamm} hold exactly, so a single absolute time over $\mathbb{R}^3$ is consistent with the Lorentz coordinates of every inertial observer and, for the spherical and Hubble flows, with an exactly flat absolute slice. Assumed: that the frame $\mathbf{S}$ is physically distinguished. We identify it with the frame of the flow, the cosmic rest frame on large scales and the free-fall frame of section~\ref{sec_pg_relation} locally. Equation~\eqref{eq_tau_recovered} requires each observer to know its velocity relative to this frame, which on cosmological scales is measured by the dipole of the cosmic microwave background. Not claimed: that local experiments can distinguish this description from special relativity. The construction is a preferred-frame formulation with the same local predictions, and a different observable must come from a sector with independent dynamics for $y$. Exactly flat absolute slices are shown here for spherical vacuum, marginally bound dust and homogeneous expansion, and to first order in the angular momentum (section~\ref{sec_rotation}). They are not shown for general spacetimes.
+\paragraph{What is and is not established.} Established: items 1 to 5 and equation~\eqref{eq_sync_gap_flamm} hold exactly, so a single absolute time over $\mathbb{R}^3$ is consistent with the Lorentz coordinates of every inertial observer and, for the spherical and Hubble flows, with an exactly flat absolute slice. Assumed: that the frame $\mathbf{S}$ is physically distinguished. We identify it with the frame of the flow, the cosmic rest frame on large scales and the outward flow of section~\ref{sec_pg_relation} locally. Equation~\eqref{eq_tau_recovered} requires each observer to know its velocity relative to this frame, which on cosmological scales is measured by the dipole of the cosmic microwave background. Not claimed: that local experiments can distinguish this description from special relativity. The construction is a preferred-frame formulation with the same local predictions, and a different observable must come from a sector with independent dynamics for $y$. Exactly flat absolute slices are shown here for spherical vacuum, marginally bound dust and homogeneous expansion, and to first order in the angular momentum (section~\ref{sec_rotation}). They are not shown for general spacetimes.
 
 
 \subsection{Fifth-Dimensional Spatial Displacement and Gravitational Force}
@@ -1302,7 +1302,7 @@ so $\beta c$ is the escape velocity from the enclosed mass. The constraint is im
 \item Critical density: $\rho=3H^2/(8\pi G)$ gives $L=c/H$ and $\beta=HR/c$, the Hubble flow. The Schwarzschild radius of a critical-density ball of radius $c/H$ equals $c/H$.
 \end{itemize}
 
-Gravitational binding and cosmic expansion are then the same relation $\beta^2=2Gm/(c^2R)$, applied to different mass distributions. The sign of the associated flow differs: infall for a bound mass, outflow for the Hubble flow.
+Gravitational binding and cosmic expansion are then the same relation $\beta^2=2Gm/(c^2R)$, applied to different mass distributions. In both cases the flow is taken outward (section~\ref{sec_pg_relation}).
 
 \subsubsection{The Temporal Relation}
 
@@ -1414,7 +1414,7 @@ Integrating with $N(\infty)=1$ gives the stated result. The radial component, $N
 Consequently $g_{00}\,h_{RR}=-1$ is a theorem of the construction in this region, not an assumption: the redshift factor equals $\cos\theta$, the foreshortening of the embedded slice. The same relation is what the Painlev\'e--Gullstrand change of time in section~\ref{sec_pg_relation} produces, so the two routes agree.
 
 \paragraph{Free fall and the role of marginal binding.}
-Let $u$ be a radial geodesic with relative Lorentz factor $\gamma_{\rm rel}$ with respect to the static observers. Contracting with the Killing vector $\xi=\partial_t$ gives the conserved energy per unit mass, $E=N\gamma_{\rm rel}$. For a body released from rest at infinity $E=1$, hence $\gamma_{\rm rel}=1/N=\gamma$ and $\beta_{\rm rel}=\beta$, which is the identification used to define $y$. For a body released from rest at $R_0$, $E=N(R_0)$ and
+Let $u$ be a radial geodesic with relative Lorentz factor $\gamma_{\rm rel}$ with respect to the static observers. Contracting with the Killing vector $\xi=\partial_t$ gives the conserved energy per unit mass, $E=N\gamma_{\rm rel}$. For a body released from rest at infinity, or for its time reverse, a body moving outward at exactly the escape velocity, $E=1$, hence $\gamma_{\rm rel}=1/N=\gamma$ and $\beta_{\rm rel}=\beta$, which is the identification used to define $y$. For a body released from rest at $R_0$, $E=N(R_0)$ and
 
 \begin{equation}
     \gamma_{\rm rel}(R)=\frac{N(R_0)}{N(R)},
@@ -1422,7 +1422,7 @@ Let $u$ be a radial geodesic with relative Lorentz factor $\gamma_{\rm rel}$ wit
     \beta_{\rm rel}^2=1-\frac{N(R)^2}{N(R_0)^2}\neq\beta^2
 \end{equation}
 
-The slope $\beta\gamma$ of the Flamm embedding therefore coincides with $\beta_{\rm rel}\gamma_{\rm rel}$ only for the marginally bound congruence. Bound orbits are not described by a different embedding of the same slice but by a different relation between the flow and the slope. The orbit results of Appendix~\ref{app_orbits} use the static geometry and standard geodesics and are unaffected, but the reading of $y$ as ``the displacement of the infalling frame'' is specific to $E=1$.
+The slope $\beta\gamma$ of the Flamm embedding therefore coincides with $\beta_{\rm rel}\gamma_{\rm rel}$ only for the marginally bound congruence. Bound orbits are not described by a different embedding of the same slice but by a different relation between the flow and the slope. The orbit results of Appendix~\ref{app_orbits} use the static geometry and standard geodesics and are unaffected, but the reading of $y$ as ``the displacement of the flow frame'' is specific to $E=1$.
 
 \paragraph{What is and is not established.}
 
@@ -1760,10 +1760,10 @@ The identification $\beta^2=2Gm(R)/(c^2R)$ of equation \ref{eq_beta_enclosed} is
 With $\beta^2=r_s/R$ the Schwarzschild metric can be written~\cite{Painleve1921,Gullstrand1922,MartelPoisson2001}
 
 \begin{equation}\label{eq_pg_metric}
-    ds^2=-c^2dT^2+\left(dR+\beta c\,dT\right)^2+R^2d\Omega^2 ,
+    ds^2=-c^2dT^2+\left(dR-\beta c\,dT\right)^2+R^2d\Omega^2 ,
 \end{equation}
 
-where $T$ is the proper time of observers in radial free fall from rest at infinity. The surfaces $T=\text{const}$ are intrinsically flat, and $\beta c$ is the Newtonian escape velocity. Alternatively to the river model~\cite{HamiltonLisle2008}, space flows radially outwards while an observer at rest with respect to a static coordinate system appears to move radially inward. The rest space of an observer held at fixed $R$ has radial metric component
+where $T$ is the proper time of observers moving radially outward at exactly the escape velocity. The surfaces $T=\text{const}$ are intrinsically flat, and $\beta c$ is the Newtonian escape velocity. This is the time reverse of the inflowing river model~\cite{HamiltonLisle2008}: here space flows radially outward, in the same direction as the Hubble flow, while an observer at rest with respect to the static coordinates moves radially inward relative to space. The static radius of a body does not change. At the surface of the Earth, space streams outward past the surface at the escape velocity, about $11.2~\mathrm{km\,s^{-1}}$. Both forms describe the same spacetime outside the horizon; inside $r_s$ the outward form covers the time reverse of the black-hole interior, and all results in this paper concern the exterior or ordinary stars. The rest space of an observer held at fixed $R$ has radial metric component
 
 \begin{equation}
     h_{RR}=g_{RR}-\frac{g_{TR}^2}{g_{TT}}=1+\beta^2\gamma^2=\gamma^2,
@@ -1771,11 +1771,11 @@ where $T$ is the proper time of observers in radial free fall from rest at infin
     \gamma=\frac{1}{\sqrt{1-\beta^2}},
 \end{equation}
 
-so $\gamma$ is the Lorentz factor between the infalling frame and the static observers, and the static proper length is $d\ell=\gamma\,dR$. This is the content of equations $dS^2=dx^2+dy^2=\gamma^2dx^2$ and $dy=\beta\gamma\,dx$ above, with $x$ the coordinate $R$ of the flat slices, $y$ the Flamm embedding~\cite{Flamm1916} of the static slice, and $\partial_R y=\beta\gamma$.
+so $\gamma$ is the Lorentz factor between the flow frame and the static observers, and the static proper length is $d\ell=\gamma\,dR$. This is the content of equations $dS^2=dx^2+dy^2=\gamma^2dx^2$ and $dy=\beta\gamma\,dx$ above, with $x$ the coordinate $R$ of the flat slices, $y$ the Flamm embedding~\cite{Flamm1916} of the static slice, and $\partial_R y=\beta\gamma$.
 
-Along a free-fall worldline $dR/dT=-\beta c$, so $dy/dT=-c\beta^2\gamma$. With $v=\beta c$ its magnitude is $v^2/\sqrt{c^2-v^2}$, which is equation \ref{eq_dy_dtau}, and its sign agrees with $c\,dt'=-\partial_\tau y$. The time-equivalent parameter $\tau$ therefore plays the role of the proper time $T$ of the flow.
+Along a worldline at rest in the flow $dR/dT=\beta c$, so $dy/dT=c\beta^2\gamma$. With $v=\beta c$ this is $v^2/\sqrt{c^2-v^2}$, which is equation \ref{eq_dy_dtau}. The time-equivalent parameter $\tau$ therefore plays the role of the proper time $T$ of the flow.
 
-\textit{Temporal relation.} For any $\beta(R)$, the change of time $dT=dt+\beta\,dR/\left[c(1-\beta^2)\right]$ takes equation \ref{eq_pg_metric} to
+\textit{Temporal relation.} For any $\beta(R)$, the change of time $dT=dt-\beta\,dR/\left[c(1-\beta^2)\right]$ takes equation \ref{eq_pg_metric} to
 
 \begin{equation}
     ds^2=-(1-\beta^2)c^2dt^2+\frac{dR^2}{1-\beta^2}+R^2d\Omega^2 ,
@@ -1793,7 +1793,7 @@ For flat FLRW, $R=a(t)r$ gives $a\,dr=dR-HR\,dt$ and
     \beta_H=\frac{HR}{c}
 \end{equation}
 
-the same form as equation \ref{eq_pg_metric} with the opposite sign of the shift. With $m=\tfrac{4\pi}{3}\rho R^3$ and the Friedmann equation $H^2=8\pi G\rho/3$, $\beta_H^2=2Gm/(c^2R)$. The Hubble radius $R=c/H$ is where $\beta=1$ and $2Gm/c^2=R$, which is the apparent horizon of the flat FLRW universe~\cite{Faraoni2011,Faraoni2022}. The Newtonian counterpart is the zero-energy condition of Milne and McCrea~\cite{Milne1934,McCreaMilne1934}: the Hubble velocity equals the escape velocity from the enclosed mass.
+the same form as equation \ref{eq_pg_metric}, with the shift of the same, outward sign. For constant $H$ the two flows combine into one outward flow, $\beta^2=r_s/R+H^2R^2/c^2$, whose static form is the Schwarzschild--de Sitter metric. With $m=\tfrac{4\pi}{3}\rho R^3$ and the Friedmann equation $H^2=8\pi G\rho/3$, $\beta_H^2=2Gm/(c^2R)$. The Hubble radius $R=c/H$ is where $\beta=1$ and $2Gm/c^2=R$, which is the apparent horizon of the flat FLRW universe~\cite{Faraoni2011,Faraoni2022}. The Newtonian counterpart is the zero-energy condition of Milne and McCrea~\cite{Milne1934,McCreaMilne1934}: the Hubble velocity equals the escape velocity from the enclosed mass.
 
 \subsubsection{The general relation}
 
@@ -1806,14 +1806,14 @@ For spherical, pressureless, marginally bound dust (Lema\^itre--Tolman--Bondi~\c
 \toprule
 Configuration & $m(R)$ & Flow & Static-slice embedding\\
 \midrule
-Exterior of a mass& $M$ & inward & paraboloid\\
-Uniform density ball& $\tfrac{4\pi}{3}\rho R^3$ & inward or outward & cap of a $3$-sphere, $L^2=3c^2/8\pi G\rho$\\
+Exterior of a mass& $M$ & outward & paraboloid\\
+Uniform density ball& $\tfrac{4\pi}{3}\rho R^3$ & outward & cap of a $3$-sphere, $L^2=3c^2/8\pi G\rho$\\
 Critical density (flat FLRW)& $\tfrac{4\pi}{3}\rho_c R^3$ & outward & cap with $L=c/H$\\
 \bottomrule
 \end{tabular*}
 \end{table}
 
-Binding and expansion are then one relation with different mass distributions, and the sign of the flow distinguishes infall from Hubble expansion.
+Binding and expansion are then one outward flow with different mass distributions. The outward direction is the convention of this paper; the inward form is its time reverse and describes the same spacetime outside the horizon.
 
 \subsubsection{Scope}
 
@@ -1821,6 +1821,28 @@ In the regimes above (vacuum or pressureless matter, spherical symmetry, flat-sl
 
 
 
+
+\subsection{Time as the Rate of Change of Coordinate Density}\label{sec_coordinate_density}
+
+The construction rests on two properties of time: a fourth displacement coordinate, the coordinate density, and a rate of change, the motion of space. In the flow form of section~\ref{sec_pg_relation} both have a precise counterpart.
+
+\paragraph{Coordinate density.} Outside a mass a static observer measures $d\ell=\gamma\,dR$ along a radial interval whose absolute length is $dR$. The number of absolute coordinates per measured length is therefore
+\begin{equation}\label{eq_density_lapse}
+    \frac{dR}{d\ell}=\frac{1}{\gamma}=N ,
+\end{equation}
+the static clock rate. In vacuum the coordinate density and the rate of time are the same quantity. Inside matter the lapse differs from $1/\gamma$ by the pressure terms of subsection~\ref{sec_interior_lapse}, so equation~\eqref{eq_density_lapse} is a vacuum statement.
+
+\paragraph{Rate of change.} The flow $\vec v$ of absolute space changes the coordinate density at the rate $\theta=\nabla\cdot\vec v$, the fractional rate of change of a volume element carried by the flow. The shear $\sigma_{ij}$ is the trace-free part of $\partial_{(i}v_{j)}$. With unit lapse and flat slices the Hamiltonian constraint and the Raychaudhuri equation~\cite{Raychaudhuri1955} along the flow read
+\begin{equation}\label{eq_density_constraint}
+    \tfrac23\,\theta^2-\sigma_{ij}\sigma^{ij}=16\pi G\rho ,
+\end{equation}
+\begin{equation}\label{eq_raychaudhuri}
+    \frac{d\theta}{d\tau}=-\frac{\theta^2}{3}-\sigma_{ij}\sigma^{ij}-4\pi G\left(\rho+\frac{3p}{c^2}\right).
+\end{equation}
+
+\paragraph{Gravity and expansion from one equation.} For the outward flow around a mass, $v=\sqrt{2GM/R}$, the coordinate density changes everywhere outside the mass at the rate $\theta=3v/(2R)$. In vacuum this change is balanced by shear, $\tfrac23\theta^2=\sigma_{ij}\sigma^{ij}$: the radial and transverse parts of the change have opposite signs. Equation~\eqref{eq_raychaudhuri} gives how the rate itself changes along the flow, which is the gravitational focusing of the flow. For the Hubble flow, $\vec v=H\vec R$, the shear vanishes by symmetry and $\theta=3H$. Equation~\eqref{eq_density_constraint} then reads $6H^2=16\pi G\rho$, the Friedmann equation, and equation~\eqref{eq_raychaudhuri} is the acceleration equation, $3\dot H+3H^2=-4\pi G(\rho+3p/c^2)$. An isolated mass and a uniform universe are therefore governed by the same relation between mass and the rate of change of coordinate density. Around a single mass the change is anisotropic and balanced by shear; in a uniform distribution only the change of density itself remains.
+
+\paragraph{Status.} Equations~\eqref{eq_density_constraint} and~\eqref{eq_raychaudhuri} are the constraint and evolution equations of general relativity written in the flow variables of this construction. They give a precise statement of time as the rate of change of coordinate density, and they are verified for the cases above in the accompanying code, but they do not by themselves distinguish the construction from general relativity.
 
 \section{A Hypothesis for the Galactic Regime: Horizon-Limited Machian Inertia}\label{sec_machian_hypothesis}
 
@@ -2185,6 +2207,14 @@ N(R)^2=\frac{1}{A(R)}
 \end{equation}
 is not an independent input: it cannot be inferred from the existence of the additional spatial coordinate alone, but it follows from the Gauss equation of the embedding together with the second static field equation (subsection~\ref{sec_lapse_derivation}). The remaining limitation is that the static field equations are themselves imported from general relativity and not obtained from the higher-dimensional dynamics. A more complete theory would obtain both the Hamiltonian constraint and the lapse equation from a single five-dimensional action, and would extend the relation to matter and non-static sources.
 
+
+\subsection{Relation to Preferred-Frame Formulations}\label{sec_preferred_frame}
+
+The classical simultaneity of subsection~\ref{sec_classical_simultaneity} places this construction in a known family. Mansouri and Sexl~\cite{MansouriSexl1977} constructed an ether theory that keeps absolute simultaneity and is kinematically equivalent to special relativity. Equation~\eqref{eq_observer_clock} is of that type, with the offset between absolute and Einstein synchronization, parametrized by Reichenbach's $\epsilon$~\cite{Reichenbach1958}, carried by the coordinate $y$. Malament~\cite{Malament1977} showed that, given only the causal structure and an inertial observer, Einstein's $\epsilon=\tfrac12$ is the only definable simultaneity relation. A different, absolute simultaneity therefore needs structure beyond the causal one. Here that structure is the flow frame of section~\ref{sec_pg_relation}, which is assumed rather than derived.
+
+In gravity the absolute slices are the flat slices of the river model~\cite{HamiltonLisle2008}, taken here with the flow reversed to point outward. For rotating sources the corresponding form of the Kerr metric, whose time coordinate is the proper time of freely falling observers, was given by Doran~\cite{Doran2000}; its time reverse plays the same role here. Theories in which a preferred foliation is dynamical, Einstein--aether theory~\cite{JacobsonMattingly2001} and the khronometric models~\cite{BlasPujolasSibiryakov2011}, add a field that couples to the metric and therefore predict preferred-frame effects. These are measured by the parametrized post-Newtonian parameters $\alpha_1$ and $\alpha_2$, which vanish in general relativity and are bounded by $|\alpha_1|<10^{-4}$ from lunar laser ranging, $|\alpha_1|<7\times10^{-5}$ from PSR~J1738+0333, and $|\alpha_2|<2\times10^{-9}$ from millisecond pulsars~\cite{Will2014}.
+
+The present construction adds no such field. The absolute foliation is a choice of slicing of a metric that satisfies the field equations of general relativity, and no equation of motion for matter refers to it. Its preferred-frame parameters are therefore those of general relativity, $\alpha_1=\alpha_2=\alpha_3=0$, which satisfy these bounds. The same statement means that the absolute frame cannot be detected through these effects. If $y$ were given dynamics of its own, for instance through a varying $G_{44}$ or a non-gradient potential, the corresponding parameters would have to be computed and compared with these bounds.
 
 \subsection{Limitations and Future Directions}
 
