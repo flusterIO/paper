@@ -6,7 +6,7 @@
 % Edit these expressions to change the labels on each side.
 \newcommand{\BottomLabel}{$dx^{\left( S \right)}=\sqrt{\mathrm{d}x_i \mathrm{d}x^{i}} = v \tau$}
 \newcommand{\VerticalLabel}{$\mathrm{d}y= \tau \frac{v^{2}}{\sqrt{c^{2} - v^{2}}}$}
-\newcommand{\HypotenuseLabel}{$\mathrm{d}x^{\left( U \right)}= \sqrt{\mathrm{d}x_i \mathrm{d}x^{i}} \tau \gamma$}
+\newcommand{\HypotenuseLabel}{$\mathrm{d}s=\mathrm{d}x^{\left( U \right)}= \gamma\sqrt{\mathrm{d}x_i \mathrm{d}x^{i}} = \gamma v \tau$}
 
 \begin{document}
 \begin{tikzpicture}[
@@ -25,6 +25,10 @@
 
   % Conventional right-angle marker at the corner between the legs.
   \draw[line width=0.7pt] (4.68,0) -- (4.68,0.32) -- (5,0.32);
+
+  % Inclination of the path above R^3: tan(psi) = dy/dx = beta gamma.
+  \draw[line width=0.7pt] (1.1,0) arc[start angle=0,end angle=26.565,radius=1.1];
+  \node[font=\small] at (1.42,0.27) {$\psi$};
 
   % Labels follow the orientation of their respective sides.
   \node[side label] at (2.5,-0.34) {\BottomLabel};

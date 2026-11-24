@@ -54,5 +54,5 @@ build_iop: build_diagrams && clean_diagram_output
 	cd {{justfile_directory()}}/iop; sudo pdflatex main.tex
 	cd {{justfile_directory()}}/iop; sudo pdflatex main.tex
 
-build: build_diagrams build_main clean_diagram_output
-	cp ./main.pdf /Users/bigsexy/Desktop/swift/Fluster/apps/website/public/assets/pdf/paper_preprint.pdf
+build: build_diagrams build_iop clean_diagram_output
+	cp ./iop/main.pdf /Users/bigsexy/Desktop/swift/Fluster/apps/website/public/assets/pdf/paper_preprint.pdf
