@@ -2420,19 +2420,6 @@
     <bcf:citekey order="29" intorder="1">Eilers_2019</bcf:citekey>
     <bcf:citekey order="30" intorder="1">McGaugh2016RAR</bcf:citekey>
     <bcf:citekey order="31" intorder="1">IvesStillwell</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">planck_collaboration_2020</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">gordon_determining_2008</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">Brout2022</bcf:citekey>
-    <bcf:citekey order="34" intorder="2">Betoule2014</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">planck_collaboration_2020</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">cautun2020milky</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">gravity2018detection</bcf:citekey>
-    <bcf:citekey order="37" intorder="2">bobylev2021estimate</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">Eilers_2019</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">yu2023born</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">Eilers_2019</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">McMillan2017</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">McGaugh2016RAR</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

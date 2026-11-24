@@ -37,11 +37,11 @@
 \keywords{gravitation, time, relativity, inflation}
 
 \begin{abstract}
-We study a geometric reformulation of relativistic motion and gravitation in which the Lorentz factor is the slope of an additional, non-compact spatial coordinate $y$, $\gamma=\sqrt{1+\left(\partial_x y\right)^{2}}$. Relativistic effects then appear as spatial displacement along $y$, which allows absolute time and classical simultaneity to be retained. For a static spherical mass the induced radial metric is the Flamm embedding of the Schwarzschild spatial slice, with slope $\beta\gamma$ and $\beta^{2}=2Gm/(c^{2}R)$. Written in Painlev\'e--Gullstrand form, the same relation joins the radial flow of Schwarzschild geometry to homogeneous Hubble expansion, and the Sciama identity $Gm_H/(c^{2}R_H)=1/2$ follows.
+We present a geometric reformulation of relativistic motion and gravitation in which the Lorentz factor is the slope of an additional, non-compact spatial coordinate $y$, $\gamma=\sqrt{1+\left(\partial_x y\right)^{2}}$, and time is not a separate dimension but a ratio of distances. The construction is classically simultaneous. With $\tau$ the absolute time, the Lorentz coordinates of any inertial observer are $c\,t_U=\gamma c\tau-y_U$, every observer recovers the same $\tau$ for every event, and the relativity of simultaneity is entirely a displacement along $y$. A moving clock runs at $1/\gamma$ because of its own advance along $y$. In gravity the absolute slices are the flat Painlev\'e--Gullstrand slices, and their synchronization offset from the static slicing equals the height of the Flamm embedding of the Schwarzschild spatial slice, which is fixed independently by the spatial geometry.
 
-Taking the static field equations of general relativity, the embedding fixes the lapse and reproduces the circular-orbit velocity, the innermost stable circular orbit, perihelion precession, uniform-density and Tolman VII interiors with the Buchdahl bound, and the Lense--Thirring precession. In these regimes the construction is equivalent to general relativity. The field equations are imported and not derived from a five-dimensional action, so these results are consistency checks and not predictions. The five-dimensional scalar sector with a cylinder condition reduces to Brans--Dicke theory with $\omega_{\mathrm{BD}}=0$. Agreement with general relativity and with the Cassini bound then requires a stress along $y$ of $p_y=(3p-\epsilon)/2$ inside matter. This condition is derived here but has no known origin in an action.
+The same relation, $\beta^{2}=2Gm/(c^{2}R)$, joins the radial flow of Schwarzschild geometry to Hubble expansion, and the Sciama identity follows. Taking the static field equations of general relativity, the embedding reproduces circular orbits, the innermost stable circular orbit, perihelion precession, uniform-density and Tolman VII interiors with the Buchdahl bound, and Lense--Thirring precession. These are consistency checks, not predictions, because the field equations are imported. The scalar sector reduces to Brans--Dicke theory with $\omega_{\mathrm{BD}}=0$, so agreement with the Cassini bound requires a stress along $y$ of $p_y=(3p-\epsilon)/2$ inside matter.
 
-We also present Hypothesis M, a modified-inertia proposal for the galactic regime with a characteristic acceleration proportional to $cH_0$. It is an assumption, is not shown to follow from the embedding, and is not claimed to explain galactic data. An appendix lists numerical relations involving the fine-structure constant, Earth's mean density and the cosmic microwave background dipole. They have about as many adjustable choices as data points and are reported as observations without evidential weight. Predictions that differ from general relativity must come from sectors not yet developed: a non-gradient potential, a varying $G_{44}$, or a derivation of Hypothesis M.
+The absolute frame is assumed to be physically distinguished and is identified with the cosmic flow; locally the construction makes the same predictions as special relativity. We also state Hypothesis M, a modified-inertia proposal with a characteristic acceleration proportional to $cH_0$, which is assumed, not derived. Predictions that differ from general relativity must come from sectors not yet developed: a non-gradient potential, a varying $G_{44}$, or a derivation of Hypothesis M.
 \end{abstract}
 
 \section{Introduction}\label{sec1}
@@ -143,7 +143,7 @@ To remove time as a physically meaningful quantity, we let
 
 where $\dot{x}$ indicates not a derivative with respect to time, but rather a fundamental driving rate of change, a magnitude of length that grows with an arbitrary temporal scalar. We then let $\widehat{x} = \partial_\tau x\ \hat{\tau} = \left| \vec{x} \right|$ where $\hat{\tau} = 1~ \text{s}$, or the velocity in units of distance. $\tau$, while equivalent in magnitude to $t$ is derived directly from the geometry and has no explicit time dependence. A unit of seconds is inserted only for cohesion with existing mathematics.
 
-Because $\tau$ is a scalar of distance, every expression containing $\tau$ can be written with lengths alone. The unit $\hat{\tau}=1~\text{s}$ corresponds to the fixed reference length $L_\tau \equiv c\,\hat{\tau} = 299\,792\,458~\text{m}$. For example, the velocity $v=c\sqrt{GM/R^{3}}\,\hat{\tau}$ used in Appendix~\ref{sec_numerical_correlations} becomes
+Because $\tau$ is a scalar of distance, every expression containing $\tau$ can be written with lengths alone. The unit $\hat{\tau}=1~\text{s}$ corresponds to the fixed reference length $L_\tau \equiv c\,\hat{\tau} = 299\,792\,458~\text{m}$. For example, the velocity $v=c\sqrt{GM/R^{3}}\,\hat{\tau}$ becomes
 
 \begin{equation}\label{eq_length_only}
     \frac{v}{c}=\sqrt{\frac{GM}{c^{2}}}\;\frac{L_\tau}{R^{3/2}}
@@ -411,13 +411,15 @@ The clock of $\mathbf{U}$ loses, relative to $\gamma c\,d\tau$, exactly its own 
 5. Collinear boosts compose by addition of rapidities, so the boost at $v$ followed by the boost at $v_2$ is the boost at $v_W$ with $\gamma_W=\gamma\gamma_2(1+vv_2/c^2)$. Items 1 to 4 then follow with $v_W$ and $y_W(x)=\gamma_W(v_W/c)\,x$.
 \end{proof}
 
-The conventional time difference $\Delta t_U=-\gamma v\Delta x/c^2$ between two events at the same $\tau$ is therefore not a difference in absolute time. It is the displacement $\Delta y_U$ that $\mathbf{U}$ assigns to their separation, and all of $\mathbb{R}^3$ at a given $\tau$ is one instant for every observer. Item 4 obtains the slowing of a moving clock from its displacement along $y$; it does not insert time dilation separately. For $\Delta\tau=0$ the invariant interval is $\Delta x_U^2-(c\Delta t_U)^2=\Delta x_U^2-\Delta y_U^2=\Delta x^2$, so in the interval the separation along $y$ enters with the sign of the time coordinate.
+The conventional time difference $\Delta t_U=-\gamma v\Delta x/c^2$ between two events at the same $\tau$ is therefore not a difference in absolute time. It is the displacement $\Delta y_U$ that $\mathbf{U}$ assigns to their separation, and all of $\mathbb{R}^3$ at a given $\tau$ is one instant for every observer. Item 4 obtains the slowing of a moving clock from its displacement along $y$; it does not insert time dilation separately. For $\Delta\tau=0$ the absolute separation is the same for every observer, $\Delta x^2=\Delta x_U^2-(c\Delta t_U)^2=\Delta x_U^2-\Delta y_U^2$. This is the embedding relation $\Delta x_U^2=\Delta x^2+\Delta y_U^2$ read with the absolute length as the invariant. The separation $\Delta x_U$ measured by $\mathbf{U}$ is the hypotenuse of the graph of $y_U$ over $\mathbb{R}^3$ and depends on the observer, while its projection $\Delta x$ onto $\mathbb{R}^3$ does not. No time dimension is required: with $w=c\tau$, a length, item~1 reads $x_U=\gamma\left(x-\beta w\right)$ and $w_U=c\,t_U=\gamma w-y_U$, and $x_U^2-w_U^2=x^2-w^2$.
 
 \paragraph{The gravitational case.} In gravity the absolute slices are the surfaces $T=\text{const}$ of equation~\eqref{eq_pg_metric}, which are intrinsically flat (section~\ref{sec_pg_relation}). The offset between $T$ and the static time $t$ is
 \begin{equation}\label{eq_sync_gap_flamm}
     c\left(dT-dt\right)=\frac{\beta}{1-\beta^2}\,dR=\gamma\left(\beta\gamma\,dR\right)=\gamma\,dy ,
 \end{equation}
-where $dy=\beta\gamma\,dR$ is the slope of the Flamm embedding. Light sent outward and back by a static observer travels at $c(1-\beta)$ and $c(1+\beta)$ relative to the flat slice, so the synchronization parameter of that observer is $\epsilon=(1+\beta)/2$ and $dy=(2\epsilon-1)\,d\ell$ with $d\ell=\gamma\,dR$. Here $y$ is not defined from the Lorentz transformation. It is the height of the embedding, fixed by the spatial geometry, and it coincides with the synchronization offset between the static and the absolute slicing.
+where $dy=\beta\gamma\,dR$ is the slope of the Flamm embedding. Light sent outward and back by a static observer travels at $c(1-\beta)$ and $c(1+\beta)$ relative to the flat slice, so the synchronization parameter of that observer is $\epsilon=(1+\beta)/2$ and $dy=(2\epsilon-1)\,d\ell$ with $d\ell=\gamma\,dR$. Here $y$ is not defined from the Lorentz transformation. It is the height of the embedding, fixed by the spatial geometry, and it coincides with the synchronization offset between the static and the absolute slicing. The structure is the same as in item~3: the flat slice supplies the observer-independent base $dR$, and the static proper length $\gamma\,dR$ is the arc length of the Flamm graph, $1+\left(\partial_R y\right)^2=\gamma^2$.
+
+\paragraph{Sign of $G_{44}$.} Both cases require a Euclidean embedding, $G_{44}>0$. With $G_{44}<0$ the induced radial metric would be $1-\left(\partial_R y\right)^2\neq\gamma^2$, and in the reduction of the four-potential of section~\ref{sec_four_potential} the sign of the field-strength term $\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu}$ would reverse. The scalar-sector results below do not depend on this sign. With $G_{44}=\pm\Phi^2$ and $T_{44}^{(5)}=\pm\Phi^2p_y$ the reduction gives $R_{44}^{(5)}=\mp\Phi\,\Box\Phi$, and the $44$ equation becomes $\mp\tfrac12\Phi^2R^{(4)}=\pm\kappa_5\Phi^2p_y$. The sign cancels in both, so $R^{(4)}=-2\kappa_5p_y$ and equations~\eqref{eq_scalar_fluid_source} and \eqref{eq_py_gr_condition} are unchanged.
 
 \paragraph{What is and is not established.} Established: items 1 to 5 and equation~\eqref{eq_sync_gap_flamm} hold exactly, so a single absolute time over $\mathbb{R}^3$ is consistent with the Lorentz coordinates of every inertial observer and, for the spherical and Hubble flows, with an exactly flat absolute slice. Assumed: that the frame $\mathbf{S}$ is physically distinguished. We identify it with the frame of the flow, the cosmic rest frame on large scales and the free-fall frame of section~\ref{sec_pg_relation} locally. Equation~\eqref{eq_tau_recovered} requires each observer to know its velocity relative to this frame, which on cosmological scales is measured by the dipole of the cosmic microwave background. Not claimed: that local experiments can distinguish this description from special relativity. The construction is a preferred-frame formulation with the same local predictions, and a different observable must come from a sector with independent dynamics for $y$. Exactly flat absolute slices are shown here for spherical vacuum, marginally bound dust and homogeneous expansion, and to first order in the angular momentum (section~\ref{sec_rotation}). They are not shown for general spacetimes.
 
@@ -1320,7 +1322,7 @@ which is equivalent to $N^2=1/A(R)$ and to the statement that the time-dilation 
     \delta(M,R)=\frac{c^2}{2}\frac{\partial^2\beta^2}{\partial R^2}=\frac{2GM}{R^3}
 \end{equation}
 
-which identifies $\delta(M,R)=d\vec{g}/dR$ with the radial tidal eigenvalue and writes it as a second derivative of a dimensionless potential (see also Appendix~\ref{sec_numerical_correlations}). The same closure gives $v_{\mathrm{local}}^2=GM/(R-r_s)$ in the exterior region, which is $\beta^2c^2/2$ to leading order. Inside extended matter equation \ref{eq_N_postulate} is not the general-relativistic relation, so it should be applied to exterior regions only. Inside extended matter, equation~\eqref{eq_N_postulate} is not the general-relativistic relation. The interior perfect-fluid case is treated below in subsection~\ref{sec_interior_lapse}, while time-dependent spherical configurations are discussed in section~\ref{sec_pg_relation}.
+which identifies $\delta(M,R)=d\vec{g}/dR$ with the radial tidal eigenvalue and writes it as a second derivative of a dimensionless potential. The same closure gives $v_{\mathrm{local}}^2=GM/(R-r_s)$ in the exterior region, which is $\beta^2c^2/2$ to leading order. Inside extended matter equation \ref{eq_N_postulate} is not the general-relativistic relation, so it should be applied to exterior regions only. Inside extended matter, equation~\eqref{eq_N_postulate} is not the general-relativistic relation. The interior perfect-fluid case is treated below in subsection~\ref{sec_interior_lapse}, while time-dependent spherical configurations are discussed in section~\ref{sec_pg_relation}.
 
 \subsubsection{Non-Gradient Component}
 
@@ -1332,7 +1334,7 @@ The general potential is
     \mathcal{F}_{\mu\nu}=\partial_\mu a_\nu-\partial_\nu a_\mu
 \end{equation}
 
-All results above correspond to $a_\mu=0$. A non-zero $a_\mu$ is the only way for the five-dimensional geometry to carry a field strength, and $\mathcal{F}_{\mu\nu}$ acts on a body only through its fifth momentum $p_y$. For a slowly rotating source, subsection~\ref{sec_rotation} identifies the spatial part of $a_\mu$ with the rotational part of the flow velocity, so that $\mathcal{F}_{ij}$ is the gravitomagnetic field and the Lense--Thirring result follows. That component is far too small to account for the spin dependence $\Gamma(\sigma)$ of Appendix~\ref{sec_numerical_correlations}, so any electromagnetic or spin-dependent role of $a_\mu$ remains undetermined.
+All results above correspond to $a_\mu=0$. A non-zero $a_\mu$ is the only way for the five-dimensional geometry to carry a field strength, and $\mathcal{F}_{\mu\nu}$ acts on a body only through its fifth momentum $p_y$. For a slowly rotating source, subsection~\ref{sec_rotation} identifies the spatial part of $a_\mu$ with the rotational part of the flow velocity, so that $\mathcal{F}_{ij}$ is the gravitomagnetic field and the Lense--Thirring result follows. That component is very small (subsection~\ref{sec_rotation}), so any electromagnetic or spin-dependent role of $a_\mu$ remains undetermined.
 
 
 \subsection{Deriving the Temporal Relation from the Embedding}\label{sec_lapse_derivation}
@@ -1697,7 +1699,7 @@ The non-gradient component is the vorticity of the shift, and $\mathcal{F}$ has 
 
 the standard Lense--Thirring precession: $2GJ/(c^2R^3)$ at the pole and $-GJ/(c^2R^3)$ at the equator. Averaged over a polar orbit of radius $a$ it is $GJ/(2c^2a^3)$. For $J_\oplus=5.86\times10^{33}~\mathrm{kg\,m^2\,s^{-1}}$ and $a=7027$~km this gives about $41~\mathrm{mas\,yr^{-1}}$, consistent within the accuracy of these rounded inputs with the general-relativistic value and with the Gravity Probe B measurement of $37.2\pm7.2~\mathrm{mas\,yr^{-1}}$~\cite{Everitt2011GPB}.
 
-\paragraph{What this does not give.} At the surface of the Earth $\omega=3.4\times10^{-14}~\mathrm{s^{-1}}$, which is $1.9\times10^{-11}$ of $\sqrt{\delta_\oplus}=1.76\times10^{-3}~\mathrm{s^{-1}}$. The spin-dependent factor $1/(2-\alpha)$ of Appendix~\ref{sec_numerical_correlations} differs from $1/2$ by a fraction $\alpha/2=3.7\times10^{-3}$. The gravitomagnetic component is therefore about eight orders of magnitude too small to account for the spin dependence $\Gamma(\sigma)$, and the speculation that it might do so alone is not supported.
+\paragraph{What this does not give.} At the surface of the Earth $\omega=3.4\times10^{-14}~\mathrm{s^{-1}}$, which is $1.9\times10^{-11}$ of $\sqrt{\delta_\oplus}=1.76\times10^{-3}~\mathrm{s^{-1}}$. The gravitomagnetic component is therefore about eleven orders of magnitude below the tidal rate at the surface, and it cannot by itself produce a spin dependence of gravity at a level comparable to the tidal field.
 
 
 \subsection{Consequences for Orbital Motion}\label{sec_orbit_consequences}
@@ -1815,7 +1817,7 @@ Binding and expansion are then one relation with different mass distributions, a
 
 \subsubsection{Scope}
 
-In the regimes above (vacuum or pressureless matter, spherical symmetry, flat-slice flow) the construction is equivalent to general relativity. The relation $\beta^2=2Gm/(c^2R)$ is taken from its Hamiltonian constraint, and $\dot{R}^2=2Gm/R$ is the Newtonian energy equation, so neither is derived here. What the construction adds is a reading of the flow as a coordinate gradient of a fourth spatial coordinate, with the Lorentz factor of the flow as the slope, together with the identification of the time-like parameter with the proper time of the flow. Predictions that differ from general relativity must come from sectors outside these regimes: a non-gradient potential $a_\mu$, a varying $G_{44}$, or a new interpretation of the numerical relations collected in Appendix~\ref{sec_numerical_correlations}.
+In the regimes above (vacuum or pressureless matter, spherical symmetry, flat-slice flow) the construction is equivalent to general relativity. The relation $\beta^2=2Gm/(c^2R)$ is taken from its Hamiltonian constraint, and $\dot{R}^2=2Gm/R$ is the Newtonian energy equation, so neither is derived here. What the construction adds is a reading of the flow as a coordinate gradient of a fourth spatial coordinate, with the Lorentz factor of the flow as the slope, together with the identification of the time-like parameter with the proper time of the flow. Predictions that differ from general relativity must come from sectors outside these regimes: a non-gradient potential $a_\mu$ or a varying $G_{44}$.
 
 
 
@@ -1871,12 +1873,12 @@ and the product $\beta_N^{2}\beta_H$ does not depend on $R$. This is a flat rota
 
 \subsection{Comparison with the Milky Way}
 
-Appendix~\ref{sec_numerical_correlations} compares the Galactic rotation curve of Eilers et al.~\cite{Eilers_2019} with $v_{\mathrm{orbit}}$ and with Hypothesis M. For the baryonic distribution it uses an approximate exponential-disc and bulge model, rescaled to the value $4.44\times10^{10}\,M_\odot$ at $8.12$~kpc adopted in this paper. The results are as follows.
+We compare the Galactic rotation curve of Eilers et al.~\cite{Eilers_2019} with the flow velocity of the enclosed baryonic mass, $v_{\mathrm{orbit}}=\beta c=\sqrt{2GM_{\mathrm{enc}}(R)/R}$, and with Hypothesis M. For the baryonic distribution we use an approximate exponential-disc and bulge model, rescaled to the value $4.44\times10^{10}\,M_\odot$ at $8.12$~kpc adopted in this paper. The results are as follows.
 
 \begin{itemize}
 \item The flow velocity $v_{\mathrm{orbit}}$ alone does not reproduce the curve. It falls from $241$ to $139~\mathrm{km\,s^{-1}}$ between $5.3$ and $24.8$ kpc, whereas the observed speed falls from $227$ to $198~\mathrm{km\,s^{-1}}$.
 \item The ratio $(v_{\mathrm{obs}}/v_{\mathrm{orbit}})^{2}$ is $0.89$ at $5.3$ kpc, crosses $1$ near $7$ kpc and reaches $1.7$ beyond $17$ kpc, so for the adopted baryonic mass the observed speeds in the outer disc lie above $v_{\mathrm{orbit}}$.
-\item Fitting $g_0$ in an empirical interpolation function~\cite{McGaugh2016RAR} gives $g_0/(cH_0)=0.35$, $0.22$ and $0.15$ for $M_b(<8.12~\mathrm{kpc})=4.4$, $5.8$ and $7.1\times10^{10}\,M_\odot$, with $\chi^{2}/\mathrm{dof}=5.2$, $1.7$ and $2.9$.
+\item Fitting $g_0$ in an empirical interpolation function~\cite{McGaugh2016RAR} to the $32$ points with errors below $10~\mathrm{km\,s^{-1}}$ gives $g_0/(cH_0)=0.35$, $0.22$ and $0.15$ for $M_b(<8.12~\mathrm{kpc})=4.4$, $5.8$ and $7.1\times10^{10}\,M_\odot$, with $\chi^{2}/\mathrm{dof}=5.2$, $1.6$ and $2.8$.
 \end{itemize}
 
 The candidate value $\kappa'=1/2\pi\approx0.16$, which gives $g_0=cH_0/2\pi\approx1.1\times10^{-10}~\mathrm{m\,s^{-2}}$, lies within this range for the larger baryonic masses and is a factor of about two below the fit for the adopted mass. This is consistent with Hypothesis M at the factor-of-two level, and it is not a test of it. A single galaxy with uncertain baryonic mass cannot fix $\kappa'$.
@@ -2192,9 +2194,7 @@ First, the higher-dimensional metric requires a complete dynamical treatment. Al
 
 Second, the temporal metric has been obtained for static vacuum regions and static perfect-fluid configurations by imposing the corresponding Einstein equations of general relativity. The interior treatment includes both the uniform-density Schwarzschild solution and a nonuniform Tolman VII density profile. These results do not yet constitute an independent derivation from the five-dimensional field equations. The extension to non-static matter distributions, and the derivation of the complete system from a single higher-dimensional action, remain open problems.
 
-Third, the rotation-curve comparison of Appendix~\ref{sec_numerical_correlations} used an approximate baryonic model for a single galaxy. It should be repeated with the Cautun et al. profiles and extended to a sample of galaxies with measured baryonic masses before Hypothesis M of section~\ref{sec_machian_hypothesis} can be accepted or rejected. The mechanism and the interpolation function of that hypothesis are assumed, and the relationship between the additional spatial displacement and inertial resistance has not been derived from the embedding.
-
-Finally, the cosmological and observational comparisons of Appendix~\ref{sec_numerical_correlations} require systematic testing against independent datasets. In particular, the characteristic velocities should be evaluated using consistent reference frames and uncertainties.
+Third, the rotation-curve comparison of section~\ref{sec_machian_hypothesis} used an approximate baryonic model for a single galaxy. It should be repeated with the Cautun et al. profiles and extended to a sample of galaxies with measured baryonic masses before Hypothesis M can be accepted or rejected. The mechanism and the interpolation function of that hypothesis are assumed, and the relationship between the additional spatial displacement and inertial resistance has not been derived from the embedding.
 
 These developments will determine whether the additional spatial coordinate represents only an alternative geometrical description of existing relativistic solutions or whether it can support new, independently testable physical predictions.
 
@@ -2208,372 +2208,6 @@ These connections provide a geometric framework in which several established rel
 
 
 \begin{appendices}
-
-\section{Numerical Observations}\label{sec_numerical_correlations}
-
-This appendix collects numerical alignments between quantities built from solar system and galactic parameters and a few observed velocities and constants. These are simplified solutions that were discovered during the pursuit of this model. They are retained as rough approximations that a more complete theory would have to build upon or discard. Their status is limited in the following ways.
-
-\begin{itemize}
-\item The ``kinematic velocity'' is $c\sqrt{GM/R^3}\,(1~\mathrm{s})=c\sqrt{4\pi G\bar\rho/3}\,(1~\mathrm{s})$. It depends only on Earth's mean density and on the value of $L_\tau$. In the length-only form of equation~\eqref{eq_length_only} it depends on the fixed reference length $L_\tau$, here one light-second, and scales proportionally with it, so the agreement determines $L_\tau$ to about $0.5\%$ and is not a parameter-free prediction. With the same $L_\tau$ applied to the Sun, Saturn and the Moon it gives roughly $190$, $130$ and $290~\mathrm{km\,s^{-1}}$. This may or may not be explainable through the dilation of electromagnetic constants required to maintain a constant speed of light in each respective temporal surface, but that work is not undertaken here.
-\item The expression $\alpha(2-\alpha)$ for Earth was chosen after $2\alpha$ was found to be less accurate, and the factors used for the Sun and Saturn are chosen body by body, so the fits have about as many adjustable choices as data points. However, the limit of Saturn was discovered before related data was available, lending some semblance of credibility to the existence of this function.
-\item With a handful of bodies and a handful of numerical factors, agreement at the $0.5\%$ level with observation is not impossible by chance. The multiple functions that provide our peculiar $\left( dx^{\left( S \right)} \right)$ and cosmological $\left(dx^{\left( U \right)}\right)$ velocities overlap significantly at the magnitudes in question, making the repeated occurrence this approximation only marginally beneficial.
-\item The orbital velocity $v_{\mathrm{orbit}}$ below is negligibly different from the flow velocity $\beta c=\sqrt{2GM/R}$. It is not the speed of circular orbits in near single-body systems when approximated on the scale of a planet and a moon, or a sun and an orbiting planet.
-\end{itemize}
-
-
-\paragraph{Dimensional note.} The quantities $GM/R^3$ and $\varphi-1$ used below carry a factor $\hat{\tau}^{2}$ with $\hat{\tau}=1~\text{s}$, equivalent to the reference length $L_\tau=c\hat{\tau}$ of equation~\eqref{eq_length_only}. With time removed as a physically meaningful quantity they are dimensionless ratios of lengths, for example $\varphi-1=(GM/c^{2})L_\tau^{2}/R^{3}$. The unit of $1~\text{s}$ is used for consistency with existing models and depends only on the units of the variables from which it is defined.
-
-\begin{table}[h]
-\caption{Standard counterparts of the velocities of this appendix}%
-\label{table_dictionary_numerics}
-\begin{tabular}{@{}p{0.40\linewidth}p{0.54\linewidth}@{}}
-\toprule
-This paper & Standard counterpart\\
-\midrule
-$v_{\text{orbit}}$ & $\beta c$, the flow velocity of the enclosed mass (numerically its escape velocity)\\
-$v_{\text{cosmo}}$ & $c\,\left(v_{\mathrm{esc}}/R\right)\tau$, with $v_{\mathrm{esc}}/R$ the Hubble-like rate of the flow at $R$\\
-$v_{\text{kinematic}}$ & $c\,\Omega\,\tau$ with $\Omega=\sqrt{GM/R^3}$ the circular-orbit angular frequency\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The last two rows follow from $v=c\sqrt{1-\varphi^{-2}}\approx c\sqrt{2(\varphi-1)}$ with $\varphi-1=GM\hat{\tau}^{2}/R^3$ and $\tfrac12GM\hat{\tau}^{2}/R^3$ respectively, and they explain why the two velocities differ by a factor $\sqrt{2}$, the ratio of escape to circular speed.
-
-
-\subsection{The Equivalence Principle}\label{sec_equivalence_principle}
- 
-While a well defined function remains elusive, these general coordinate transformations and a numerical intersection with the fine structure constant allows us to derive several important properties of an apparent electromagnetic function producing $\vec{g}$.
-
-\paragraph{Earth's Kinematic Velocity From Electromagnetic Parameters}
-
-We define $\delta\left( M, R \right)$ to be
-
-\begin{equation}
-    \delta\left( M, R \right) = \frac{d}{dR} g = 2 \frac{GM}{R^{3}}
-\end{equation}
-
-If $\delta\left( M, R \right)$ is induced by the coordinate transformations described above, we should infer that this dilation is radial. If we presume that this dilation exists in $\mathbb{R}^{3}$ space, such that $y$ is only an emergent property and not a true spatial dimension\footnote{This axis must then be comprised completely of relative coordinate density, with the orthogonal mathematics acting only to represent an independent coordinate with no actual separation along $y$.}, we then find the magnitude of a single $\mathbb{R}^{3}$ axis by taking the inverse of the determinant of a diagonal $3 \times 3$ matrix:
-
-\begin{equation}
-    \omega\left( M, R \right) = \sqrt[3]{\hat{\tau}^{2}\frac{d}{dR} g} = \left(\hat{\tau}^{2}\delta\left( M, R \right)\right)^{1/3}
-\end{equation}
-
-
-Investigating this quantity for Earth gives
-
-\begin{equation}
-    \omega_{\oplus} = 0.014537\dots
-\end{equation}
-
-which approximates $2 \alpha$, but more closely produces
-
-\begin{equation}\label{eq_omega_earth}
-    \omega_{\oplus} = \alpha \left( 2 - \alpha \right) \pm 0.0253\%
-\end{equation}
-
-Then by expanding equation \ref{eq_omega_earth}
-
-\begin{equation}\label{eq_omega_earth_Gamma}
-    \alpha \left( 2 - \alpha \right) = \sqrt[3]{\frac{d}{dR}g}
-\end{equation}
-
-Moving the electromagnetic parameters and $R$ to one side before integrating with respect to $R$ gives
-
-
-\begin{equation}
-    R^{4} \left(\frac{e^{6} \left(\frac{\mu_{0}}{\epsilon_{0}}\right)^{\frac{3}{2}}}{4 h^{3}} + \frac{3 \mu_{0} e^{10} \left(\frac{\mu_{0}}{\epsilon_{0}}\right)^{\frac{3}{2}}}{64 \epsilon_{0} h^{5}} - \frac{3 \mu_{0}^{2} e^{8}}{16 \epsilon_{0}^{2} h^{4}} - \frac{\mu_{0}^{3} e^{12}}{256 \epsilon_{0}^{3} h^{6}}\right) = 1.272 \times 10^{21}
-\end{equation}
-
-We then take the radius independent magnitude, isolating the additional electromagnetic parameters to find
-
-\begin{equation}
-    \frac{e^{6} \left(\frac{\mu_{0}}{\epsilon_{0}}\right)^{\frac{3}{2}}}{4 h^{3}} + \frac{3 \mu_{0} e^{10} \left(\frac{\mu_{0}}{\epsilon_{0}}\right)^{\frac{3}{2}}}{64 \epsilon_{0} h^{5}} - \frac{3 \mu_{0}^{2} e^{8}}{16 \epsilon_{0}^{2} h^{4}} - \frac{\mu_{0}^{3} e^{12}}{256 \epsilon_{0}^{3} h^{6}}
-\end{equation}
-
-As $\gamma$ represents $1$ plus some small $ds$, let us add 1 to these additional parameters and substitute $\gamma_{\text{em}}$ into equation \ref{eq_v_of_gamma}.
-
-\begin{equation}
-\gamma_{\text{em}} = 1 + \frac{e^{6} \left(\frac{\mu_{0}}{\epsilon_{0}}\right)^{\frac{3}{2}}}{4 h^{3}} + \frac{3 \mu_{0} e^{10} \left(\frac{\mu_{0}}{\epsilon_{0}}\right)^{\frac{3}{2}}}{64 \epsilon_{0} h^{5}} - \frac{3 \mu_{0}^{2} e^{8}}{16 \epsilon_{0}^{2} h^{4}} - \frac{\mu_{0}^{3} e^{12}}{256 \epsilon_{0}^{3} h^{6}}
-\end{equation}
-
-\begin{equation}
-    v_{\left( \gamma_{\text{em}} \right)} = 371,721 ~ \text{m} / \text{s}
-\end{equation}
-
-This lies within $0.52\%$ of the Planck 2018 dipole velocity\cite{planck_collaboration_2020}, but the difference exceeds the quoted measurement uncertainty. More importantly, this gives a possible electromagnetic approximation for the relativistic portion of displacement which was theorized to be the source of inertia in section \ref{sec_theoretical_framework}.
-
-\paragraph{Solar $\omega$}
-
-We expand equation \ref{eq_omega_earth_Gamma} and define $\Gamma\left( \sigma \right)$ to produce
-
-\begin{equation}
-    \alpha = \Gamma\left( \sigma \right) \left( \frac{d}{dR} g \right)^{1/3}, \quad \Gamma \left( \sigma \right) = \frac{1}{2 - \sigma}
-\end{equation}
-
-Where $\Gamma\left( \sigma \right)$ is some unknown function of spin. While a well defined function remains elusive, we can take advantage of several characteristics for specific local bodies according to table \ref{table_advantageous_props} to derive certain characteristics of $\sigma$.
-
-\begin{table}[h]
-\caption{Advantageous properties}%
-\label{table_advantageous_props}
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l l l }
-\toprule
-Body & Trait & Value\\
-\midrule
-Earth& The most mass dense.& $5495 ~ \text{kg}\ \text{m}^{-3}$\\
-Saturn& The least mass dense.& $687 ~ \text{kg}\ \text{m}^{-3}$\\
-Sun& The most massive.& $1.988 \times 10^{30} ~ \text{kg}$\\
-\bottomrule
-\end{tabular*}
-\end{table}
-
-In equation \ref{eq_omega_earth_Gamma} we've demonstrated that for the most mass dense body in the system
-
-\begin{equation}
-    \Gamma_{\oplus}\left( \sigma \right) \approx \Gamma\left( \alpha \right) = \frac{1}{2 - \alpha}
-\end{equation}
-
-
-We propose that $\Gamma\left( \sigma \right)$ acts inside of the determinant. We then take the inverse of the determinant of a diagonal $3 \times 3$ matrix to find
-
-\begin{equation}
-    \Gamma_{\odot}\left( \sigma \right) \propto \sqrt[3]{\Gamma\left( \sigma \right)}
-\end{equation}
-
-We then presume that $\sigma$ is associated with spin. Due to the increased surface gravitational acceleration and the decreased rate of spin for the Sun, we approximate $\sigma = 0$.
-
-\begin{equation}
-    \Gamma_{\odot}\left( \sigma \right) \approx \frac{1}{\sqrt[3]{2}}
-\end{equation}
-
-Or
-
-\begin{equation}\label{eq_Gamma_solar}
-    \alpha = \Gamma_{\odot}\left( \sigma \right) \sqrt[3]{\frac{d}{dR}g} = \sqrt[3]{\frac{1}{2} \frac{d}{dR} g_{\odot}} \pm 0.47\%
-\end{equation}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{../diagrams/outputs/omega_mass_density.eps}
-\caption{The model quantity $\omega$, identified with $dy$ and constructed from the inverse determinant associated with volume change, plotted as a function of mass density.}
-\label{fig_omega_mass_density}
-\end{figure}
-
-We then find through observation that for the least mass dense body in the system, $\Gamma_{\saturn}\left( \sigma \right) \approx 1$.
-
-This gives a set of $3$ equations where the $\Gamma\left( \sigma \right)$ term cancels for the dominant body in the system.
-
-\begin{equation}
-    \begin{aligned}
-        g_{\oplus} & = R_{\oplus} \left( \frac{\alpha^{3} \left( 2 - \alpha \right)^{3}}{2} \right)  \tau^{2} & \pm 0.008\% \\
-        g_{\odot} & = R_{\odot} \alpha^{3}  \tau^{2} & \pm 1.426\% \\
-        g_{\saturn} & = \frac{1}{2} R_{\saturn} \alpha^{3}  \tau^{2} & \pm 1.134\% \\
-    \end{aligned}
-\end{equation}
-
-Which in turn produces a domain where $\alpha \lessapprox \omega \lessapprox \alpha \left( 2 - \alpha \right)$ as shown in figure \ref{fig_omega_mass_density}.
-
-\subsection{Gravitational Parameters}
-
-Due to algebraic symmetries, it's trivial to derive our kinematic velocity through gravitational parameters. What is of interest however, is that we derive what we propose is a more fundamental velocity first. It is only after integrating motion in a manner that is analogous to time that we produce our kinematic velocity. We call this first velocity our \textit{cosmological velocity}, and propose a new geometric interpretation of existing data that may resolve the SNe/CMB velocity discrepancy.
-
-
-\paragraph{Cosmological Velocity}
-
-As $\gamma$ is applied as a scalar, we take the average of the integral of $\delta_{\left( M, R \right)}$ to be
-
-\begin{equation}\label{eq_varphi}
-    \varphi\left( M, R \right) = \frac{1}{R}\int \delta\left( M, R  \right) = 1 + G \frac{M \hat{\tau}^{2}}{R^{3}}
-\end{equation}
-
-Substituting $\varphi\left( M, R \right)$ into equation \ref{eq_v_of_gamma} gives
-
-\begin{equation}\label{eq_v_cosmo}
-    \boxed{
-    v_{\text{cosmo}} = c \sqrt{1 - \frac{1}{\varphi^2{\left( M, R \right)}}} = 525,493.17 ~ \text{m} / \text{s}
-    }
-\end{equation}
-
-
-While this value aligns closely with the correlation carried out by Gordon et al.\cite{gordon_determining_2008}, there remains large uncertainties inherent in SNe observation\cite{Brout2022, Betoule2014}, and the function only roughly approximates this velocity for Earth. A more complete model would need to resolve this function for other bodies through the relativistic dilation of constants, or offer an explanation as to why this appears to work only for the theoretical upper limit of mass density.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{../diagrams/outputs/cosmo_velocity_mass_density_plot.eps}
-\caption{Model-derived cosmological velocity plotted as a function of mass density.}
-\label{fig_mass_density_cosmo_velocity}
-\end{figure}
-
-\paragraph{Kinematic Velocity}
-
-We apply the time-equivalent quantity in equation \ref{eq_tau_definition} to equation \ref{eq_varphi}, making equation \ref{eq_varphi} time dependent. Integrating gives
-
-\begin{equation}\label{eq_v_kinematic_1}
-\frac{1}{R} \int_0^R \int_0^x \delta \tau~ dR ~ d\tau = 1 + \frac{1}{2} \frac{G M_\oplus}{R^3_\oplus} \left( \frac{\dot{x}}{\hat{x}} \right)^{2}
-\end{equation}
-
-We then substitute equation \ref{eq_v_kinematic_1} into equation \ref{eq_v_of_gamma} where $d\tau = 1$
-
-\begin{equation}
-    \boxed{
-        v_{\text{kinematic}} = c \sqrt{1 - \frac{1}{\left( 1 + \frac{1}{2} G \frac{M \hat{\tau}^{2}}{R^3} \right)^2}} = 371,580 ~ \text{m} / \text{s}
-    }
-\end{equation}
-
-which lies within $0.5\%$ of the Planck 2018 dipole velocity\cite{planck_collaboration_2020}. As above, the difference exceeds the measurement uncertainty.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{../diagrams/outputs/mass_density_velocity_plot.eps}
-\caption{Model-derived kinematic velocity as a ratio with the velocity found by Eilers et al. plotted as a function of mass density.}
-\end{figure}
-
-
-\subsection{Orbital Velocity}
-
-When considering the potentials of a gravitational acceleration that has, in the most simplistic sense, been scaled by $-1$, it's natural to consider the affects of this radiating force on existing orbital mechanics. Here, we consider a trigonometric derivation of a stable orbit velocity in a simplified single body system where
-
-\begin{equation}
-    m^{\text{inertial}}_{j} = \sum_{i \neq j} \Lambda G \frac{M_{i}}{R^{2}_{ji}}\hat{R}_{ji}
-\end{equation}
-
-and $\Lambda$ acts as a geometric coupling parameter.
-
-While an intersection is produced at our galactic orbital radius to within $5.6\%$ with only baryonic matter, this function does \textit{not} produce a rotation curve that matches observation on its own. As in the previous section, the function found here would need to describe other radii or be discarded.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{../diagrams/outputs/trig_orbital_velocity_derivation.eps}
-\caption{Geometric construction used in the proposed stable-orbit derivation, showing $R_0$, the angle $\theta$, the displacement $\dot{x}\,d\tau$, and the proposed radial increment $R+g\,\hat{\tau}\,d\tau$.}
-\label{fig_trig_orbital_velocity}
-\end{figure}
-
-\paragraph{Relativistic Stable Orbit Velocity}
-
-In the simplified single-body system considered here, the spatial dilation described above permits a trigonometric derivation of the stable-orbit velocity as an alternative to the conventional algebraic equality where a straight trajectory in $\mathbf{S}$ is a curved, orbital trajectory in $\mathbf{U}$.
-
-Figure \ref{fig_trig_orbital_velocity} represents the geometric construction used in this derivation.
-
-\begin{equation}\label{eq_trig_derivation}
-R_0^2 + v_{\text{orbit}}^2 d\tau^2 = \left(\hat{\tau}\int_0^{R_0} 2 G \frac{M}{R^3}\ dR\ d\tau\right)^2 = \left(R_0 + g\,\hat{\tau}\, d \tau\right)^2
-\end{equation}
-
-Setting $d\tau = \hat{\tau} = 1~\mathrm{s}$ gives
-
-\begin{equation}\label{eq_orbital_velocity}
-    \boxed{
-    v_{\text{orbit}}\left( M, R \right) = \frac{\hat{\tau}\sqrt{G M \left(G M + 2 R^{3}/\hat{\tau}^{2}\right)}}{R^{2}} 
-    }
-\end{equation}
-
-For the comparison with the Milky Way, we adopt the enclosed Galactic baryonic mass reported by Cautun et al.~\cite{cautun2020milky}:
-
-\begin{equation}
-    M_{\text{enc}} = M_{\mathrm{bar}}(<R_0)
-    = 4.44 \times 10^{10}\,M_\odot,
-\end{equation}
-
-Here, $R_0 = 8.12\,\mathrm{kpc}$ denotes the Sun's Galactocentric orbital radius\cite{gravity2018detection, bobylev2021estimate}.
-
-For comparison with observation, we use the solar-neighborhood circular velocity reported by Eilers et al.~\cite{Eilers_2019}. Using the adopted enclosed mass and solar orbital radius, the model gives the following orbital velocity:
-
-\begin{equation}\label{eq_v_orbit_solution}
-    v_{\text{orbit}}\left( M_{\text{enc}}, R_{\text{orbit}} \right) = 216,874 \ \text{m}/ \text{s} = v_{\text{eilers}} \pm 5.59\%
-\end{equation}
-
-The model velocity equals the comparison velocity at $M_{ \text{enc}} \approx 4.95 \times 10^{10} M_{\odot}$.
-
-The adopted mass scale is also consistent with the characteristic stellar mass scale of approximately $5 \times 10^{10}\,M_\odot$ identified by Yu et al.~\cite{yu2023born} in their FIRE-2 simulations of Milky Way-mass galaxies. Yu et al. associate this scale with a transition in galactic morphology from predominantly disc-dominated to increasingly spheroid-dominated systems. 
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{../diagrams/outputs/eilers_observation.eps}
-\caption{Milky Way circular velocity as a function of galactocentric radius. Eilers et al. (2019) measurements are shown as points, alongside the relativistic and Newtonian point-mass model curves. The solar-neighborhood measurement is marked with a star; error bars indicate the reported uncertainties in galactocentric radius and circular velocity.}\label{fig_eilers_observation}
-\end{figure}
-
-It is important to note here that $v_{\text{orbit}} \left( M, R \right) \approx v_{\text{escape}}$, not a stable orbit velocity. This discrepancy needs to be accounted for by Machian resistance in an n-body system, for which section~\ref{sec_machian_hypothesis} states a hypothesis. This work is not carried out here, but geometric unity achieved elsewhere appears to indicate the viability of this geometry, such that the sum of this radiating force for all other bodies in the system may induce inertial resistance.
-
-
-\paragraph{Kinematic Velocity From Trigonometric Orbit Equations}
-
-We now investigate equation \ref{eq_orbital_velocity} by setting 
-
-\begin{equation}
-    v_{\text{orbit}} = \sqrt{2 \frac{GM}{R}}
-\end{equation}
-
-which is obtained by $E_{\text{kinetic}} = \int g\ dR$. Solving equation \ref{eq_trig_derivation} for $\tau$ and substituting $v_{\text{orbit}}$ gives
-
-\begin{equation}
-    d \tau = \frac{2 R^{3}}{G M - 2 R^{3}} = -1.000000768
-\end{equation}
-
-Inserting this quantity into equation \ref{eq_v_of_gamma} gives
-
-\begin{equation}
-    v_{\left( \left|d \tau\right| \right)} = 371,580 ~ \text{m} / \text{s}
-\end{equation}
-
-which matches the 2018 Planck data to within $0.47\%$.
-
-This is the same quantity as the kinematic velocity obtained above, since $\left| d \tau \right|=1+GM/(2R^3)$, and it is not an independent confirmation.
-
-
-\subsection{Galactic Orbital Motion and the Baryonic Mass Distribution}\label{sec_galactic_test}
-
-
-\paragraph{Full-radius test.} Expression \ref{eq_orbital_velocity} was compared with the circular velocities of Eilers et al.~\cite{Eilers_2019} at the $38$ radii between $5.3$ and $24.8$ kpc, with the quoted statistical errors and per-bin systematic fractions combined in quadrature. The Cautun et al. profiles were not available for this test. The enclosed baryonic mass was instead taken from an approximate model of exponential stellar and gas discs and a bulge, with parameters in the style of McMillan~\cite{McMillan2017} with flattened components treated as spherical shells. The model was rescaled so that $M_b(<8.12~\mathrm{kpc})=4.44\times10^{10}\,M_\odot$, the value adopted in this paper. 
-
-\begin{itemize}
-\item With the stated errors, $v_{\mathrm{orbit}}$ gives $\chi^{2}=1.6\times10^{4}$ for $38$ points. With an additional $5\%$ floor on the error it gives $\chi^{2}=327$, or $8.6$ per point. Restricted to $R\le10$~kpc, the $5\%$-floor value is $1.1$ per point, so agreement within about $5\%$ holds in the inner region.
-\item The predicted speed falls from $241~\mathrm{km\,s^{-1}}$ at $5.27$ kpc to $139~\mathrm{km\,s^{-1}}$ at $24.82$ kpc. The observed speed falls from $227$ to $198~\mathrm{km\,s^{-1}}$.
-\item Allowing one free overall scale on the baryonic mass does not repair the shape. The best fit scales the mass by $1.31$ and still gives $\chi^{2}=3.4\times10^{3}$ ($92$ per degree of freedom), or $3.5$ per degree of freedom with the $5\%$ floor.
-\item The enclosed mass required to match the data, $v_{\mathrm{obs}}^{2}R/2G$, rises from $3.2\times10^{10}\,M_\odot$ at $5.3$ kpc to $9.4\times10^{10}\,M_\odot$ at $17$ to $20$ kpc, whereas the model enclosed mass grows by a factor of only $1.6$ over $5$ to $25$ kpc.
-\item The ratio $f=(v_{\mathrm{obs}}/v_{\mathrm{orbit}})^{2}$ is $0.89$ at $5.3$ kpc, $1.12$ at $8.2$ kpc and $1.74$ at $17$ kpc. For the adopted baryonic mass the observed speeds in the outer disc therefore lie above $v_{\mathrm{orbit}}$, which the outer-arm interpretation of section~\ref{sec_machian_hypothesis} does not predict.
-\end{itemize}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.95\textwidth]{../diagrams/outputs/rotation_curve_plot.eps}
-\caption{Left: Eilers et al. circular velocities, $v_{\mathrm{orbit}}=\sqrt{2GM_{\mathrm{enc}}/R}$ and the Newtonian circular speed from the baryonic model. Right: enclosed mass required to match the data, $v_{\mathrm{obs}}^{2}R/2G$, compared with the baryonic model.}
-\label{fig_rotation_curve_test}
-\end{figure}
-
-\paragraph{Test of Hypothesis M.} Replacing the single-body expression by the interpolation function $g_{\mathrm{obs}}=g_N/\left(1-e^{-\sqrt{g_N/g_0}}\right)$~\cite{McGaugh2016RAR}, with $g_N=Gm_b(<R)/R^{2}$ and $g_0$ fitted, the $32$ points with errors below $10~\mathrm{km\,s^{-1}}$ give the results of Table~\ref{table_g0_fit} as the baryonic normalization $s$ varies.
-
-\begin{table}[h]
-\caption{Fitted acceleration scale as a function of the baryonic normalization. $s=1$ is $M_b(<8.12~\mathrm{kpc})=4.44\times10^{10}\,M_\odot$. $cH_0=6.8\times10^{-10}~\mathrm{m\,s^{-2}}$ for $H_0=70~\mathrm{km\,s^{-1}\,Mpc^{-1}}$.}%
-\label{table_g0_fit}
-\begin{tabular}{@{}cccc@{}}
-\toprule
-$s$ & $g_0$ ($10^{-10}~\mathrm{m\,s^{-2}}$) & $g_0/(cH_0)$ & $\chi^{2}$/dof\\
-\midrule
-$1.00$ & $2.4$ & $0.35$ & $5.2$\\
-$1.31$ & $1.5$ & $0.22$ & $1.7$\\
-$1.60$ & $1.0$ & $0.15$ & $2.9$\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The fitted scale is of the order of $cH_0/2\pi$ over this range of baryonic mass, and it depends on that mass by a factor of about two. This comparison uses one galaxy, an approximate baryonic model and an empirical interpolation function, and it does not determine $\kappa'$. A meaningful test requires a sample of galaxies with measured baryonic masses, and it is not performed here.
-
-At the solar radius the flow velocity $v_{\mathrm{orbit}}$ is within $5.6\%$ of the observed speed, and this agreement arises from the factor $\sqrt{2}$ between the flow velocity and the circular speed. Over the full radial range the flow velocity alone does not follow the observed curve, and Hypothesis M of section~\ref{sec_machian_hypothesis} is one proposal for the additional inertial effect.
-
-\subsection{On The Appearance of Electromagnetic Parameters}
-
-An additional observation concerns the repeated appearance of the fine structure constant in the gravitational approximations developed for Earth, the Sun, and Saturn.
-
-The numerical relationships suggest the possibility that the gravitational parameters and the additional spatial coordinate share a common underlying function.
-
-However, the present work does not derive a direct electromagnetic mechanism responsible for these relationships. Nor does it establish that the fine structure constant must appear in the gravitational field equations.
-
-In particular, numerical agreement involving a dimensionful quantity requires careful treatment of units and normalization. A dimensionless fundamental constant cannot be identified with a dimensionful gravitational quantity without an additional scale or normalization.
-
-The observed relationships should therefore be regarded as numerical correlations that motivate further theoretical investigation, rather than as evidence of an established electromagnetic origin of gravity.
-
-A more complete treatment should establish whether these relationships follow from a dimensionally consistent higher-dimensional field equation, whether they depend on the properties of the individual source, and whether they produce predictions that can be independently tested.
-
-
 
 \section{Schwarzschild Orbits and Stability}\label{app_orbits}
 
