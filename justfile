@@ -1,3 +1,8 @@
+set dotenv-load
+
+current_file := "./iop/main"
+
+
 build_dilating_planes:
 	cd {{justfile_directory()}}/diagrams/inputs; sudo pdflatex -output-directory=../outputs ./dilating_planes.tex
 	pdftops -eps ./diagrams/outputs/dilating_planes.pdf ./diagrams/outputs/dilating_planes.eps
@@ -34,7 +39,7 @@ build_diagrams: build_dilating_planes build_trig_derivation build_triangle_diagr
 	magick diagrams/outputs/rotation_curve_plot.png diagrams/outputs/rotation_curve_plot.eps
 
 build_cover_letter:
-	sudo pandoc ./cover_letter/cover_letter.md -o ./cover_letter/cover_letter.pdf
+	cd {{justfile_directory()}}/cover_letter; sudo pdflatex ./cover_letter.tex
 	
 build_main:
 	sudo pdflatex ./main.tex
@@ -55,4 +60,10 @@ build_iop: build_diagrams && clean_diagram_output
 	cd {{justfile_directory()}}/iop; sudo pdflatex main.tex
 
 build: build_diagrams build_iop clean_diagram_output
-	cp ./iop/main.pdf /Users/bigsexy/Desktop/swift/Fluster/apps/website/public/assets/pdf/paper_preprint.pdf
+	cp {{current_file}}.pdf /Users/bigsexy/Desktop/swift/Fluster/apps/website/public/assets/pdf/paper_preprint.pdf
+
+build_second:
+	cd {{justfile_directory()}}/second_paper; sudo pdflatex main.tex
+	cd {{justfile_directory()}}/second_paper; biber main
+	cd {{justfile_directory()}}/second_paper; sudo pdflatex main.tex
+	cd {{justfile_directory()}}/second_paper; sudo pdflatex main.tex

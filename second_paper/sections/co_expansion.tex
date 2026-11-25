@@ -1,0 +1,77 @@
+% Section draft (Claude's notes, to be combined into paper two).
+% Code: physics.symbolic.function_generators.paper_two.co_expansion (check_co_expansion, 13/13).
+% Status: static, spherical, single mass. Verified symbolically; deflection coefficient numerical.
+
+\section{Co-expansion and the Equivalence Principle}\label{sec_co_expansion}
+
+\subsection{The Postulate}
+
+All matter co-expands with the change in $y$. Every material length, of a ruler, an atom or the Earth, scales with the local Lorentz factor $\gamma$ of the inclination into $y$, and every clock runs at the coordinate density $1/\gamma$. The scaling is the same for all matter. A body's free fall therefore cannot depend on what it is made of, and the universality of free fall follows from the geometry rather than being imposed as a separate principle. Measured with co-expanding rulers and clocks, the line element in the absolute coordinates $\mathbf{x}$ is
+\begin{equation}\label{eq_coexp_metric}
+    ds^2=-\frac{c^2dt^2}{\gamma^2}+\gamma^2\,|d\mathbf{x}|^2 .
+\end{equation}
+
+\subsection{The Self-Consistent Lorentz Factor}
+
+The flow around a mass $M$ obeys $\beta^2=2GM/(c^2R)$, and $\gamma=1/\sqrt{1-\beta^2}$. The radius $R$ in this relation must be chosen. If it is the absolute radius $r=|\mathbf{x}|$, so that $\beta^2=2u$ with $u=GM/(c^2r)$, equation~\eqref{eq_coexp_metric} has the post-Newtonian parameters $\gamma_{\rm PPN}=1$ and $\beta_{\rm PPN}=0$. The perihelion advance would then be $(2+2\gamma_{\rm PPN}-\beta_{\rm PPN})/3=4/3$ of the general-relativistic value, which Mercury excludes.
+
+Co-expansion fixes the choice. The body that sources the flow has itself co-expanded, so the radius that sets the flow is the measured radius $R=\gamma r$. Then $\beta^2=2u/\gamma$, and $\gamma$ satisfies
+\begin{equation}\label{eq_gamma_selfconsistent}
+    \gamma^2-2u\gamma-1=0,\qquad \gamma=u+\sqrt{1+u^2}.
+\end{equation}
+Expanding equation~\eqref{eq_coexp_metric} with this $\gamma$,
+\begin{equation}
+    \frac{1}{\gamma^2}=1-2u+2u^2-u^3+O(u^4),\qquad \gamma^2=1+2u+2u^2+O(u^3),
+\end{equation}
+so $\gamma_{\rm PPN}=\beta_{\rm PPN}=1$. At first post-Newtonian order the perihelion advance, the light deflection and the Shapiro delay are those of general relativity. The isotropic Schwarzschild metric has $1-2u+2u^2-\tfrac32u^3$ and $1+2u+\tfrac32u^2$, so the two first differ at second post-Newtonian order.
+
+\subsection{The Exact Metric}
+
+In terms of the measured radius, $R=\gamma r=GM/c^2+\sqrt{(GM/c^2)^2+r^2}$, and equation~\eqref{eq_coexp_metric} becomes, with $G=c=1$,
+\begin{equation}\label{eq_coexp_areal}
+    ds^2=-\left(1-\frac{2M}{R}\right)dt^2+\frac{(R-M)^2}{(R-2M)^2}\,dR^2+R^2d\Omega^2 .
+\end{equation}
+Its $g_{tt}$ and areal radius are exactly those of Schwarzschild. Its radial component is larger by
+\begin{equation}
+    \frac{g_{RR}}{g_{RR}^{\rm Schw}}=1+\frac{M^2}{R(R-2M)} .
+\end{equation}
+Every observable that depends only on $g_{tt}$ and the areal radius is therefore unchanged. These include the photon sphere at $R=3M$, the critical impact parameter $b_c=3\sqrt3M$ and hence the size of a black hole's shadow, the innermost stable circular orbit at $R=6M$, and circular-orbit frequencies. The differences are carried by $g_{RR}$.
+
+\paragraph{The centre.} The surface $R=2M$ is the absolute centre $r=0$: there is no region inside it. Along a static slice it lies at infinite proper radial distance, since $\int(R-M)\,dR/(R-2M)$ diverges logarithmically. A radially infalling body nevertheless reaches it in finite proper time, because $\dot R^2\simeq 2E^2(R-2M)/M$ near $R=2M$. What happens to matter that arrives at the centre is not yet determined.
+
+\subsection{Where the Model Differs from General Relativity}
+
+\begin{table}[h]
+\caption{Static single-mass predictions of co-expansion compared with general relativity ($G=c=1$)}
+\label{table_coexp}
+\begin{tabular}{@{}p{0.34\linewidth}p{0.28\linewidth}p{0.30\linewidth}@{}}
+\toprule
+Quantity & Co-expansion & General relativity\\
+\midrule
+PPN $\gamma$, $\beta$ & $1$, $1$ & $1$, $1$\\
+Shadow, $b_c$ & $3\sqrt3M$ & $3\sqrt3M$\\
+ISCO & $6M$ & $6M$\\
+Light deflection & $4M/b+4\pi(M/b)^2$ & $4M/b+\tfrac{15\pi}{4}(M/b)^2$\\
+Radial epicyclic frequency at $6M$ & $0.980\times$ GR & --\\
+Ringdown damping time (eikonal) & $2/\sqrt3\approx1.155\times$ GR & --\\
+Ringdown frequency (eikonal) & GR & --\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The second-order light deflection was found by integrating the null geodesics of equation~\eqref{eq_coexp_areal}. At impact parameters $b=100$, $400$ and $1600\,M$ the excess over Schwarzschild, multiplied by $(b/M)^2$, is $0.827$, $0.796$ and $0.788$, which tends to $\pi/4$. For a ray grazing the Sun the excess is about $3.5\times10^{-12}$\,rad, below present reach.
+
+The ringdown is the first place the difference is large. In the eikonal limit the oscillation frequency of a perturbation is set by $g_{tt}/R^2$ at the photon sphere and is unchanged. The damping rate is the Lyapunov exponent of the photon orbit, which scales as $1/\sqrt{g_{RR}}$, so the damping time is longer by $\sqrt{g_{RR}/g_{RR}^{\rm Schw}}=2/\sqrt3$ at $R=3M$. Multiplying the posteriors from GWTC-3 events, the LIGO--Virgo--KAGRA collaboration found $\delta\hat f_{220}=0.02^{+0.03}_{-0.03}$ and $\delta\hat\tau_{220}=0.13^{+0.11}_{-0.11}$ for the fundamental mode~\cite{LVK2025TGRGWTC3}. The eikonal estimate here, $\delta\hat f=0$ and $\delta\hat\tau\approx+0.15$, lies inside that interval. This comparison is only indicative. It uses the eikonal limit for an $\ell=2$ mode, a test field on a non-rotating background, and no field equations for the perturbations themselves, while the observed remnants spin rapidly.
+
+\subsection{Several Masses}
+
+The field equation of section~\ref{sec_field_equation} makes this exact: $\gamma-1/\gamma$ superposes linearly. To first order $\gamma^2=1+2\sum_iGM_i/(c^2r_i)$, and the measured geometry is conformally flat. General relativity's time-symmetric slice for several black holes is also conformally flat with a linearly superposed factor~\cite{BrillLindquist1963}. Requiring instead that space be a single hypersurface $y=h(\mathbf{x})$ whose induced metric reproduces the static two-body geometry fails: the Codazzi equations cannot be satisfied for two masses. Co-expansion avoids this, because the measured geometry is set by $\gamma$ and not by the induced metric. In the weak field the condition $\gamma^2=1+|\nabla h|^2=1-2\Phi/c^2$ is the eikonal equation $|\nabla h|^2=-2\Phi/c^2$ for the height of the inclined space.
+
+\subsection{Open Questions}
+
+\begin{enumerate}
+    \item \textbf{Ringdown.} Derive the perturbation equations of the model, including rotation, and compute the $\ell=2$ quasinormal modes directly rather than in the eikonal limit.
+    \item \textbf{The absolute frame (settled).} The absolute frame keeps the outward flow at $\beta$, unit lapse and the synchronization offset $c(dT-dt)=-\gamma\,dy$ exactly; in it the metric is $-c^2dT^2+(dr-\beta c\,dT)^2+\gamma^2r^2d\Omega^2$, with $r$ the absolute radius. The Painlev\'e--Gullstrand construction is this with the angular co-expansion removed.
+    \item \textbf{Interiors.} The field equation (section~\ref{sec_field_equation}) determines $\gamma$ inside matter; compact objects are treated in section~\ref{sec_compact_objects}.
+    \item \textbf{Cosmic co-expansion.} Determine whether co-expansion with the Hubble flow leaves $\dot G/G$ within the lunar-laser-ranging bound.
+\end{enumerate}

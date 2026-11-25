@@ -1,0 +1,55 @@
+% Section draft (Claude's notes, to be combined into paper two).
+% Code: physics.symbolic.function_generators.paper_two.compact_objects (check_compact_objects, 10/10).
+% Status: uniform (incompressible) star only; realistic equations of state and observational tests open.
+
+\section{Compact Objects}\label{sec_compact_objects}
+
+The field equation of section~\ref{sec_field_equation} determines the Lorentz factor inside matter. This section finds the equilibrium of a star in the co-expansion geometry and what replaces a black hole.
+
+\subsection{Hydrostatic Equilibrium of a Uniform Star}
+
+Take a ball of uniform rest-mass density $\rho$ per absolute volume (the definition of mass), absolute radius $a$ and mass $M$. Inside, $\psi=\gamma-1/\gamma=(GM/c^2)(3a^2-r^2)/a^3$, and
+\begin{equation}
+    \gamma(r)=\exp\!\left[\operatorname{asinh}\!\left(\frac{GM(3a^2-r^2)}{2c^2a^3}\right)\right].
+\end{equation}
+The clock rate is $1/\gamma$, and since a measured volume is $\gamma^3$ times an absolute one, the measured energy density is $\epsilon=\rho c^2/\gamma^3$. Matter follows the geometry, so a static fluid satisfies
+\begin{equation}\label{eq_hydrostatic_coexp}
+    \frac{dp}{dr}=\left(\epsilon+p\right)\frac{d\ln\gamma}{dr},
+    \qquad p(a)=0 .
+\end{equation}
+In the weak field this is Newtonian hydrostatics: the central pressure is $p_c/\epsilon_c=GM/(2c^2a)$, which the numerical integration reproduces to $0.1\%$ at $GM/(c^2a)=10^{-3}$.
+
+\begin{table}[h]
+\caption{Uniform stars in the co-expansion geometry ($G=c=1$)}
+\label{table_uniform_stars}
+\begin{tabular}{@{}llllll@{}}
+\toprule
+$M/a$ & $p_c/\epsilon_c$ & centre clock & surface clock & $R_{\rm surface}/2M$ & surface $z$\\
+\midrule
+$0.1$ & $0.055$ & $0.861$ & $0.905$ & $5.52$ & $0.105$\\
+$0.5$ & $0.334$ & $0.500$ & $0.618$ & $1.618$ & $0.618$\\
+$1$ & $0.626$ & $0.303$ & $0.414$ & $1.207$ & $1.41$\\
+$5$ & $0.988$ & $0.066$ & $0.099$ & $1.010$ & $9.1$\\
+$100$ & $1.016$ & $0.003$ & $0.005$ & $1.000025$ & $199$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{No Buchdahl limit.} In general relativity the central pressure of a uniform star diverges when its surface reaches $R=\tfrac98\,(2GM/c^2)$, and no static star can be more compact. Here the central pressure is finite at every compactness (table~\ref{table_uniform_stars}) and levels off near $p_c\simeq\epsilon_c$, and the central clock rate stays positive. Pressure does not gravitate in this geometry, which is why the divergence does not occur.
+
+\subsection{What Replaces a Black Hole}
+
+The measured surface radius of the star is
+\begin{equation}\label{eq_surface_radius}
+    R_{\rm surface}=\gamma(a)\,a=\frac{GM}{c^2}+\sqrt{\left(\frac{GM}{c^2}\right)^2+a^2}>\frac{2GM}{c^2}
+\end{equation}
+for every $a>0$, approaching $2GM/c^2$ only as $a\to0$, and the surface redshift is $z=\gamma(a)-1=u+\sqrt{1+u^2}-1$ with $u=GM/(c^2a)$, large but finite. The surface $R=2GM/c^2$ is the absolute centre and no finite body reaches it. The endpoint of collapse is therefore a horizonless object whose surface lies just outside $R=2GM/c^2$. This is the strong-field form of co-expansion: the more compact a body is, the more its surface co-expands, and it never falls within its own horizon.
+
+\subsection{Tests and Caveats}
+
+\begin{itemize}
+    \item \textbf{Shadows do not distinguish.} The photon sphere and the critical impact parameter depend only on $g_{tt}$ and the areal radius and are those of general relativity, so the shadow sizes measured by the Event Horizon Telescope agree with both.
+    \item \textbf{A surface instead of a horizon.} Gas falling onto a surface heats it and radiates, while a horizon absorbs it. Observations of Sgr~A* have been used to argue against such surfaces; this is the most serious observational test of the result and must be checked against that literature.
+    \item \textbf{Ringdown and echoes.} A reflecting surface just outside $R=2GM/c^2$ would add late-time echoes to the gravitational-wave ringdown, and the eikonal damping time of section~\ref{sec_co_expansion} is already longer than in general relativity.
+    \item \textbf{Matter.} At extreme compactness $p_c/\epsilon_c$ slightly exceeds $1$ (about $1.016$ at $M/a=100$), beyond the dominant energy condition, and an incompressible fluid has an unphysical sound speed. A realistic neutron-star equation of state is needed before quoting maximum masses or comparing with measured mass--radius relations.
+\end{itemize}

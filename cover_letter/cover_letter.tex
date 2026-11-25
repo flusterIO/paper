@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,top=0.65in,bottom=0.65in,left=0.95in,right=0.95in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage[colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
+\pagestyle{empty}
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+\definecolor{rulecolor}{gray}{0.35}
+\newcommand{\sep}{\hspace{0.9em}\raisebox{0.1ex}{\textperiodcentered}\hspace{0.9em}}
+
+\begin{document}
+
+% Letterhead
+\begin{center}
+  {\LARGE\scshape Andrew Mueller}\\[0.35em]
+  \begin{tabular}{@{}r@{\hspace{0.9em}}c@{\hspace{0.9em}}l@{}}
+    \small Independent Researcher & \small\textperiodcentered & \small Milwaukee, WI, USA\\[0.2em]
+    \small \href{mailto:AndrewMueller414@gmail.com}{AndrewMueller414@gmail.com} & \small\textperiodcentered & \small ORCID: \href{https://orcid.org/0000-0003-0573-6327}{0000-0003-0573-6327}
+  \end{tabular}\\[0.5em]
+  {\color{rulecolor}\rule{\linewidth}{0.6pt}}
+\end{center}
+
+\vspace{0.4em}
+\today
+
+\vspace{0.2em}
+Editorial Board\\
+\textit{Physica Scripta}\\
+IOP Publishing
+
+\vspace{0.2em}
+{\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000 \textbf{Re: Submission of a Research Paper, ``Absolute Time in Higher-Dimensional Geometry: Classically Simultaneous Relativity via an Unwrapped Kaluza--Klein Dimension''}
+
+Dear Editors,
+
+Please consider the enclosed single-author manuscript for publication as a Research Paper in \textit{Physica Scripta}. It has been prepared for double-anonymous review.
+
+The manuscript asks whether the kinematics of special relativity, and the static clock rates of general relativity, can be written with a fourth spatial axis and no time dimension. It shows that they can. A moving body traces a path through three-dimensional space and a non-compact density axis, $y$. The inclination of that path carries the kinematics: its slope is $\partial_x y=\beta\gamma$, where $\beta=v/c$ and $\gamma$ is the Lorentz factor; its sine is the speed; and its cosine is the rate of a clock carried along the path. Time readings are ratios of distances along the path, and the relativity of simultaneity becomes a displacement along $y$, so that every inertial observer can recover a single absolute time. If space flows outward from a mass, as in the Hubble flow, the space around the mass is inclined into $y$ in the same way, and for steady fields the time coordinate can be eliminated from the motion of light and matter. The resulting flat-space paths reproduce the Schwarzschild orbit equation, light bending, the stability limit for circular orbits and the perihelion advance. The results are checked symbolically and numerically in an open-source package.
+
+I want to be clear about the scope of the claims. Where the construction has been developed, it is equivalent to special and general relativity, and its gravitational results rely on field equations imported from general relativity. The manuscript therefore presents them as consistency checks, not as new predictions, and a table separates what is an identity of the geometry, what is recovered from general relativity, what is assumed, and what is not established. The contribution is the unification of the Lorentz factor, speed, clock rate and synchronization offset as one geometric quantity, the account of time that follows from it, and an identification of where an independent dynamics for $y$ could make the model differ from general relativity. The manuscript places the work among Euclidean and neo-Lorentzian formulations of relativity, induced-matter Kaluza--Klein theory, and the Zermelo/Randers and Jacobi-metric treatments of motion.
+
+I believe the manuscript suits the journal's scope in mathematical physics, and will interest readers concerned with the foundations of relativity. The work is original, has not been published, and is not under consideration elsewhere. I have no competing interests to declare and received no funding. The code that reproduces and checks every result is open source, and the manuscript says how to obtain it\footnote{The package is named for a numerical intersection with the fine structure constant that has since been aborted. All paper specific functions are exported under a nested module "paper".}. As the journal's policy requires, the manuscript also contains a declaration of generative-AI use: I used Anthropic's Claude to review and edit the text, to check and extend derivations, and to write and test the accompanying code, and I reviewed all of that material and take full responsibility for it. The theory itself was developed while I was without access to AI. I have chosen the subscription publication route and do not wish to publish open access.
+
+Thank you for your consideration.
+
+Sincerely,
+
+\vspace{1.6em}
+Andrew Mueller\\
+{\small Independent Researcher}
+
+\end{document}

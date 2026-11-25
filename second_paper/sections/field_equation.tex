@@ -1,0 +1,89 @@
+% Section draft (Claude's notes, to be combined into paper two).
+% Code: physics.symbolic.function_generators.paper_two.co_expansion_field (check_co_expansion_field, 13/13).
+% Status: static field equation, verified symbolically; mass definition adopted as a definition of the model.
+% Depends on: sections/co_expansion.tex (the postulate, the self-consistent gamma, the exact metric).
+
+\section{The Field Equation and the Definition of Mass}\label{sec_field_equation}
+
+Section~\ref{sec_co_expansion} obtained the Lorentz factor around a point mass from a self-consistency rule: the flow is set by the co-expanded radius, $\beta^2=2GM/(c^2R)$ with $R=\gamma r$, which gives $\gamma^2-2u\gamma-1=0$, $u=GM/(c^2r)$. As it stands the rule applies to one point mass, and the choice of the measured radius can look as if it had been made to pass the perihelion test. This section shows that the rule is the point-mass solution of a linear field equation in flat absolute space, states the definition of mass that the equation requires, and works out what follows from it.
+
+\subsection{The Field Equation}
+
+Dividing $\gamma^2-2u\gamma-1=0$ by $\gamma$ gives
+\begin{equation}\label{eq_fe_pointmass}
+    \gamma-\frac{1}{\gamma}=\frac{2GM}{c^2r}.
+\end{equation}
+The right-hand side is $-2/c^2$ times the Newtonian potential of the mass in absolute coordinates, which is harmonic away from the mass. The self-consistent Lorentz factor is therefore the point-mass solution of
+\begin{equation}\label{eq_field_equation}
+    \nabla^2\!\left(\gamma-\frac{1}{\gamma}\right)=-\frac{8\pi G}{c^2}\,\rho ,
+\end{equation}
+where $\nabla^2$ is the Laplacian of flat absolute space and $\rho$ is the density of mass, defined in subsection~\ref{sec_mass_definition}. The equation is linear in the field
+\begin{equation}\label{eq_field_variable}
+    \psi\equiv\gamma-\frac{1}{\gamma}=\gamma\beta^2=-\frac{2\Phi}{c^2},
+\end{equation}
+not in $\gamma$, and it holds exactly, not only in the weak field. Inverting,
+\begin{equation}\label{eq_gamma_asinh}
+    \gamma=\exp\!\left[\operatorname{asinh}\!\left(-\frac{\Phi}{c^2}\right)\right]=-\frac{\Phi}{c^2}+\sqrt{1+\frac{\Phi^2}{c^4}} ,
+\end{equation}
+with $\Phi$ the Newtonian potential of $\rho$ in absolute space. For one point mass this is $\gamma=u+\sqrt{1+u^2}$. To second order, $\gamma^2=1+\psi+\tfrac12\psi^2+O(\psi^3)$, which for one mass is $1+2u+2u^2$, the expansion that gives $\gamma_{\rm PPN}=\beta_{\rm PPN}=1$.
+
+\paragraph{The equation for the inclined space.} With the slope of the inclined space, $|\nabla y|=\beta\gamma=\sqrt{\gamma^2-1}$, the field is $\psi=(\gamma^2-1)/\gamma=|\nabla y|^2/\sqrt{1+|\nabla y|^2}$, and equation~\eqref{eq_field_equation} becomes an equation for the height $y$ itself:
+\begin{equation}\label{eq_field_equation_y}
+    \nabla^2\frac{|\nabla y|^2}{\sqrt{1+|\nabla y|^2}}=-\frac{8\pi G}{c^2}\,\rho .
+\end{equation}
+This is the first equation of the model that governs the density axis directly. In the weak field it reduces to $|\nabla y|^2=-2\Phi/c^2$, the eikonal equation for the height that was found when the outward flows of several masses were combined (section~\ref{sec_co_expansion}). Equation~\eqref{eq_field_equation_y} fixes $|\nabla y|$; where the flows of two bodies meet, the direction of $\nabla y$ changes across a surface on which the jump in $\nabla y$ is normal and exerts no force.
+
+\subsection{The Definition of Mass}\label{sec_mass_definition}
+
+\paragraph{Definition.} The mass density $\rho$ in equation~\eqref{eq_field_equation} is the rest mass per unit absolute volume.
+
+Co-expansion changes measured lengths by $\gamma$ and measured volumes by $\gamma^3$, but it does not change the amount of matter contained in a given absolute volume. Rest mass per absolute volume is therefore the measure of mass that co-expansion leaves unchanged, and it is the natural density to source a field defined on absolute space. The mass of a body, $M=\int\rho\,d^3x$, is the sum of the rest masses of its constituents. Three consequences follow directly.
+
+\begin{enumerate}
+    \item \textbf{Exact superposition.} Because $\psi$ obeys a linear equation, the geometry of any distribution of masses at rest is exact:
+    \begin{equation}\label{eq_superposition}
+        \gamma-\frac{1}{\gamma}=\frac{2G}{c^2}\sum_i\frac{M_i}{|\mathbf{x}-\mathbf{x}_i|}.
+    \end{equation}
+    The field $\psi$ adds; $\gamma$ itself does not. In general relativity separated masses at rest have no static vacuum solution without stresses to hold them apart, and the time-symmetric initial slice of several masses superposes only its conformal factor~\cite{BrillLindquist1963}. Equation~\eqref{eq_superposition} is the instantaneous geometry of masses at rest; how it changes as they move is the time-dependent problem.
+
+    \item \textbf{Binding energy and pressure are not sources.} The gravitational mass of a body is the sum of the rest masses of its parts. In general relativity it also includes the internal energy and the (negative) gravitational binding energy, and pressure contributes to the active mass. Subsection~\ref{sec_sep} works out what this requires of inertial mass.
+
+    \item \textbf{Interiors.} For a ball of uniform density and absolute radius $a$, $\psi=(GM/c^2)(3a^2-r^2)/a^3$ inside and $2GM/(c^2r)$ outside, joined continuously at $r=a$. The central clock rate is
+    \begin{equation}\label{eq_ball_center}
+        \frac{1}{\gamma(0)}=\exp\!\left[-\operatorname{asinh}\!\left(\frac{3GM}{2c^2a}\right)\right],
+    \end{equation}
+    which is positive for every compactness ($0.86$, $0.50$ and $0.30$ for $GM/(c^2a)=0.1$, $0.5$ and $1$). In general relativity the central clock rate of a uniform star vanishes at the Buchdahl limit, where the central pressure diverges because pressure gravitates. Here the field equation sets no such limit. Any upper bound on the compactness of a star must come from the matter, through hydrostatic equilibrium in this geometry, which has not yet been worked out.
+\end{enumerate}
+
+\subsection{Self-Gravitating Bodies and the Strong Equivalence Principle}\label{sec_sep}
+
+Because gravitational binding energy is not part of $\rho$, it does not contribute to the gravitational mass. Whether the definition is viable depends on whether it contributes to the inertial mass.
+
+If inertial mass included the gravitational binding energy, as it does in general relativity, the gravitational and inertial masses of a self-gravitating body would differ. In the standard parametrization~\cite{Will2014}, $m_g/m_i=1-\eta_N\,|E_g|/(mc^2)$, and this case is $\eta_N=-1$. Bodies with different fractions of self-energy would then fall at different rates, which is the Nordtvedt effect. The fractions are about $4.6\times10^{-10}$ for the Earth and $0.2\times10^{-10}$ for the Moon, so in the field of the Sun the lunar orbit would be displaced, with a monthly modulation of the Earth--Moon distance of about $13$\,m per unit $\eta_N$. Lunar laser ranging limits $|\eta_N|$ to the order of $10^{-4}$~\cite{Will2014}. For a neutron star the fraction is about $0.1$, and the pulsar in the triple system PSR~J0337+1715, which falls together with a white dwarf in the field of a second white dwarf, gives the strong-field bound $\Delta=(0.5\pm1.8)\times10^{-6}$ at 95\% confidence on the fractional difference in their accelerations~\cite{Voisin2020}. The case $\eta_N=-1$ would predict $\Delta\sim0.1$. It is excluded by lunar laser ranging by a factor of several thousand and by the triple pulsar by more than $10^4$.
+
+The definition is consistent with these tests if inertial mass is defined in the same way, as rest mass per absolute volume, so that gravitational self-energy contributes to neither. Then $m_g=m_i$ for every body, $\eta_N=0$, and the strong equivalence principle holds. In that case it is a consequence of co-expansion: the weak equivalence principle follows from the universality of the rescaling (section~\ref{sec_co_expansion}), and the strong one from defining both masses by the quantity co-expansion leaves unchanged. This is a requirement on the dynamics of the model, which must give inertial mass in this form. It also has a consequence that differs from general relativity: the mass of a neutron star measured from an orbit is the sum of the rest masses of its baryons, whereas in general relativity it is smaller than that sum by the binding energy, about ten per cent. Inferences about the structure and formation of neutron stars that use the general-relativistic relation would change.
+
+\subsection{What the Field Equation Does Not Yet Provide}
+
+\begin{table}[h]
+\caption{Status of the field equation}
+\label{table_field_equation}
+\begin{tabular}{@{}p{0.36\linewidth}p{0.58\linewidth}@{}}
+\toprule
+Result & Status\\
+\midrule
+Point-mass geometry, $\gamma=u+\sqrt{1+u^2}$ & derived from equation~\eqref{eq_field_equation}\\
+Several static masses & exact, equation~\eqref{eq_superposition}\\
+Uniform-density interior & exact, equation~\eqref{eq_ball_center}; hydrostatics open\\
+Mass & defined as rest mass per absolute volume\\
+Strong equivalence principle & holds if inertial mass is defined the same way; not yet derived\\
+Action and matter coupling & open\\
+Time dependence, radiation & open; requires a tensor sector\\
+Rotation & open; first-order result imported from general relativity\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Action and matter coupling.} Equation~\eqref{eq_field_equation} should follow, together with the motion of bodies along the geodesics of the co-expansion geometry, from one action. The simplest attempt fails. A field term $k|\nabla\psi|^2$ with matter coupled through its rest energy and the clock rate, $\rho c^2/\gamma$, gives on variation a source $\rho\cdot2/(1+\gamma^2)$ in place of $\rho$, which differs at first order in $u$. The correct coupling must also give inertial mass as rest mass per absolute volume (subsection~\ref{sec_sep}).
+
+\paragraph{Time dependence.} Promoting equation~\eqref{eq_field_equation} to a wave equation for the single field $\psi$ would give a scalar theory of gravity. A scalar theory radiates in the wrong way: it does not reproduce the orbital decay of binary pulsars or the tensor polarization of the gravitational waves observed by LIGO and Virgo. The time-dependent theory needs a tensor sector whose static limit is equation~\eqref{eq_field_equation}. One lead is that, read through the Einstein equations, the co-expansion geometry has an exterior source with $\rho\simeq p_r\simeq-p_t\simeq-g^2/(8\pi G)$ at leading order, the stress of a scalar field with negative kinetic energy. Whether the Einstein equations coupled to such a field, built from $y$, reproduce the co-expansion geometry exactly or only at leading order is the next calculation.

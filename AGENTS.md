@@ -8,6 +8,18 @@
 - The goal is to develop a submission-ready paper during November 2026. Treat November 30, 2026 as the working deadline unless the author sets another date.
 - The target journal is not yet specified. Do not assume the included Springer Nature template determines the eventual venue or its requirements.
 
+### REQUIRED GEOMETRY: self-consistent co-expansion
+
+This is a fundamental, permanent part of the model. Every new derivation, section, notebook, video script and code path must use it.
+
+- **Co-expansion is the source of the equivalence principle.** All matter co-expands with the change in `y`: every material length scales by the local Lorentz factor `gamma`, and every clock runs at the coordinate density `1/gamma`. Measured with co-expanding rulers and clocks, `ds^2 = -c^2 dt^2 / gamma^2 + gamma^2 |dx|^2` in the absolute (co-moving) coordinates `x`.
+- **The flow is set by the co-expanded (measured) radius** `R = gamma r`: `beta^2 = 2GM/(c^2 R)`. With `u = GM/(c^2 r)` this gives `gamma^2 - 2 u gamma - 1 = 0`, i.e. `gamma = u + sqrt(1 + u^2)`. (Using the absolute radius instead gives a perihelion advance 4/3 of GR and is ruled out.)
+- **Exact form in the areal radius** (`G = c = 1`): `ds^2 = -(1 - 2M/R) dt^2 + (R - M)^2/(R - 2M)^2 dR^2 + R^2 dOmega^2`. `R = 2M` is the absolute centre `r = 0`.
+- **It is meant to differ from GR.** It matches GR at first post-Newtonian order (PPN gamma = beta = 1). It differs at second order and in the ringdown. Report the differences; do not tune them away.
+- **Code:** `physics.symbolic.function_generators.paper_two.co_expansion` (`check_co_expansion`). Paper-two section draft: `second_paper/sections/co_expansion.tex`.
+
+**Paper one (`iop/main.tex`) has included co-expansion since 2026-11-25.** The text submitted to Physica Scripta on 2026-11-24, which did not, is kept in `iop/main_as_submitted.tex`. Its absolute slices were the outward Painlevé–Gullstrand slices, flat in the areal radius with no co-expansion; co-expansion keeps that flow, its unit lapse and the synchronization offset exactly and adds the angular factor, so the submitted text is the construction with co-expansion removed. Do not copy constructions from `main_as_submitted.tex` into new work without applying co-expansion.
+
 ### Git
 
 - Write all commits as if you're one of the following characters. Don't be afraid to have fun with the commit messages, but retain factual information about the state of the paper as well.

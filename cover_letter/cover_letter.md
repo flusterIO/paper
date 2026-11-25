@@ -1,22 +1,21 @@
-Dear Editorial Board,
+Dear Editors,
 
-Please consider the enclosed manuscript, “Lorentz Factor as the Slope of an Additional Coordinate”, for publication in General Relativity and Gravitation.
+Please consider the enclosed manuscript, "Absolute Time in Higher-Dimensional Geometry: Classically Simultaneous Relativity via an Unwrapped Kaluza-Klein Dimension", for publication as a Research Paper in _Physica Scripta_. It has a single author. The manuscript has been prepared for double-anonymous review.
 
-The manuscript investigates whether the Lorentz factor can be represented as the slope of an additional, non-compactified spatial coordinate, $\gamma=\sqrt{1+(\partial_x y)^2}$, in a Kaluza–Klein-like construction. Treating the gradient of this coordinate as a pure-gauge four-potential, I show that the induced radial metric reproduces the spatial geometry of the Schwarzschild solution as a Flamm-type embedding, with the metric component $G_{44}$ fixed to unity and consistent with the Cassini bound on the post-Newtonian parameter. I further show that the relation $\beta^2=2Gm(R)/(c^2R)$ describes both the flow velocity in the Painlevé–Gullstrand form of Schwarzschild geometry and the Hubble flow of a flat universe, with opposite sign, and I place this result in the context of the established literature.
+The manuscript asks whether the kinematics of special relativity, and the static clock rates of general relativity, can be written with a fourth spatial axis and no time dimension. It shows that they can, in a precise sense. A moving body traces a path through three-dimensional space and a non-compact density axis, y. The inclination of that path carries the Lorentz factor (the slope dy/dx is the product of the speed, in units of c, and the Lorentz factor), the speed (the sine of the inclination), and the rate of a clock carried along the path (its cosine). Time readings are ratios of distances along the path, and the relativity of simultaneity becomes a displacement along y, so that every inertial observer can recover a single absolute time. If space flows outward from a mass, as it does in the Hubble flow, the space around the mass is inclined into y in the same way. For steady fields the time coordinate can then be eliminated from the motion of light and matter. The resulting flat-space paths reproduce the Schwarzschild orbit equation, light bending, the innermost stable circular orbit and the perihelion advance. These results are verified symbolically and numerically in an open-source package.
 
-I want to be clear about the scope of the claims. Where the construction can be checked, it is equivalent to general relativity, and the temporal metric function is supplied by a postulate rather than derived. The manuscript states these limitations explicitly, together with the open problems: a dimensionally consistent treatment of the time-equivalent parameter, and a derivation of the temporal relation from the higher-dimensional geometry. I submit it as a geometric reformulation and a starting point for work that could yield predictions differing from general relativity, not as a finished alternative theory.
+I want to be explicit about scope. Where the construction has been developed, it is equivalent to special and general relativity, and its gravitational results rely on field equations imported from general relativity. The manuscript therefore presents its results as consistency checks, not as new predictions. It states in a table which results are identities of the geometry, which are recovered from general relativity, which are assumed, and which are not established. Its contribution is the unification of the Lorentz factor, speed, clock rate and synchronization offset as one geometric quantity; the account of time that follows from it; and an identification of where an independent dynamics for y could make the model differ from general relativity. The work is related to Euclidean and neo-Lorentzian formulations of relativity, induced-matter Kaluza-Klein theory, and the Zermelo/Randers and Jacobi-metric treatments of motion, and the manuscript discusses these connections.
 
-Also, I've included a section in the appendix that includes some earlier formulations. These early, simplified models did seem to produce rough approximations, but their scientific rigor is not up to par with the rest of the paper. I do hope to include them in the final report as I do feel that there is a non-zero chance that there may be validity in their derivations, however oversimplified they may be, but I am content removing that section if the reviewer deems it appropriate.
+I believe the manuscript suits the journal's broad scope in mathematical physics, and its readers interested in the foundations of relativity in particular. This work is original, has not been published, and is not under consideration elsewhere. I have no competing interests to declare and received no funding. The Python code that reproduces and checks every result is available as an open-source package, and the manuscript states how to obtain it. In line with the journal's policy, the manuscript includes a declaration of generative-AI use: I used Claude, an AI assistant, to review and edit the text, to check and extend derivations, and to write and test the accompanying code. I reviewed all AI-assisted content and take full responsibility for it.
 
-I believe the manuscript will interest your readers working on higher-dimensional and embedding approaches to gravitation, and on the relationship between local gravitational flow and cosmological expansion.
+I have chosen the subscription publication route and do not wish to publish open access. I have entered suggested reviewers in the submission form.
 
-This work is original, and is not under consideration elsewhere. I have no competing interests to declare. The derivations contained within the paper were carried out without the assistance of AI as I wrote almost all of it while homeless and without internet access, but AI was used to revise the manuscript. I am an independent researcher with no institutional affiliation or funding of any kind.
+Thank you for your consideration.
 
-I would be glad to suggest reviewers if useful, and I look forward to your reply.
-
-Thank you,
+Sincerely,
 
 Andrew Mueller  
 Independent Researcher  
 Milwaukee, WI, USA  
-AndrewMueller414@gmail.com
+AndrewMueller414@gmail.com  
+ORCID: 0000-0003-0573-6327
