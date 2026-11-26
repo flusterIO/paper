@@ -8,17 +8,19 @@
 - The goal is to develop a submission-ready paper during November 2026. Treat November 30, 2026 as the working deadline unless the author sets another date.
 - The target journal is not yet specified. Do not assume the included Springer Nature template determines the eventual venue or its requirements.
 
-### REQUIRED GEOMETRY: self-consistent co-expansion
+### REQUIRED GEOMETRY: co-expansion along the flow (since 2026-11-26)
 
 This is a fundamental, permanent part of the model. Every new derivation, section, notebook, video script and code path must use it.
 
-- **Co-expansion is the source of the equivalence principle.** All matter co-expands with the change in `y`: every material length scales by the local Lorentz factor `gamma`, and every clock runs at the coordinate density `1/gamma`. Measured with co-expanding rulers and clocks, `ds^2 = -c^2 dt^2 / gamma^2 + gamma^2 |dx|^2` in the absolute (co-moving) coordinates `x`.
-- **The flow is set by the co-expanded (measured) radius** `R = gamma r`: `beta^2 = 2GM/(c^2 R)`. With `u = GM/(c^2 r)` this gives `gamma^2 - 2 u gamma - 1 = 0`, i.e. `gamma = u + sqrt(1 + u^2)`. (Using the absolute radius instead gives a perihelion advance 4/3 of GR and is ruled out.)
-- **Exact form in the areal radius** (`G = c = 1`): `ds^2 = -(1 - 2M/R) dt^2 + (R - M)^2/(R - 2M)^2 dR^2 + R^2 dOmega^2`. `R = 2M` is the absolute centre `r = 0`.
-- **It is meant to differ from GR.** It matches GR at first post-Newtonian order (PPN gamma = beta = 1). It differs at second order and in the ringdown. Report the differences; do not tune them away.
-- **Code:** `physics.symbolic.function_generators.paper_two.co_expansion` (`check_co_expansion`). Paper-two section draft: `second_paper/sections/co_expansion.tex`.
+- **Co-expansion along the flow is the source of the equivalence principle.** Matter at rest relative to a mass moves through the outward-flowing space and co-expands as a moving body does in special relativity: lengths ALONG the flow scale by the Lorentz factor `gamma` of the flow, clocks run at `1/gamma`, and lengths ACROSS the flow are unchanged (exponents -1, +1, 0, the same as SR). It is the same for all matter. A body released at rest no longer co-moves along `y` with the matter around it and falls relative to it.
+- **Signature (+,+,+,+): write every interval as a sum of squares.** Static observer: `c^2 dt^2/gamma^2 = c^2 dtau^2 + gamma^2 dR^2 + R^2 dOmega^2`. Absolute frame: `c^2 dT^2 = c^2 dtau^2 + |dx - W dT|^2` on FLAT absolute slices, `W = beta c R-hat` outward. SR: `(c dtau)^2 = (c dt_U)^2 + dx^2`. Do not write Lorentzian forms except to identify a result with GR.
+- **The flow is set by the measured radius** `R` (on flat absolute slices the absolute radius equals the measured radius): `beta^2 = 2GM/(c^2 R)`, `gamma = 1/sqrt(1 - 2GM/(c^2 R))`. With enclosed mass, `beta^2 = 2Gm(R)/(c^2 R)` is the Hamiltonian constraint of the Einstein equations on flat slices (and the Friedmann equation for the Hubble flow).
+- **Inclined space = Flamm's paraboloid:** `dy/dR = beta gamma`, `y = 2 sqrt(2M(R - 2M))`; synchronization offset `c(dT - dt) = -beta gamma^2 dR = -gamma dy`.
+- **Field equations are Einstein's**, written on the slices of absolute time. The geometry of an isolated mass is exactly Schwarzschild; every GR prediction holds (SEP/PSR J0337, binary pulsars, GW170817, shadow, ISCO 6M, deflection 4M/b + 15pi/4 (M/b)^2). Earth: proper radius exceeds measured radius by ~GM/(3c^2) = 1.5 mm (uniform body).
+- **Do NOT reintroduce co-expansion in every direction** (`ds^2 = -dt^2/gamma^2 + gamma^2|dx|^2`, `gamma = u + sqrt(1+u^2)`): it departs from GR at second order and its neutron stars violate the strong equivalence principle by ~4%, excluded by PSR J0337+1715 by ~2e4. That version is kept only as history (`iop/main_v7_isotropic_coexpansion.tex`, Zenodo v7; paper-two modules `co_expansion`, `stellar_structure`, ...).
+- **Code:** `physics.symbolic.function_generators.paper_two.flow_geometry` (`check_flow_geometry`, 15 checks).
 
-**Paper one (`iop/main.tex`) has included co-expansion since 2026-11-25.** The text submitted to Physica Scripta on 2026-11-24, which did not, is kept in `iop/main_as_submitted.tex`. Its absolute slices were the outward Painlevé–Gullstrand slices, flat in the areal radius with no co-expansion; co-expansion keeps that flow, its unit lapse and the synchronization offset exactly and adds the angular factor, so the submitted text is the construction with co-expansion removed. Do not copy constructions from `main_as_submitted.tex` into new work without applying co-expansion.
+**Paper one (`iop/main.tex`) uses co-expansion along the flow since 2026-11-26.** The text submitted to Physica Scripta on 2026-11-24 (`iop/main_as_submitted.tex`) used the same outward Painleve-Gullstrand slices (flat, unit lapse) and is consistent with this geometry; the 2026-11-25 version with co-expansion in every direction (`iop/main_v7_isotropic_coexpansion.tex`) is superseded.
 
 ### Git
 
